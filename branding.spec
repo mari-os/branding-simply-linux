@@ -83,7 +83,7 @@ PreReq(post,preun): alternatives >= 0.2
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-graphics ";done )
 
 %description graphics
-This package contains some graphics for ALT design.
+This package contains some graphics for Simply linux design.
 
 
 %define provide_list altlinux fedora redhat system altlinux
