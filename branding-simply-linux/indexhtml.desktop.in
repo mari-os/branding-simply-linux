@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=xdg-open /usr/share/doc/alt-docs/indexhtml/index.html
+StartupNotify=false
+Icon=i-linux
+Name=@NAME@ @VERSION@ @STATUS@: start page
+Categories=System;Documentation;
+
+# Translations
+Name[ru]=@NAME@ @VERSION@ @STATUS@: cтартовая страница

@@ -1,0 +1,32 @@
+AC_INIT( [branding], [0.1], [http://bugzilla.altlinux.ru] )
+
+
+PROGRESS_COLOR="0x23b8dc"
+TITLE_COLOR="0x23b8dc"
+INACTIVE_COLOR="0xd3d7cf"
+
+
+AC_SUBST(THEME)
+AC_SUBST(NAME)
+AC_SUBST(STATUS)
+AC_SUBST(VERSION)
+AC_SUBST(PROGRESS_COLOR)
+AC_SUBST(TITLE_COLOR)
+AC_SUBST(INACTIVE_COLOR)
+
+AC_CONFIG_FILES([
+		 Makefile
+		 bootloader/config
+		 bootsplash/config/bootsplash-640x480.cfg
+		 bootsplash/config/bootsplash-800x600.cfg
+		 alterator/design/design.ini
+		 bootloader/gfxboot.cfg
+		 notes/release-notes.ru.html
+		 notes/release-notes.all.html
+		 notes/license.ru.html
+		 notes/license.all.html
+		 indexhtml.desktop
+		 indexhtml/index-ru.html
+		 indexhtml/index-en.html
+])
+AC_OUTPUT
