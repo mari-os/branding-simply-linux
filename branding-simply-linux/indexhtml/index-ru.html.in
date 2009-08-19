@@ -10,27 +10,26 @@
 <body>
 
 <div id=lang>
- <a href="index-en.html">English</a> |
+ <a href="index-en.html">English</a>
 </div>
 
 <div id="content">
 
 <table border="0" cellspacing="10"><tr>
-<td><img src="img/altlinux-logo.png" width="95" height="84" style="margin-right: 15px;"></td>
-<td width="99%" valign="bottom"><h1 class="shadow" title="@NAME@ @VERSION@ @STATUS@"><nobr>@NAME@ @VERSION@ @STATUS@</nobr></h1></td>
+<td width="99%" valign="bottom"><h1 class="shadow" title="Simply GNU/Linux @VERSION@ @STATUS@"><nobr>Simply GNU/Linux @VERSION@ @STATUS@</nobr></h1></td>
 </tr></table>
 
 <div id="main">
 
 <div id="pane">
-<div class="footer">Поиск по сайтам ALT Linux</div>
+<div class="footer">Поиск по ресурсам сообщества</div>
 <!-- Google CSE Search Box Begins  -->
 <form action="http://www.google.com/cse" id="searchbox_014412136813254060649:m2__wfh9ajy">
 <!--table border="1" width="100%">
 <tbody><tr><td-->
 <input type="hidden" name="cx" value="014412136813254060649:m2__wfh9ajy" />
 <input type="text" name="q" size="23" />
-<input type="submit" name="sa" value="Поиск" id="button" />
+<input type="submit" name="sa" value="Искать" id="button" />
 <!--/td></tr></tbody></table-->
 </form>
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_014412136813254060649%3Am2__wfh9ajy"></script>
@@ -44,8 +43,10 @@
 <p align="justify" style="padding: 15px;">Этот дистрибутив не появился бы без активного участия ALT Linux Team &mdash; сообщества разработчиков свободного программного обеспечения.</p>
 <ul>
  <li><a href="http://www.altlinux.org/">Wiki сообщества</a></li>
- <li><a href="http://backports.altlinux.org/">Backports</a></li>
- <li><a href="http://bugs.altlinux.org/">Сообщить об ошибке</a></li>
+  <li><a href="http://forum.altlinux.org/">Форум сообщества</a></li>
+  <li><a href="http://www.altlinux.ru/online_help/users_mailing_lists.html">Списки рассылки</a></li>
+ <!-- <li><a href="http://backports.altlinux.org/">Backports</a></li> -->
+
 </ul>
 </div>
 </div>
@@ -65,9 +66,9 @@
 <ul>
  <li><a href="http://myaltlinux.blogspot.com">Блог автора дистрибутива</a></li>
  <li><a href="http://faq.altlinux.ru/">Ответы на часто задаваемые вопросы</a></li>
- <li><a href="http://search.altlinux.ru/">Поиск информации по ALT Linux</a></li>
- <li><a href="http://www.altlinux.ru/online_help/users_mailing_lists.html">Списки рассылки</a></li>
- <li><a href="http://forum.altlinux.org/">Форум пользователей ALT Linux</a></li>
+ <!-- <li><a href="http://search.altlinux.ru/">Поиск информации по ALT Linux</a></li> -->
+  <li><a href="http://bugs.altlinux.org/">Сообщить об ошибке</a></li>
+ 
 </ul>
 </div>
 </div>

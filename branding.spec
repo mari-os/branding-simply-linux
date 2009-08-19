@@ -1,12 +1,12 @@
 %define theme slinux
-%define Name Simply linux
-%define codename Dilly 
-%define status beta
+%define Name Simply GNU/Linux
+%define codename Billy
+%define status RC1
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt1
+Release: alt3
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -27,7 +27,10 @@ Summary: System/Base
 License: GPL
 
 %description
-Distro-specific packages with design and texts
+Distro-specific packages with design and texts for Simply GNU/Linux distribution.
+
+%description -l ru_RU.UTF-8
+Пакеты, для дистрибутива "Просто Линукс" (Simply GNU/Linux)
 
 %package bootloader
 Group: System/Configuration/Boot and Init
@@ -41,7 +44,12 @@ Obsoletes: design-bootloader-system-%theme design-bootloader-livecd-%theme desig
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootloader ";done )
 
 %description bootloader
-Here you find the graphical boot logo. Suitable for both lilo and syslinux.
+Here you find the graphical boot logo for Simply GNU/Linux distribution. 
+Suitable for both lilo and syslinux.
+
+%description bootloader -l ru_RU.UTF-8
+В данном пакете находится тема для экрана выбора вариантов загрузки (lilo и syslinux) 
+для дистрибутива "Просто Линукс" (Simply GNU/Linux). 
 
 %package bootsplash
 Summary: Theme for splash animations during bootup
@@ -52,12 +60,17 @@ Requires: bootsplash >= 3.3
 Obsoletes:  branding-alt-%theme-bootsplash
 
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootsplash ";done )
+
 %description bootsplash
-This package contains graphics for boot process
-(needs console splash screen enabled)
+This package contains graphics for boot process for Simply GNU/Linux
+(needs console splash screen enabled).
+
+%description bootsplash -l ru_RU.UTF-8
+В данном пакете находится тема для экрана загрузки для дистрибутива 
+"Просто Линукс" (Simply GNU/Linux). 
 
 %package alterator
-Summary: Design for alterator for Simply linux 
+Summary: Design for alterator for Simply GNU/Linux 
 License: GPL
 Group: System/Configuration/Other
 Packager: Denis Koryavov <dkoryavov@altlinux.org>
@@ -70,7 +83,11 @@ Obsoletes: design-alterator-server design-alterator-desktop design-altertor-brow
 PreReq(post,preun): alternatives >= 0.2 alterator
 
 %description alterator
-Design for QT and web alterator for Simply linux 
+Design for QT and web alterator for Simply GNU/Linux.
+
+%description alterator -l ru_RU.UTF-8
+В данном пакете находится тема для "Центра управления системой" (Alterator)
+и модулей библиотеки QT для дистрибутива "Просто Линукс" (Simply GNU/Linux). 
 
 %package graphics
 Summary: design for ALT
@@ -83,7 +100,11 @@ PreReq(post,preun): alternatives >= 0.2
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-graphics ";done )
 
 %description graphics
-This package contains some graphics for Simply linux design.
+This package contains some graphics for Simply GNU/Linux design.
+
+%description graphics -l ru_RU.UTF-8
+В данном пакете находится необходимые графические элементы для дистрибутива 
+"Просто Линукс" (Simply GNU/Linux). 
 
 
 %define provide_list altlinux fedora redhat system altlinux
@@ -101,7 +122,11 @@ Conflicts: %conflicts_list
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-release ";done )
 
 %description release
-%Name %version release file.
+Simply GNU/Linux %version release file.
+
+%description release -l ru_RU.UTF-8
+В данном пакете находится описание версии %version дистрибутива 
+"Просто Линукс" (Simply GNU/Linux).
 
 %package notes
 Provides: alt-license-theme = %version alt-notes-%theme
@@ -115,19 +140,26 @@ Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-n
 %description notes
 Distribution license and release notes
 
-%package slideshow
+%description notes -l ru_RU.UTF-8
+В данном пакете находится лицензия и дополнительные сведения для версии %version 
+дистрибутива "Просто Линукс" (Simply GNU/Linux).
 
-Summary: Slideshow for Simply linux %version installer
+
+%package slideshow
+Summary: Slideshow for Simply GNU/Linux %version installer.
 License: Distributable
 Group: System/Configuration/Other 
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-slideshow ";done )
 
 %description slideshow
-Slideshow for Simply linux %version installer
+Slideshow for Simply GNU/Linux %version installer.
+
+%description slideshow -l ru_RU.UTF-8
+В данном пакете находятся изображения для организации "слайдшоу" в инсталляторе 
+дистрибутива "Просто Линукс" (Simply GNU/Linux).
 
 %package indexhtml
-
-Summary: %name -- Simply Linux html welcome page
+Summary: Simply GNU/Linux html welcome page
 License: distributable
 Group: System/Base
 Provides: indexhtml indexhtml-%theme = %version indexhtml-Desktop = 1:5.0
@@ -145,7 +177,12 @@ Requires: xdg-utils
 Requires(post): indexhtml-common
 
 %description indexhtml
-Simply Linux index.html welcome page.
+Simply GNU/Linux index.html welcome page.
+
+%description indexhtml -l ru_RU.UTF-8
+В данном пакете содержится стартовая страница для дистрибутива 
+"Просто Линукс" (Simply GNU/Linux).
+
 
 %prep
 %setup -q
@@ -208,6 +245,8 @@ __EOF__
 
 #graphics
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
+mkdir -p %buildroot/%_iconsdir
+install graphics/icons/altlinux.png %buildroot/%_iconsdir/altlinux.png
 cp -ar graphics/* %buildroot/%_datadir/design/%theme
 
 pushd %buildroot/%_datadir/design/%theme
@@ -215,6 +254,7 @@ pushd %buildroot/%_datadir/design/%theme
 	ln -sf ../../../wallpapers more
     popd
 popd
+
 
 install -d %buildroot//etc/alternatives/packages.d
 cat >%buildroot/etc/alternatives/packages.d/%name-graphics <<__EOF__
@@ -252,7 +292,7 @@ install -m644 indexhtml.desktop %buildroot%_desktopdir/
 
 #bootloader
 %pre bootloader
-[ -s /boot/splash/%theme ] && rm -fr  /boot/splash/%theme ||:
+[ -s /boot/splash/%theme ] && rm -rf  /boot/splash/%theme ||:
 
 %post bootloader
 %__ln_s -nf %theme/message /boot/splash/message
@@ -261,7 +301,6 @@ lang=$(echo $LANG | cut -d. -f 1)
 cd boot/splash/%theme/
 echo $lang > lang
 [ "$lang" = "C" ] || echo lang | cpio -o --append -F message
-
 
 
 %preun bootloader
@@ -294,6 +333,7 @@ echo $lang > lang
 %files graphics
 %config /etc/alternatives/packages.d/%name-graphics
 %_datadir/design
+%_iconsdir/altlinux.png
 
 %files bootsplash
 %_sysconfdir/bootsplash/themes/%theme/
@@ -316,6 +356,12 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Wed Aug 19 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt3
+- Added brand icon an Russian description for package.
+
+* Thu Aug 13 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt2
+ - Update for bootsplash. 
+
 * Sat Jun 13 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt1
 - Fork from branding-altlinux-lite
 

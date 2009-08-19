@@ -10,13 +10,12 @@
 <body>
 
 <div id=lang>
- <a href="index-ru.html">Русский</a> |
+ <a href="index-ru.html">Русский</a>
 </div>
 
 <div id="content">
 
 <table border="0" cellspacing="10"><tr>
-<td><img src="img/altlinux-logo.png" width="95" height="84" style="margin-right: 15px;"></td>
 <td width="99%" valign="bottom"><h1 class="shadow" title="@NAME@ @VERSION@ @STATUS@"><nobr>@NAME@ @VERSION@ @STATUS@</nobr></h1></td>
 </tr></table>
 
