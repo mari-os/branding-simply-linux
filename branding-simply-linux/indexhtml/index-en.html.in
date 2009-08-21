@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>@NAME@ @VERSION@ @STATUS@</title>
+  <title>Simply GNU/Linux @VERSION@ @STATUS@</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -16,13 +16,13 @@
 <div id="content">
 
 <table border="0" cellspacing="10"><tr>
-<td width="99%" valign="bottom"><h1 class="shadow" title="@NAME@ @VERSION@ @STATUS@"><nobr>@NAME@ @VERSION@ @STATUS@</nobr></h1></td>
+<td width="99%" valign="bottom"><h1 class="shadow" title="Simply GNU/Linux @VERSION@ @STATUS@"><nobr>Simply GNU/Linux @VERSION@ @STATUS@</nobr></h1></td>
 </tr></table>
 
 <div id="main">
 
 <div id="pane">
-<div class="footer">Search on ALT Linux websites</div>
+<div class="footer">Search on community resources</div>
 <!-- Google CSE Search Box Begins  -->
 <form action="http://www.google.com/cse" id="searchbox_014412136813254060649:m2__wfh9ajy">
 <!--table border="1" width="100%">
@@ -43,13 +43,13 @@
 <p align="justify" style="padding: 15px;">This distribution would never be accomplished without active efforts put by ALT Linux Team&nbsp;&mdash; a community of free/libre software developers.</p>
 <ul>
  <li><a href="http://www.altlinux.org/">Community Wiki</a></li>
- <li><a href="http://backports.altlinux.org/">Backports</a></li>
- <li><a href="http://bugs.altlinux.org/">Report a bug</a></li>
+ <li><a href="http://forum.altlinux.org/">Community Forum</a></li>
+ <li><a href="http://www.altlinux.ru/online_help/users_mailing_lists.html">Mailing lists</a></li>
 </ul>
 </div>
 </div>
 
-<p align="justify">Welcome to <nobr>@NAME@ @VERSION@ @STATUS@</nobr>. The distribution is set up and ready to use, you may proceed. We hope that results of our work will be of use to you.</p>
+<p align="justify">Welcome to <nobr>Simply Linux @VERSION@ @STATUS@</nobr>. The distribution is set up and ready to use, you may proceed. We hope that results of our work will be of use to you.</p>
 
 <div id="documentation">
 <h2>Documentation</h2>
@@ -60,13 +60,11 @@
 </div>
 
 <div id="web">
-<h2>in Internet</h2>
+<h2>In Internet</h2>
 <ul>
  <li><a href="http://myaltlinux.blogspot.com">Author blog</a></li>
  <li><a href="http://faq.altlinux.ru/">Frequently Asked QUestion</a></li>
- <li><a href="http://search.altlinux.ru/">Search on ALT Linux websites</a></li>
- <li><a href="http://www.altlinux.ru/online_help/users_mailing_lists.html">Mailing lists</a></li>
- <li><a href="http://forum.altlinux.org/">ALT Linux Forum</a></li>
+  <li><a href="http://bugs.altlinux.org/">Report a bug</a></li>
 </ul>
 </div>
 </div>
