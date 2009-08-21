@@ -35,6 +35,7 @@ Distro-specific packages with design and texts for Simply GNU/Linux distribution
 %package bootloader
 Group: System/Configuration/Boot and Init
 Summary: Graphical boot logo for lilo and syslinux
+Summary(ru_RU.UTF-8): Тема для экрана выбора вариантов загрузки (lilo и syslinux) 
 License: GPL
 
 PreReq: coreutils
@@ -53,6 +54,7 @@ Suitable for both lilo and syslinux.
 
 %package bootsplash
 Summary: Theme for splash animations during bootup
+Summary(ru_RU.UTF-8): Тема для экрана загрузки для дистрибутива "Просто Линукс"
 License: Distributable
 Group:  System/Configuration/Boot and Init
 Provides: design-bootsplash design-bootsplash-%theme  branding-alt-%theme-bootsplash
@@ -71,6 +73,7 @@ This package contains graphics for boot process for Simply GNU/Linux
 
 %package alterator
 Summary: Design for alterator for Simply GNU/Linux 
+Summary(ru_RU.UTF-8): Тема для "Центра управления системой" и QT для дистрибутива "Просто Линукс"
 License: GPL
 Group: System/Configuration/Other
 Packager: Denis Koryavov <dkoryavov@altlinux.org>
@@ -90,7 +93,8 @@ Design for QT and web alterator for Simply GNU/Linux.
 и модулей библиотеки QT для дистрибутива "Просто Линукс" (Simply GNU/Linux). 
 
 %package graphics
-Summary: design for ALT
+Summary: Design for Simply GNU/Linux
+Summary(ru_RU.UTF-8): Тема для дистрибутива "Просто Линукс"
 License: Different licenses
 Group: Graphics
 
@@ -112,7 +116,8 @@ This package contains some graphics for Simply GNU/Linux design.
 %define conflicts_list altlinux-release-sisyphus altlinux-release-4.0 altlinux-release-junior altlinux-release-master altlinux-release-server altlinux-release-terminal altlinux-release-small_business
 %package release
 
-Summary: %Name release file
+Summary: Simply GNU/Linux release file
+Summary(ru_RU.UTF-8): Описание дистрибутива "Просто Линукс"
 Copyright: GPL
 Group: System/Configuration/Other
 Packager: Denis Koryavov <dkoryavov@altlinux.org>
@@ -132,6 +137,7 @@ Simply GNU/Linux %version release file.
 Provides: alt-license-theme = %version alt-notes-%theme
 Obsoletes: alt-license-%theme alt-notes-%theme
 Summary: Distribution license and release notes
+Summary(ru_RU.UTF-8): Лицензия и дополнительные сведения для дистрибутива "Просто Линукс"
 License: Distributable
 Group: Documentation
 Conflicts: alt-notes-children alt-notes-hpc alt-notes-junior alt-notes-junior-sj alt-notes-junior-sm alt-notes-school-server alt-notes-server-lite alt-notes-skif alt-notes-terminal 
@@ -147,6 +153,7 @@ Distribution license and release notes
 
 %package slideshow
 Summary: Slideshow for Simply GNU/Linux %version installer.
+Summary(ru_RU.UTF-8): Изображения для организации "слайдшоу" в установщике дистрибутива "Просто Линукс"
 License: Distributable
 Group: System/Configuration/Other 
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-slideshow ";done )
@@ -155,11 +162,12 @@ Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-s
 Slideshow for Simply GNU/Linux %version installer.
 
 %description slideshow -l ru_RU.UTF-8
-В данном пакете находятся изображения для организации "слайдшоу" в инсталляторе 
+В данном пакете находятся изображения для организации "слайдшоу" в установщике 
 дистрибутива "Просто Линукс" (Simply GNU/Linux).
 
 %package indexhtml
 Summary: Simply GNU/Linux html welcome page
+Summary(ru_RU.UTF-8): Стартовая страница для дистрибутива "Просто Линукс"
 License: distributable
 Group: System/Base
 Provides: indexhtml indexhtml-%theme = %version indexhtml-Desktop = 1:5.0
