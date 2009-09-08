@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt3
+Release: alt4
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -364,6 +364,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Tue Sep 08 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt4
+- Removed misspellings in bootsplash text for 640x480 and 800x600 modes
+
 * Wed Aug 19 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt3
 - Added brand icon an Russian description for package.
 
