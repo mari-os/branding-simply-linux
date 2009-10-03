@@ -1,12 +1,12 @@
 %define theme slinux
 %define Name Simply GNU/Linux
 %define codename Billy
-%define status RC1
+%define status RC2
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt4
+Release: alt5
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -364,6 +364,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Sun Oct 04 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt5
+Simply Linux RC2.
+
 * Tue Sep 08 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt4
 - Removed misspellings in bootsplash text for 640x480 and 800x600 modes
 
