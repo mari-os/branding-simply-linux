@@ -23,7 +23,7 @@ talk=0
 ; sound volume (0..100)
 volume=70
 ; menu background transparency (0..255)
-menu.transparency=0x20
+menu.transparency=0x10
 ; default font
 font.normal=16x16.fnt
 ; main menu font
@@ -35,36 +35,36 @@ mainmenu.entries=8
 ; minimal main menu selection bar width
 mainmenu.bar.minwidth=300
 ; main menu selection bar transparency (0..255)
-mainmenu.bar.transparency=200
+mainmenu.bar.transparency=50
 ; main menu colors
-mainmenu.bar.color=0xf6f6f6
-mainmenu.normal.fg=0xf6f6f6
-mainmenu.selected.fg=0xffffff
+mainmenu.bar.color=0xffffff
+mainmenu.normal.fg=0xffffff
+mainmenu.selected.fg=0x00a1e4
 ; boot option colors
-bootopt.label.fg=0xf6f6f6
-bootopt.text.fg=0xf6f6f6
+bootopt.label.fg=0xffffff
+bootopt.text.fg=0xffffff
 ; progress bar color
 progress.bar.color=0x@PROGRESS_COLOR@
 ; menu colors
-menu.normal.bg=0x94ddee
+menu.normal.bg=0x00a1e4
 menu.normal.fg=0xffffff
-menu.selected.bg=0x6c6c6c
-menu.selected.fg=0xffffff
+menu.selected.bg=0xffffff
+menu.selected.fg=0x00a1e4
 ; window colors
-window.bg=0x94ddee
+window.bg=0x00a1e4
 window.fg=0x000000
 window.title.bg=0x@TITLE_COLOR@
 window.title.fg=0xffffff
 window.title.error.bg=0xc00000
 ; help system colors
 help.link.fg=0x0000a0
-help.link.selected.fg=0x94ddee
-help.link.selected.bg=0x0000a0
-help.highlight.fg=0x009000
+help.link.selected.fg=0x68d2fc
+help.link.selected.bg=0x00a1e4
+help.highlight.fg=0x00a1e4
 ; panel colors
-panel.fg=0xf6f6f6
+panel.fg=0xffffff
 panel.title.fg=0xffffff
-panel.f-key.fg=0xffe050
+panel.f-key.fg=0x68d2fc
 ; default keymap (e.g. de_DE, czech)
 keymap=
 
@@ -72,7 +72,7 @@ keymap=
 ; screen size
 screen.size=800,600
 ; upper left corner
-mainmenu.pos=253,170
+mainmenu.pos=283,257
 ; boot option input field position
 bootopt.pos=263,480
 
@@ -80,7 +80,7 @@ bootopt.pos=263,480
 ; screen size
 screen.size=640,480
 ; upper left corner
-mainmenu.pos=130,122
+mainmenu.pos=160,209
 ; boot option input field position
 bootopt.pos=263,380
 

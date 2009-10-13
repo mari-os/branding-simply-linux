@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt5
+Release: alt6
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -364,8 +364,11 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Wed Oct 14 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt6
+- Added new bootloader theme.
+
 * Sun Oct 04 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt5
-Simply Linux RC2.
+- Simply Linux RC2.
 
 * Tue Sep 08 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt4
 - Removed misspellings in bootsplash text for 640x480 and 800x600 modes
@@ -374,7 +377,7 @@ Simply Linux RC2.
 - Added brand icon an Russian description for package.
 
 * Thu Aug 13 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt2
- - Update for bootsplash. 
+- Update for bootsplash. 
 
 * Sat Jun 13 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt1
 - Fork from branding-altlinux-lite
