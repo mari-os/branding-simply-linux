@@ -60,7 +60,7 @@ window.title.error.bg=0xc00000
 help.link.fg=0x0000a0
 help.link.selected.fg=0x68d2fc
 help.link.selected.bg=0x00a1e4
-help.highlight.fg=0x00a1e4
+help.highlight.fg=0x68d2fc
 ; panel colors
 panel.fg=0xffffff
 panel.title.fg=0xffffff
