@@ -24,15 +24,15 @@ th=550
 jpeg=/etc/bootsplash/themes/@THEME@/images/bootsplash-800x600.jpg
 silentjpeg=/etc/bootsplash/themes/@THEME@/images/silent-800x600.jpg
 
-box silent noover 235 345 555 345 #69696760
-box silent noover 235 345 555 350 #CCCDCC60
-box silent noover 235 350 555 357 #9A9A9A60 #9A9A9A60 #D7D7D760 #D7D7D760
-box silent noover 235 357 555 349 #CBCBCC60
+box silent noover 250 385 550 385 #69696760
+box silent noover 250 385 550 390 #e9eef160
+box silent noover 250 390 550 397 #9A9A9A60 #9A9A9A60 #D7D7D760 #D7D7D760
+box silent noover 250 397 550 389 #dae0e760
 
-box silent inter 236 441 236 350 #94ddee
-box silent 236 441 554 350 #94ddee
-box silent inter 236 350 236 357 #23b8dc
-box silent 236 350 554 357 #23b8dc
+box silent inter 251 385 251 390 #59a8dd
+box silent 	 251 385 554 390 #59a8dd
+box silent inter 251 390 251 397 #0093d7
+box silent 	 251 390 554 397 #0093d7
 
 trigger "isdown" quit
 trigger "rlreached 5" quit

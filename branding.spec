@@ -1,12 +1,12 @@
 %define theme slinux
 %define Name Simply GNU/Linux
 %define codename Billy
-%define status RC2
+%define status %nil
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt6
+Release: alt7
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -364,6 +364,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Sat Oct 17 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt7
+- Simply Linux final release.
+
 * Wed Oct 14 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt6
 - Added new bootloader theme.
 
