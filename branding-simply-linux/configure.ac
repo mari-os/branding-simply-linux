@@ -29,6 +29,7 @@ AC_CONFIG_FILES([
 		 bootsplash/config/bootsplash-800x600.cfg
 		 bootsplash/config/bootsplash-1024x768.cfg
 		 bootsplash/config/bootsplash-1280x800.cfg
+		 bootsplash/config/bootsplash-1280x1024.cfg
 		 alterator/design/design.ini
 		 bootloader/gfxboot.cfg
 		 notes/release-notes.ru.html

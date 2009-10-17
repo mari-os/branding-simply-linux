@@ -18,21 +18,21 @@ bgcolor=0
 
 tx=10
 ty=50
-tw=1250
-th=975
+tw=1220
+th=924
 
 jpeg=/etc/bootsplash/themes/@THEME@/images/bootsplash-1280x1024.jpg
 silentjpeg=/etc/bootsplash/themes/@THEME@/images/silent-1280x1024.jpg
 
-box silent noover 400 657 880 657 #69696760
-box silent noover 400 657 880 666 #CCCDCC60
-box silent noover 400 666 880 678 #9A9A9A60 #9A9A9A60 #D7D7D760 #D7D7D760
-box silent noover 400 678 880 665 #CBCBCC60
+box silent noover 400 577 880 577 #69696760
+box silent noover 400 577 880 583 #CCCDCC60
+box silent noover 400 583 880 595 #9A9A9A60 #9A9A9A60 #D7D7D760 #D7D7D760
+box silent noover 400 595 880 582 #CBCBCC60
 
-box silent inter 401 657 401 666 #59a8dd
-box silent       401 657 879 666 #59a8dd
-box silent inter 401 666 401 678 #0093d7
-box silent       401 666 879 678 #0093d7
+box silent inter 401 577 401 583 #59a8dd
+box silent       401 577 879 583 #59a8dd
+box silent inter 401 583 401 595 #0093d7
+box silent       401 583 879 595 #0093d7
 
 trigger "isdown" quit
 trigger "rlreached 5" quit
