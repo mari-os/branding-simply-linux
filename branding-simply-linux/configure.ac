@@ -26,7 +26,6 @@ AC_SUBST(TITLE_COLOR)
 AC_CONFIG_FILES([
 		 Makefile
 		 bootloader/config
-		 bootsplash/config/bootsplash-640x480.cfg
 		 bootsplash/config/bootsplash-800x600.cfg
 		 bootsplash/config/bootsplash-1024x768.cfg
 		 bootsplash/config/bootsplash-1280x800.cfg
