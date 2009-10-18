@@ -365,7 +365,7 @@ echo $lang > lang
 
 %changelog
 * Sat Oct 17 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt7
-- Simply Linux final release.
+- Simply Linux 5.0 final release.
 
 * Wed Oct 14 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt6
 - Added new bootloader theme.
