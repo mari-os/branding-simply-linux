@@ -1,12 +1,12 @@
 %define theme slinux
 %define Name Simply GNU/Linux
 %define codename Billy
-%define status RC3
+%define status %nil
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt7
+Release: alt8
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -289,7 +289,7 @@ install slideshow/*  %buildroot/usr/share/install2/slideshow/
 
 #indexhtml
 %define _altdocsdir %_defaultdocdir/alt-docs
-%define _indexhtmldir %_altdocsdir/indexhtml
+%define _indexhtmldir %_defaultdocdir/indexhtml
 pushd indexhtml
 mkdir -p %buildroot{%_indexhtmldir/,%_desktopdir/}
 cp -r * %buildroot%_indexhtmldir/
@@ -364,6 +364,11 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Sun Oct 25 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt8
+- Changed colors for bootsplash.
+- Changed license page fonts.
+- Changed logo for slideshow.
+
 * Sat Oct 17 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt7
 - Simply Linux 5.0 RC3 release.
 

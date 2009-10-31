@@ -5,8 +5,8 @@
 </head>
 <body>
 
-<h1>License agreement</h1>
-<h2>for @NAME@ @VERSION@ @STATUS@ and included software applications</h2>
+<h2>License agreement</h2>
+<h3>for @NAME@ @VERSION@ @STATUS@ and included software applications</h3>
 
 <p><b>1. Agreement information</b></p>
 <p>1.1 Parties to the contract</p>
@@ -53,6 +53,7 @@
 <li>    Lucent/Agere support modules </li>
 <li>    Adobe Flash Player Plugin</li>
 <li>    Java 2 (SUN) Runtime Environment, Standard Edition</li>
+<li>    Yandex.Bar Firefox plugin</li>
 </ul>
 
 <p>Owners of exclusive rights for the listed above APPLICATIONS this way or the other limit your freedom of using these APPLICATIONS. Please familiarize yourself with license agreements accompanying these APPLICATIONS to decide, whether any use of any of those APPLICATIONS is legitimate, if it's outside boundaries of "free reproduction". License agreements for these APPLICATIONS are inside correspondent packages of the Distribution.

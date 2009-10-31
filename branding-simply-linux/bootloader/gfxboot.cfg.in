@@ -51,7 +51,7 @@ menu.normal.fg=0xffffff
 menu.selected.bg=0xffffff
 menu.selected.fg=0x00a1e4
 ; window colors
-window.bg=0x00a1e4
+window.bg=0xe9eef1
 window.fg=0x000000
 window.title.bg=0x@TITLE_COLOR@
 window.title.fg=0xffffff
