@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt8
+Release: alt9
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -364,6 +364,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Mon Nov 02 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt9
+- Indexhtml page changed.
+
 * Sun Oct 25 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt8
 - Changed colors for bootsplash.
 - Changed license page fonts.
