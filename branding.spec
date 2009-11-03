@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt10
+Release: alt9.M51.1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -364,6 +364,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Tue Nov 03 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt9.M51.1
+- Backport to 5.1.
+
 * Tue Nov 03 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt10
 - Version update for easy backport to 5.1.
 
