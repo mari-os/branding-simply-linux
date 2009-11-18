@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt9.M51.1
+Release: alt11
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -253,8 +253,8 @@ __EOF__
 
 #graphics
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
-mkdir -p %buildroot/%_iconsdir
-install graphics/icons/altlinux.png %buildroot/%_iconsdir/altlinux.png
+mkdir -p %buildroot/%_niconsdir
+install graphics/icons/altlinux.png %buildroot/%_niconsdir/altlinux.png
 cp -ar graphics/* %buildroot/%_datadir/design/%theme
 
 pushd %buildroot/%_datadir/design/%theme
@@ -341,7 +341,7 @@ echo $lang > lang
 %files graphics
 %config /etc/alternatives/packages.d/%name-graphics
 %_datadir/design
-%_iconsdir/altlinux.png
+%_niconsdir/altlinux.png
 
 %files bootsplash
 %_sysconfdir/bootsplash/themes/%theme/
@@ -364,6 +364,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Tue Nov 17 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt11
+- Some repocop warnings is taken into account.
+
 * Tue Nov 03 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt9.M51.1
 - Backport to 5.1.
 
