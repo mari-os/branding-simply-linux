@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.0
-Release: alt11
+Release: alt12
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -82,7 +82,7 @@ Provides: alterator-icons design-alterator design-alterator-%theme
 Obsoletes:  branding-alt-%theme-browser-qt  branding-altlinux-%theme-browser-qt 
 
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-browser-qt ";done )
-Obsoletes: design-alterator-server design-alterator-desktop design-altertor-browser-desktop  design-altertor-browser-server 
+Obsoletes: design-alterator-server design-alterator-desktop design-altertor-browser-desktop  design-altertor-browser-server branding-altlinux-backup-server-alterator
 PreReq(post,preun): alternatives >= 0.2 alterator
 
 %description alterator
@@ -113,7 +113,7 @@ This package contains some graphics for Simply GNU/Linux design.
 
 %define provide_list altlinux fedora redhat system altlinux
 %define obsolete_list altlinux-release fedora-release redhat-release
-%define conflicts_list altlinux-release-sisyphus altlinux-release-4.0 altlinux-release-junior altlinux-release-master altlinux-release-server altlinux-release-terminal altlinux-release-small_business
+%define conflicts_list altlinux-release-sisyphus altlinux-release-4.0 altlinux-release-5.0 altlinux-release-5.1 altlinux-release-junior altlinux-release-master altlinux-release-server altlinux-release-terminal altlinux-release-small_business
 %package release
 
 Summary: Simply GNU/Linux release file
@@ -135,12 +135,12 @@ Simply GNU/Linux %version release file.
 
 %package notes
 Provides: alt-license-theme = %version alt-notes-%theme
-Obsoletes: alt-license-%theme alt-notes-%theme
+Obsoletes: alt-license-%theme alt-notes-%theme 
 Summary: Distribution license and release notes
 Summary(ru_RU.UTF-8): Лицензия и дополнительные сведения для дистрибутива "Просто Линукс"
 License: Distributable
 Group: Documentation
-Conflicts: alt-notes-children alt-notes-hpc alt-notes-junior alt-notes-junior-sj alt-notes-junior-sm alt-notes-school-server alt-notes-server-lite alt-notes-skif alt-notes-terminal 
+Conflicts: alt-notes-children alt-notes-hpc alt-notes-junior alt-notes-junior-sj alt-notes-junior-sm alt-notes-school-server alt-notes-server-lite alt-notes-skif alt-notes-terminal alt-notes-desktop
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-notes ";done )
 
 %description notes
@@ -180,6 +180,7 @@ Conflicts: indexhtml-school_master
 Conflicts: indexhtml-school_terminal
 Conflicts: indexhtml-small_business
 Conflicts: indexhtml-school-server
+Conflicts: branding-altlinux-backup-server-indexhtml
 
 Requires: xdg-utils 
 Requires(post): indexhtml-common
@@ -364,6 +365,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Tue Nov 24 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt12
+- Some repocop warnings is taken into account.
+
 * Tue Nov 17 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt11
 - Some repocop warnings is taken into account.
 
