@@ -1,0 +1,40 @@
+# This is a bootsplash configuration file for
+# Simply linux, resolution 800x600.
+#
+# See www.bootsplash.org for more information.
+# Written by Jakub Steiner <jimmac@novell.com>
+# modified by Sergey V Turchin <zerg@altlinux.org>
+# modified by Anton V. Boyarshinov <boyarsh@altlinux.org>
+# modified by Sergey Alembekov <rt@altlinux.org>
+# modified by Denis Koryavov <dkoryavov@yandex.ru>
+
+version=3
+state=1
+progress_enable=1
+overpaintok=1
+
+fgcolor=7
+bgcolor=0
+
+tx=10
+ty=50
+tw=780
+th=550
+
+jpeg=/etc/bootsplash/themes/@THEME@/images/bootsplash-800x600.jpg
+silentjpeg=/etc/bootsplash/themes/@THEME@/images/silent-800x600.jpg
+
+box silent noover 250 385 550 385 #69696760
+box silent noover 250 385 550 390 #e9eef160
+box silent noover 250 390 550 397 #9A9A9A60 #9A9A9A60 #D7D7D760 #D7D7D760
+box silent noover 250 397 550 389 #dae0e760
+
+box silent inter 251 385 251 390 #59a8dd
+box silent 	 251 385 554 390 #59a8dd
+box silent inter 251 390 251 397 #0093d7
+box silent 	 251 390 554 397 #0093d7
+
+trigger "isdown" quit
+trigger "rlreached 5" quit
+trigger "rlchange 0" tosilent
+trigger "rlchange 6" tosilent

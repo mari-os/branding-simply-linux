@@ -1,0 +1,40 @@
+# This is a bootsplash configuration file for
+# Simply linux, resolution 1024x768.
+#
+# See www.bootsplash.org for more information.
+# Written by Jakub Steiner <jimmac@novell.com>
+# modified by Sergey V Turchin <zerg@altlinux.org>
+# modified by Anton V. Boyarshinov <boyarsh@altlinux.org>
+# modified by Sergey Alembekov <rt@altlinux.org>
+# modified by Denis Koryavov <dkoryavov@yandex.ru>
+
+version=3
+state=1
+progress_enable=1
+overpaintok=1
+
+fgcolor=7
+bgcolor=0
+
+tx=10
+ty=50
+tw=780
+th=550
+
+jpeg=/etc/bootsplash/themes/@THEME@/images/bootsplash-1024x768.jpg
+silentjpeg=/etc/bootsplash/themes/@THEME@/images/silent-1024x768.jpg
+
+box silent noover 320 463 704 463 #69696760
+box silent noover 320 463 704 469 #CCCDCC60
+box silent noover 320 469 704 478 #9A9A9A60 #9A9A9A60 #D7D7D760 #D7D7D760
+box silent noover 320 478 704 468 #CBCBCC60
+
+box silent inter 321 463 321 469 #59a8dd
+box silent       321 463 709 469 #59a8dd
+box silent inter 321 469 321 478 #0093d7
+box silent       321 469 709 478 #0093d7
+
+trigger "isdown" quit
+trigger "rlreached 5" quit
+trigger "rlchange 0" tosilent
+trigger "rlchange 6" tosilent
