@@ -1,10 +1,10 @@
 [Default Applications]
-application/vnd.oasis.opendocument.text-template=oowriter.desktop
-application/vnd.oasis.opendocument.text=oowriter.desktop
-application/vnd.oasis.opendocument.spreadsheet=oocalc.desktop
-application/vnd.oasis.opendocument.spreadsheet-template=oocalc.desktop
-application/vnd.oasis.opendocument.presentation-template=ooimpress.desktop
-application/vnd.oasis.opendocument.presentation=ooimpress.desktop
+application/vnd.oasis.opendocument.text-template=openoffice.org-writer.desktop
+application/vnd.oasis.opendocument.text=openoffice.org-writer.desktop
+application/vnd.oasis.opendocument.spreadsheet=openoffice.org-calc.desktop
+application/vnd.oasis.opendocument.spreadsheet-template=openoffice.org-calc.desktop
+application/vnd.oasis.opendocument.presentation-template=openoffice.org-impress.desktop
+application/vnd.oasis.opendocument.presentation=openoffice.org-impress.desktop
 application/pdf=evince.desktop
 image/jpeg=gthumb.desktop
 image/png=gthumb.desktop
