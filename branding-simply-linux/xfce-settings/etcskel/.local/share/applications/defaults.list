@@ -1,0 +1,18 @@
+[Default Applications]
+application/vnd.oasis.opendocument.text-template=oowriter.desktop
+application/vnd.oasis.opendocument.text=oowriter.desktop
+application/vnd.oasis.opendocument.spreadsheet=oocalc.desktop
+application/vnd.oasis.opendocument.spreadsheet-template=oocalc.desktop
+application/vnd.oasis.opendocument.presentation-template=ooimpress.desktop
+application/vnd.oasis.opendocument.presentation=ooimpress.desktop
+application/pdf=evince.desktop
+image/jpeg=gthumb.desktop
+image/png=gthumb.desktop
+image/gif=gthumb.desktop
+image/tiff=gthumb.desktop
+image/bmp=gthumb.desktop
+audio/mpeg=gnome-mplayer.desktop
+video/x-flv=gnome-mplayer.desktop
+video/quicktime=gnome-mplayer.desktop
+video/x-msvideo=gnome-mplayer.desktop
+audio/x-scpls=gnome-mplayer.desktop

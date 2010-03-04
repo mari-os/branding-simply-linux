@@ -5,8 +5,8 @@
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 
 Name: branding-simply-linux
-Version: 5.0.0
-Release: alt12
+Version: 5.0.1
+Release: alt1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -150,6 +150,21 @@ Distribution license and release notes
 В данном пакете находится лицензия и дополнительные сведения для версии %version 
 дистрибутива "Просто Линукс" (Simply GNU/Linux).
 
+%package xfce-settings
+
+Summary: default settings for Xfce 4.6 for Simply linux distribution
+License: Distributable
+Group: Graphical desktop/XFce
+Requires: PolicyKit-gnome
+Requires: etcskel gtk2-theme-simplicity
+Requires: gnome-icon-theme icon-theme-simple
+Requires: branding-simply-linux-graphics
+Obsoletes: xfce-settings-lite xfce-settings-school-lite
+Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-xfce-settings ";done )
+Conflicts: xfce-settings-simply-linux
+
+%description xfce-settings
+This package contains default settings for Xfce 4.6 for Simply linux distribution.
 
 %package slideshow
 Summary: Slideshow for Simply GNU/Linux %version installer.
@@ -284,6 +299,62 @@ pushd notes
 %makeinstall
 popd
 
+#xfce-settings
+pushd xfce-settings
+mkdir -p %buildroot/etc/skel/.config/Terminal
+mkdir -p %buildroot/etc/skel/.config/Thunar
+mkdir -p %buildroot/etc/skel/.config/autostart
+mkdir -p %buildroot/etc/skel/.config/sonata
+
+mkdir -p %buildroot/etc/skel/.gconf/apps/gnome-screensaver
+mkdir -p %buildroot/etc/skel/.gconf/desktop/gnome/session
+
+mkdir -p %buildroot/etc/skel/.config/xfce4/desktop
+mkdir -p %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
+mkdir -p %buildroot/etc/skel/.config/xfce4/panel
+mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf
+mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+
+mkdir -p %buildroot/etc/skel/.local/share/applications
+mkdir -p %buildroot/etc/skel/Templates
+mkdir -p %buildroot/etc/skel/Музыка
+mkdir -p %buildroot/etc/skel/Музыка/mpd
+mkdir -p %buildroot/etc/skel/Музыка/mpd/playlists
+
+cp etcskel/Templates/* %buildroot/etc/skel/Templates
+
+install -m 644 etcskel/.config/Terminal/*  %buildroot/etc/skel/.config/Terminal
+install -m 644 etcskel/.config/Thunar/*  %buildroot/etc/skel/.config/Thunar
+install -m 644 etcskel/.config/autostart/*  %buildroot/etc/skel/.config/autostart
+install -m 644 etcskel/.config/sonata/*  %buildroot/etc/skel/.config/sonata
+install -m 644 etcskel/.config/meditrc  %buildroot/etc/skel/.config
+
+install -m 644 etcskel/.gconf/apps/gnome-screensaver/* %buildroot/etc/skel/.gconf/apps/gnome-screensaver
+install -m 644 etcskel/.gconf/desktop/*.xml %buildroot/etc/skel/.gconf/desktop
+install -m 644 etcskel/.gconf/desktop/gnome/*.xml %buildroot/etc/skel/.gconf/desktop/gnome
+install -m 644 etcskel/.gconf/desktop/gnome/session/*.xml %buildroot/etc/skel/.gconf/desktop/gnome/session
+
+install -m 644 etcskel/.config/xfce4/desktop/* %buildroot/etc/skel/.config/xfce4/desktop
+install -m 644 etcskel/.config/xfce4/notication-daemon-xfce/* %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
+install -m 644 etcskel/.config/xfce4/panel/* %buildroot/etc/skel/.config/xfce4/panel
+install -m 644 etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/* %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+install -m 644 etcskel/.config/xfce4/Xcursor.xrdb %buildroot/etc/skel/.config/xfce4/
+install -m 644 etcskel/.config/xfce4/Xft.xrdb %buildroot/etc/skel/.config/xfce4/
+
+install -m 644 etcskel/.local/share/applications/*  %buildroot/etc/skel/.local/share/applications
+install -m 644 etcskel/.wm-select %buildroot/etc/skel/
+install -m 644 etcskel/.fonts.conf %buildroot/etc/skel/
+install -m 644 etcskel/.mpdconf %buildroot/etc/skel/
+
+mkdir -p %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200
+mkdir -p %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050
+cp -P backgrounds/*.jpg %buildroot/usr/share/xfce4/backdrops/
+install -m 644 backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/xfce4/backdrops/vladstudio.com/
+install -m 644 backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/
+install -m 644 backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050/
+popd
+
+
 #slideshow
 mkdir -p %buildroot/usr/share/install2/slideshow
 install slideshow/*  %buildroot/usr/share/install2/slideshow/
@@ -355,6 +426,16 @@ echo $lang > lang
 %files notes
 %_datadir/alt-notes/*
 
+%files xfce-settings
+/etc/skel/Templates
+/etc/skel/Музыка/mpd/playlists
+/etc/skel/.wm-select
+/etc/skel/.fonts.conf
+/etc/skel/.mpdconf
+/etc/skel/.config
+/etc/skel/.local
+/etc/skel/.gconf
+/usr/share/xfce4/backdrops
 
 %files slideshow
 /usr/share/install2/slideshow
@@ -365,6 +446,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Thu Mar 04 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.1-alt1
+- merged with xfce-settings-simply-linux
+
 * Tue Nov 24 2009 Denis Koryavov <dkoryavov@altlinux.org> 5.0.0-alt12
 - Some repocop warnings is taken into account.
 

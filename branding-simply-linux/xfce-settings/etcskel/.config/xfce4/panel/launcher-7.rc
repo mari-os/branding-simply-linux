@@ -1,0 +1,14 @@
+[Entry 0]
+Name=Command Prompt
+Name[ru]=Терминал
+Comment=X terminal emulator
+Comment[ru]=Эмулятор терминала для X
+Icon=utilities-terminal
+Exec=exo-open --launch TerminalEmulator
+Terminal=false
+StartupNotify=true
+
+[Global]
+MoveFirst=false
+ArrowPosition=0
+

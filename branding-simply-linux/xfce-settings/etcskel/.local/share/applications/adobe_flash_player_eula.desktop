@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Adobe Flash Plugin EULA
+GenericName=License Agreement
+GenericName[ru]=Лицензионное соглашение
+Icon=networking_www_section
+Exec=/bin/sh -c "$BROWSER file:///usr/share/doc/mozilla-plugin-adobe-flash-10.0.32.18/LICENSE.txt"
+Categories=AudioVideo;
+NoDisplay=true

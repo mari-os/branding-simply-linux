@@ -1,0 +1,12 @@
+[Entry 0]
+Name=Mozilla Thunderbird
+Comment=Почтовый клиент
+Icon=thunderbird
+Exec=exo-open --launch MailReader
+Terminal=false
+StartupNotify=true
+
+[Global]
+MoveFirst=false
+ArrowPosition=0
+
