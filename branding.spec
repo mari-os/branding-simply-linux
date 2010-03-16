@@ -1,5 +1,5 @@
 %define theme slinux
-%define Name Simply GNU/Linux
+%define Name Simply Linux
 %define codename Billy
 %define status %nil
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
@@ -27,10 +27,10 @@ Summary: System/Base
 License: GPL
 
 %description
-Distro-specific packages with design and texts for Simply GNU/Linux distribution.
+Distro-specific packages with design and texts for Simply Linux distribution.
 
 %description -l ru_RU.UTF-8
-Пакеты, для дистрибутива "Просто Линукс" (Simply GNU/Linux)
+Пакеты, для дистрибутива "Просто Линукс" (Simply Linux)
 
 %package bootloader
 Group: System/Configuration/Boot and Init
@@ -45,12 +45,12 @@ Obsoletes: design-bootloader-system-%theme design-bootloader-livecd-%theme desig
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootloader ";done )
 
 %description bootloader
-Here you find the graphical boot logo for Simply GNU/Linux distribution. 
+Here you find the graphical boot logo for Simply Linux distribution. 
 Suitable for both lilo and syslinux.
 
 %description bootloader -l ru_RU.UTF-8
 В данном пакете находится тема для экрана выбора вариантов загрузки (lilo и syslinux) 
-для дистрибутива "Просто Линукс" (Simply GNU/Linux). 
+для дистрибутива "Просто Линукс" (Simply Linux). 
 
 %package bootsplash
 Summary: Theme for splash animations during bootup
@@ -64,15 +64,15 @@ Obsoletes:  branding-alt-%theme-bootsplash
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootsplash ";done )
 
 %description bootsplash
-This package contains graphics for boot process for Simply GNU/Linux
+This package contains graphics for boot process for Simply Linux
 (needs console splash screen enabled).
 
 %description bootsplash -l ru_RU.UTF-8
 В данном пакете находится тема для экрана загрузки для дистрибутива 
-"Просто Линукс" (Simply GNU/Linux). 
+"Просто Линукс" (Simply Linux). 
 
 %package alterator
-Summary: Design for alterator for Simply GNU/Linux 
+Summary: Design for alterator for Simply Linux 
 Summary(ru_RU.UTF-8): Тема для "Центра управления системой" и QT для дистрибутива "Просто Линукс"
 License: GPL
 Group: System/Configuration/Other
@@ -86,14 +86,14 @@ Obsoletes: design-alterator-server design-alterator-desktop design-altertor-brow
 PreReq(post,preun): alternatives >= 0.2 alterator
 
 %description alterator
-Design for QT and web alterator for Simply GNU/Linux.
+Design for QT and web alterator for Simply Linux.
 
 %description alterator -l ru_RU.UTF-8
 В данном пакете находится тема для "Центра управления системой" (Alterator)
-и модулей библиотеки QT для дистрибутива "Просто Линукс" (Simply GNU/Linux). 
+и модулей библиотеки QT для дистрибутива "Просто Линукс" (Simply Linux). 
 
 %package graphics
-Summary: Design for Simply GNU/Linux
+Summary: Design for Simply Linux
 Summary(ru_RU.UTF-8): Тема для дистрибутива "Просто Линукс"
 License: Different licenses
 Group: Graphics
@@ -104,11 +104,11 @@ PreReq(post,preun): alternatives >= 0.2
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-graphics ";done )
 
 %description graphics
-This package contains some graphics for Simply GNU/Linux design.
+This package contains some graphics for Simply Linux design.
 
 %description graphics -l ru_RU.UTF-8
 В данном пакете находится необходимые графические элементы для дистрибутива 
-"Просто Линукс" (Simply GNU/Linux). 
+"Просто Линукс" (Simply Linux). 
 
 
 %define provide_list altlinux fedora redhat system altlinux
@@ -116,7 +116,7 @@ This package contains some graphics for Simply GNU/Linux design.
 %define conflicts_list altlinux-release-sisyphus altlinux-release-4.0 altlinux-release-5.0 altlinux-release-5.1 altlinux-release-junior altlinux-release-master altlinux-release-server altlinux-release-terminal altlinux-release-small_business
 %package release
 
-Summary: Simply GNU/Linux release file
+Summary: Simply Linux release file
 Summary(ru_RU.UTF-8): Описание дистрибутива "Просто Линукс"
 Copyright: GPL
 Group: System/Configuration/Other
@@ -127,11 +127,11 @@ Conflicts: %conflicts_list
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-release ";done )
 
 %description release
-Simply GNU/Linux %version release file.
+Simply Linux %version release file.
 
 %description release -l ru_RU.UTF-8
 В данном пакете находится описание версии %version дистрибутива 
-"Просто Линукс" (Simply GNU/Linux).
+"Просто Линукс" (Simply Linux).
 
 %package notes
 Provides: alt-license-theme = %version alt-notes-%theme
@@ -148,7 +148,7 @@ Distribution license and release notes
 
 %description notes -l ru_RU.UTF-8
 В данном пакете находится лицензия и дополнительные сведения для версии %version 
-дистрибутива "Просто Линукс" (Simply GNU/Linux).
+дистрибутива "Просто Линукс" (Simply Linux).
 
 %package xfce-settings
 
@@ -167,21 +167,21 @@ Conflicts: xfce-settings-simply-linux
 This package contains default settings for Xfce 4.6 for Simply linux distribution.
 
 %package slideshow
-Summary: Slideshow for Simply GNU/Linux %version installer.
+Summary: Slideshow for Simply Linux %version installer.
 Summary(ru_RU.UTF-8): Изображения для организации "слайдшоу" в установщике дистрибутива "Просто Линукс"
 License: Distributable
 Group: System/Configuration/Other 
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-slideshow ";done )
 
 %description slideshow
-Slideshow for Simply GNU/Linux %version installer.
+Slideshow for Simply Linux %version installer.
 
 %description slideshow -l ru_RU.UTF-8
 В данном пакете находятся изображения для организации "слайдшоу" в установщике 
-дистрибутива "Просто Линукс" (Simply GNU/Linux).
+дистрибутива "Просто Линукс" (Simply Linux).
 
 %package indexhtml
-Summary: Simply GNU/Linux html welcome page
+Summary: Simply Linux html welcome page
 Summary(ru_RU.UTF-8): Стартовая страница для дистрибутива "Просто Линукс"
 License: distributable
 Group: System/Base
@@ -201,11 +201,11 @@ Requires: xdg-utils
 Requires(post): indexhtml-common
 
 %description indexhtml
-Simply GNU/Linux index.html welcome page.
+Simply Linux index.html welcome page.
 
 %description indexhtml -l ru_RU.UTF-8
 В данном пакете содержится стартовая страница для дистрибутива 
-"Просто Линукс" (Simply GNU/Linux).
+"Просто Линукс" (Simply Linux).
 
 
 %prep
