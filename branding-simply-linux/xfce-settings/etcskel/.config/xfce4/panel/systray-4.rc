@@ -5,4 +5,9 @@ Rows=1
 [Applications]
 xfce4-power-manager=false
 orage=false
+$(b'!'a'a']'v'd(b networkmanager=false
+apt-indicator-agent=false
+gnome-mplayer=false
+pidgin=false
+vlc=false
 

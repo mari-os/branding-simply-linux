@@ -1,0 +1,4 @@
+card=HDAATISBAlsamixer
+track=Общий
+command=xfce4-mixer
+

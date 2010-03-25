@@ -14,6 +14,8 @@
       <property name="&lt;Control&gt;Alt_L" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="string" value="gnome-system-monitor"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
+      <property name="Print" type="string" value="xfce4-screenshooter"/>
+      <property name="Super_L" type="string" value="xfce4-popup-menu"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

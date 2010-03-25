@@ -4,4 +4,5 @@ all_workspaces=false
 expand=true
 flat_buttons=true
 show_handles=true
+fixed_width=false
 

@@ -1,14 +1,12 @@
+[Global]
+MoveFirst=false
+ArrowPosition=0
+
 [Entry 0]
-Name=Web Browser
-Name[ru]=Mozilla Firefox
-Comment=Surf the internet
-Comment[ru]=Интернет-проводник
+Name=Mozilla Firefox
+Comment=Интернет-проводник
 Icon=web-browser
 Exec=exo-open --launch WebBrowser
 Terminal=false
 StartupNotify=false
-
-[Global]
-MoveFirst=false
-ArrowPosition=0
 

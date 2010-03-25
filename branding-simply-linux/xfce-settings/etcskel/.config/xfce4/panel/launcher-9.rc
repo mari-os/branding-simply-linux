@@ -1,14 +1,12 @@
+[Global]
+MoveFirst=false
+ArrowPosition=0
+
 [Entry 0]
-Name=File Manager
-Name[ru]=Thunar
-Comment=Manage files and folders
-Comment[ru]=Менеджер файлов
+Name=Thunar
+Comment=Менеджер файлов
 Icon=Thunar
 Exec=thunar
 Terminal=false
 StartupNotify=true
-
-[Global]
-MoveFirst=false
-ArrowPosition=0
 
