@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=xdg-open /usr/share/doc/indexhtml/index.html
+StartupNotify=false
+Icon=altlinux
+Hidden=true
+Name=Simply Linux 5.0.1 : start page
+Categories=System;Documentation;
+
+# Translations
+Name[ru]=Simply Linux 5.0.1 : cтартовая страница

@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=medit
+Name[cs]=medit
+Name[de]=medit
+Name[es]=medit
+Name[fr]=medit
+Name[nl]=medit
+Name[ru]=Текстовый редактор medit 
+Name[zh_CN]=medit
+Comment=Text editor
+Comment[cs]=Textový editor
+Comment[de]=Texteditor
+Comment[es]=Editor de texto
+Comment[fr]=Éditeur de texte
+Comment[nl]=Teksteditor
+Comment[ru]=Текстовый редактор 
+Comment[zh_CN]=文本编辑器
+Exec=medit %F
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=medit
+Categories=Utility;TextEditor;
