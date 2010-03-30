@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="disable_embedding" mtime="1269929731" type="bool" value="false"/>
+	<entry name="disable_midi" mtime="1269929731" type="bool" value="false"/>
+	<entry name="disable_dvx" mtime="1269929731" type="bool" value="false"/>
+	<entry name="disable_wmp" mtime="1269929731" type="bool" value="false"/>
+	<entry name="disable_real" mtime="1269929731" type="bool" value="false"/>
+	<entry name="disable_qt" mtime="1269929731" type="bool" value="false"/>
+</gconf>

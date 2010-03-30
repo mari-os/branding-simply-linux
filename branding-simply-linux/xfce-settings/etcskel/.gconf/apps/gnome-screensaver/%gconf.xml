@@ -1,13 +1,8 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="lock_enabled" mtime="1257005598" type="bool" value="false"/>
-	<entry name="idle_activation_enabled" mtime="1257005598" type="bool" value="true"/>
-	<entry name="themes" mtime="1257005605" type="list" ltype="string">
-		<li type="string">
-			<stringvalue>screensavers-cosmos-slideshow</stringvalue>
-		</li>
+	<entry name="themes" mtime="1269339866" type="list" ltype="string">
 	</entry>
-	<entry name="mode" mtime="1257005605" type="string">
-		<stringvalue>single</stringvalue>
+	<entry name="mode" mtime="1269339866" type="string">
+		<stringvalue>blank-only</stringvalue>
 	</entry>
 </gconf>
