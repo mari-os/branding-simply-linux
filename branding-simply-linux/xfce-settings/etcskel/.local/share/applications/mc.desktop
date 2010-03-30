@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Midnight Commander
+Name[ru]=Консольный файловый менеджер
+Comment=Midnight Commander
+Icon=mc
+Exec=mc
+Terminal=true
+Categories=ConsoleOnly;System;FileTools;FileManager;

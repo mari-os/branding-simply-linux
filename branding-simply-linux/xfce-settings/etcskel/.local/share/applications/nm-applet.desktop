@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Управление сетью (nm-applet)
+Comment=Network Manager applet
+Icon=nm-device-wireless
+Exec=nm-applet --sm-disable
+Terminal=false
+Type=Application
+Categories=GTK;Network;Applet;
