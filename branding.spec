@@ -316,33 +316,15 @@ mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf
 mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 
 mkdir -p %buildroot/etc/skel/.local/share/applications
-mkdir -p %buildroot/etc/skel/Templates
+mkdir -p %buildroot/etc/skel/Шаблоны
 mkdir -p %buildroot/etc/skel/Музыка
 mkdir -p %buildroot/etc/skel/Музыка/mpd
 mkdir -p %buildroot/etc/skel/Музыка/mpd/playlists
 
-cp etcskel/Templates/* %buildroot/etc/skel/Templates
+cp etcskel/Шаблоны/* %buildroot/etc/skel/Шаблоны
 
 cp -ra etcskel/.config/* %buildroot/etc/skel/.config
 cp -ra etcskel/.gconf/* %buildroot/etc/skel/.gconf
-
-#install -m 644 etcskel/.config/Terminal/*  %buildroot/etc/skel/.config/Terminal
-#install -m 644 etcskel/.config/Thunar/*  %buildroot/etc/skel/.config/Thunar
-#install -m 644 etcskel/.config/autostart/*  %buildroot/etc/skel/.config/autostart
-#install -m 644 etcskel/.config/sonata/*  %buildroot/etc/skel/.config/sonata
-#install -m 644 etcskel/.config/meditrc  %buildroot/etc/skel/.config
-
-#install -m 644 etcskel/.gconf/apps/gnome-screensaver/* %buildroot/etc/skel/.gconf/apps/gnome-screensaver
-#install -m 644 etcskel/.gconf/desktop/*.xml %buildroot/etc/skel/.gconf/desktop
-#install -m 644 etcskel/.gconf/desktop/gnome/*.xml %buildroot/etc/skel/.gconf/desktop/gnome
-#install -m 644 etcskel/.gconf/desktop/gnome/session/*.xml %buildroot/etc/skel/.gconf/desktop/gnome/session
-
-#install -m 644 etcskel/.config/xfce4/desktop/* %buildroot/etc/skel/.config/xfce4/desktop
-#install -m 644 etcskel/.config/xfce4/notication-daemon-xfce/* %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
-#install -m 644 etcskel/.config/xfce4/panel/* %buildroot/etc/skel/.config/xfce4/panel
-#install -m 644 etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/* %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
-#install -m 644 etcskel/.config/xfce4/Xcursor.xrdb %buildroot/etc/skel/.config/xfce4/
-#install -m 644 etcskel/.config/xfce4/Xft.xrdb %buildroot/etc/skel/.config/xfce4/
 
 install -m 644 etcskel/.local/share/applications/*  %buildroot/etc/skel/.local/share/applications
 install -m 644 etcskel/.wm-select %buildroot/etc/skel/
@@ -430,7 +412,7 @@ echo $lang > lang
 %_datadir/alt-notes/*
 
 %files xfce-settings
-/etc/skel/Templates
+/etc/skel/Шаблоны
 /etc/skel/Музыка/mpd/playlists
 /etc/skel/.wm-select
 /etc/skel/.fonts.conf
