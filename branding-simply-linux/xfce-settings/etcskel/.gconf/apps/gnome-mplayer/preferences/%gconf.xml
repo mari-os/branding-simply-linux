@@ -1,51 +1,54 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="mplayer_dvd_device" mtime="1269929731" type="string">
-		<stringvalue>/dev/dvd</stringvalue>
-	</entry>
-	<entry name="show_subtitles" mtime="1269929731" type="bool" value="true"/>
-	<entry name="subtitle_margin" mtime="1269929731" type="int" value="0"/>
-	<entry name="subtitleshadow" mtime="1269929731" type="bool" value="false"/>
-	<entry name="subtitleoutline" mtime="1269929731" type="bool" value="false"/>
-	<entry name="subtitlecolor" mtime="1269929731" type="string">
-		<stringvalue>ffffff00</stringvalue>
-	</entry>
-	<entry name="subtitlescale" mtime="1269929731" type="float" value="1"/>
-	<entry name="subtitlefont" mtime="1269929731" type="string">
-		<stringvalue>Sans 12</stringvalue>
-	</entry>
-	<entry name="metadatacodepage" mtime="1269929731" type="string">
+	<entry name="metadatacodepage" mtime="1270218827" type="string">
 		<stringvalue>CP1251</stringvalue>
 	</entry>
-	<entry name="verbose" mtime="1269929731" type="int" value="0"/>
-	<entry name="resize_on_new_media" mtime="1269929731" type="bool" value="false"/>
-	<entry name="keep_on_top" mtime="1269929731" type="bool" value="false"/>
-	<entry name="remember_loc" mtime="1269929731" type="bool" value="false"/>
-	<entry name="bring_to_front" mtime="1269929731" type="bool" value="false"/>
-	<entry name="replace_and_play" mtime="1269929731" type="bool" value="false"/>
-	<entry name="single_instance" mtime="1269929731" type="bool" value="false"/>
-	<entry name="vertical" mtime="1269929731" type="bool" value="false"/>
-	<entry name="show_status_icon" mtime="1269929731" type="bool" value="false"/>
-	<entry name="show_notification" mtime="1269929731" type="bool" value="false"/>
-	<entry name="use_xscrnsaver" mtime="1269929731" type="bool" value="false"/>
-	<entry name="use_defaultpl" mtime="1269929731" type="bool" value="false"/>
-	<entry name="use_mediakeys" mtime="1269929731" type="bool" value="true"/>
-	<entry name="showdetails" mtime="1269929731" type="bool" value="false"/>
-	<entry name="showplaylist" mtime="1269929731" type="bool" value="false"/>
-	<entry name="disable_animation" mtime="1269929731" type="bool" value="false"/>
-	<entry name="disable_pause_on_click" mtime="1269929731" type="bool" value="false"/>
-	<entry name="disableframedrop" mtime="1269929731" type="bool" value="false"/>
-	<entry name="disable_deinterlace" mtime="1269929731" type="bool" value="false"/>
-	<entry name="disableembeddedfonts" mtime="1269929731" type="bool" value="false"/>
-	<entry name="disableass" mtime="1269929731" type="bool" value="false"/>
-	<entry name="forcecache" mtime="1269929731" type="bool" value="false"/>
-	<entry name="volume_gain" mtime="1269929731" type="int" value="0"/>
-	<entry name="remember_softvol" mtime="1269929731" type="bool" value="false"/>
-	<entry name="softvol" mtime="1269929731" type="bool" value="false"/>
-	<entry name="pplevel" mtime="1269929731" type="int" value="0"/>
-	<entry name="osdlevel" mtime="1269929731" type="int" value="0"/>
-	<entry name="plugin_cache_size" mtime="1269929731" type="int" value="2000"/>
-	<entry name="cache_size" mtime="1269929731" type="int" value="2000"/>
-	<entry name="use_hw_audio" mtime="1269929731" type="bool" value="false"/>
-	<entry name="audio_channels" mtime="1269929731" type="int" value="0"/>
+	<entry name="last_dir" mtime="1270217634" type="string">
+		<stringvalue>file:///home/test/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8</stringvalue>
+	</entry>
+	<entry name="mplayer_dvd_device" mtime="1270218827" type="string">
+		<stringvalue>/dev/dvd</stringvalue>
+	</entry>
+	<entry name="show_subtitles" mtime="1270218827" type="bool" value="true"/>
+	<entry name="subtitle_margin" mtime="1270218827" type="int" value="0"/>
+	<entry name="subtitleshadow" mtime="1270218827" type="bool" value="true"/>
+	<entry name="subtitleoutline" mtime="1270218827" type="bool" value="false"/>
+	<entry name="subtitlecolor" mtime="1270218827" type="string">
+		<stringvalue>ffffff00</stringvalue>
+	</entry>
+	<entry name="subtitlescale" mtime="1270218827" type="float" value="1"/>
+	<entry name="subtitlefont" mtime="1270218827" type="string">
+		<stringvalue>Sans 12</stringvalue>
+	</entry>
+	<entry name="verbose" mtime="1270218827" type="int" value="0"/>
+	<entry name="resize_on_new_media" mtime="1270218827" type="bool" value="false"/>
+	<entry name="keep_on_top" mtime="1270218827" type="bool" value="false"/>
+	<entry name="remember_loc" mtime="1270218827" type="bool" value="false"/>
+	<entry name="bring_to_front" mtime="1270218827" type="bool" value="false"/>
+	<entry name="replace_and_play" mtime="1270218827" type="bool" value="false"/>
+	<entry name="single_instance" mtime="1270218827" type="bool" value="false"/>
+	<entry name="vertical" mtime="1270218827" type="bool" value="false"/>
+	<entry name="show_status_icon" mtime="1270218827" type="bool" value="false"/>
+	<entry name="show_notification" mtime="1270218827" type="bool" value="false"/>
+	<entry name="use_xscrnsaver" mtime="1270218827" type="bool" value="false"/>
+	<entry name="use_defaultpl" mtime="1270218827" type="bool" value="false"/>
+	<entry name="use_mediakeys" mtime="1270218827" type="bool" value="true"/>
+	<entry name="showdetails" mtime="1270218827" type="bool" value="false"/>
+	<entry name="showplaylist" mtime="1270218827" type="bool" value="true"/>
+	<entry name="disable_animation" mtime="1270218827" type="bool" value="false"/>
+	<entry name="disable_pause_on_click" mtime="1270218827" type="bool" value="false"/>
+	<entry name="disableframedrop" mtime="1270218827" type="bool" value="false"/>
+	<entry name="disable_deinterlace" mtime="1270218827" type="bool" value="false"/>
+	<entry name="disableembeddedfonts" mtime="1270218827" type="bool" value="false"/>
+	<entry name="disableass" mtime="1270218827" type="bool" value="false"/>
+	<entry name="forcecache" mtime="1270218827" type="bool" value="false"/>
+	<entry name="volume_gain" mtime="1270218827" type="int" value="0"/>
+	<entry name="remember_softvol" mtime="1270218827" type="bool" value="false"/>
+	<entry name="softvol" mtime="1270218827" type="bool" value="false"/>
+	<entry name="pplevel" mtime="1270218827" type="int" value="0"/>
+	<entry name="osdlevel" mtime="1270218827" type="int" value="0"/>
+	<entry name="plugin_cache_size" mtime="1270218827" type="int" value="2000"/>
+	<entry name="cache_size" mtime="1270218827" type="int" value="2000"/>
+	<entry name="use_hw_audio" mtime="1270218827" type="bool" value="false"/>
+	<entry name="audio_channels" mtime="1270218827" type="int" value="0"/>
 </gconf>
