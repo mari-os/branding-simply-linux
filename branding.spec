@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.1
-Release: alt1
+Release: alt2
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -431,6 +431,9 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Mon Apr 05 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.1-alt2
+- xfce-settings for simply linux 5.0.1
+
 * Thu Mar 04 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.1-alt1
 - merged with xfce-settings-simply-linux
 
