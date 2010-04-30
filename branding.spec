@@ -271,7 +271,7 @@ __EOF__
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
 mkdir -p %buildroot/%_niconsdir
 install graphics/icons/slinux.png %buildroot/%_niconsdir/slinux.png
-install graphics/icons/altlinux.png %buildroot/%_iconsdir/altlinux.png
+install graphics/icons/mini/slinux.png %buildroot/%_iconsdir/altlinux.png
 cp -ar graphics/* %buildroot/%_datadir/design/%theme
 
 pushd %buildroot/%_datadir/design/%theme
@@ -400,6 +400,7 @@ echo $lang > lang
 %config /etc/alternatives/packages.d/%name-graphics
 %_datadir/design
 %_niconsdir/slinux.png
+%_iconsdir/altlinux.png
 
 %files bootsplash
 %_sysconfdir/bootsplash/themes/%theme/
