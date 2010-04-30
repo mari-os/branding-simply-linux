@@ -6,7 +6,7 @@
 
 Name: branding-simply-linux
 Version: 5.0.1
-Release: alt2
+Release: alt3
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -433,6 +433,11 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Fri Apr 30 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.1-alt3
+- test user bindings removed (Closes: 23327)
+- returning icon for alterator (Closes: 23316)
+- removing local *.desktop files for often deleted packages
+
 * Mon Apr 05 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.1-alt2
 - xfce-settings for simply linux 5.0.1
 
