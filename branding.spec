@@ -271,6 +271,7 @@ __EOF__
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
 mkdir -p %buildroot/%_niconsdir
 install graphics/icons/slinux.png %buildroot/%_niconsdir/slinux.png
+install graphics/icons/altlinux.png %buildroot/%_iconsdir/altlinux.png
 cp -ar graphics/* %buildroot/%_datadir/design/%theme
 
 pushd %buildroot/%_datadir/design/%theme
