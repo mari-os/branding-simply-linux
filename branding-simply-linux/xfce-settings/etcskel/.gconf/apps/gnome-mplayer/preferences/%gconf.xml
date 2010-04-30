@@ -3,9 +3,6 @@
 	<entry name="metadatacodepage" mtime="1270218827" type="string">
 		<stringvalue>CP1251</stringvalue>
 	</entry>
-	<entry name="last_dir" mtime="1270217634" type="string">
-		<stringvalue>file:///home/test/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8</stringvalue>
-	</entry>
 	<entry name="mplayer_dvd_device" mtime="1270218827" type="string">
 		<stringvalue>/dev/dvd</stringvalue>
 	</entry>

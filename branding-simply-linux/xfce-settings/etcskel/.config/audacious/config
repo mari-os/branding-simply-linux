@@ -130,7 +130,6 @@ url_history_length=0
 clear_playlist=FALSE
 resume_playlist=0
 resume_entry=0
-filesel_path=/home/test/Музыка
 [AdPlug]
 16bit=TRUE
 Stereo=FALSE
