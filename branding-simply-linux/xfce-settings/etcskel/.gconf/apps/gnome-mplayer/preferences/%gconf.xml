@@ -18,12 +18,12 @@
 		<stringvalue>Sans 12</stringvalue>
 	</entry>
 	<entry name="verbose" mtime="1270218827" type="int" value="0"/>
-	<entry name="resize_on_new_media" mtime="1270218827" type="bool" value="false"/>
+	<entry name="resize_on_new_media" mtime="1270218827" type="bool" value="true"/>
 	<entry name="keep_on_top" mtime="1270218827" type="bool" value="false"/>
 	<entry name="remember_loc" mtime="1270218827" type="bool" value="false"/>
-	<entry name="bring_to_front" mtime="1270218827" type="bool" value="false"/>
-	<entry name="replace_and_play" mtime="1270218827" type="bool" value="false"/>
-	<entry name="single_instance" mtime="1270218827" type="bool" value="false"/>
+	<entry name="bring_to_front" mtime="1270218827" type="bool" value="true"/>
+	<entry name="replace_and_play" mtime="1270218827" type="bool" value="true"/>
+	<entry name="single_instance" mtime="1270218827" type="bool" value="true"/>
 	<entry name="vertical" mtime="1270218827" type="bool" value="false"/>
 	<entry name="show_status_icon" mtime="1270218827" type="bool" value="false"/>
 	<entry name="show_notification" mtime="1270218827" type="bool" value="false"/>
