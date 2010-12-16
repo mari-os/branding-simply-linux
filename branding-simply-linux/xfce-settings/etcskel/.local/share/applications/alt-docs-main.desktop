@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=ALT Linux
+GenericName=
+Comment=ALT Linux Documentation main page
+Icon=altlinux.png
+Exec=/bin/sh -c "$BROWSER /usr/share/doc/alt-docs/index.html"
+Terminal=false
+Hidden=true
+Categories=Utility;
+Name[ru]=ALT Linux
+Comment[ru]=Главная страница документации ALT Linux
