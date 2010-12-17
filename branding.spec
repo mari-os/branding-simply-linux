@@ -5,8 +5,8 @@
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 
 Name: branding-simply-linux
-Version: 5.0.1
-Release: alt3
+Version: 5.0.2
+Release: alt1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
@@ -434,6 +434,11 @@ echo $lang > lang
 %_desktopdir/*
 
 %changelog
+* Fri Dec 17 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.2-alt1
+- version for 5.0.2:
+-- new wallpapers
+-- some new xfce default settings
+
 * Fri Apr 30 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.1-alt3
 - test user bindings removed (Closes: 23327)
 - returning icon for alterator (Closes: 23316)
