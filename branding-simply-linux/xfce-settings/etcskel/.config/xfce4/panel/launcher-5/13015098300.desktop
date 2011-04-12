@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Mozilla Firefox
+Comment=Интернет-проводник
+Icon=web-browser
+Exec=exo-open --launch WebBrowser
+Path=
+Terminal=false
+StartupNotify=false
+

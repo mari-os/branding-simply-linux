@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Терминал
+Comment=Эмулятор терминала для X
+Icon=utilities-terminal
+Exec=exo-open --launch TerminalEmulator
+Path=
+Terminal=false
+StartupNotify=true
+

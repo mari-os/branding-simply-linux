@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Thunar
+Comment=Менеджер файлов
+Icon=Thunar
+Exec=thunar
+Path=
+Terminal=false
+StartupNotify=true
+

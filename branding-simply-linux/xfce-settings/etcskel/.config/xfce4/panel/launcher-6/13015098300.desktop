@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Mozilla Thunderbird
+Comment=Почтовый клиент
+Icon=thunderbird
+Exec=exo-open --launch MailReader
+Path=
+Terminal=false
+StartupNotify=true
+
