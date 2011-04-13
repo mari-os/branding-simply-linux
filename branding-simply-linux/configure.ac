@@ -26,10 +26,7 @@ AC_SUBST(TITLE_COLOR)
 AC_CONFIG_FILES([
 		 Makefile
 		 bootloader/config
-		 bootsplash/config/bootsplash-800x600.cfg
-		 bootsplash/config/bootsplash-1024x768.cfg
-		 bootsplash/config/bootsplash-1280x800.cfg
-		 bootsplash/config/bootsplash-1280x1024.cfg
+		 components/bootsplash/theme.plymouth
 		 alterator/design/design.ini
 		 bootloader/gfxboot.cfg
 		 notes/release-notes.ru.html
