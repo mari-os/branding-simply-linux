@@ -3,9 +3,10 @@
 %define codename Billy
 %define status %nil
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
+%define brand simply
 
 Name: branding-simply-linux
-Version: 5.0.2
+Version: 6.0.0
 Release: alt1
 BuildArch: noarch
 
@@ -16,7 +17,7 @@ BuildRequires(pre): libqt4-core
 BuildRequires: libalternatives-devel
 BuildRequires: libqt4-devel
 
-BuildRequires: ImageMagick fontconfig
+BuildRequires: ImageMagick fontconfig bc libGConf-devel
 
 Packager: Denis Koryavov <dkoryavov@altlinux.org>
 
@@ -34,7 +35,7 @@ Distro-specific packages with design and texts for Simply Linux distribution.
 
 %package bootloader
 Group: System/Configuration/Boot and Init
-Summary: Graphical boot logo for lilo and syslinux
+Summary: Graphical boot logo for grub2, lilo and syslinux
 Summary(ru_RU.UTF-8): Тема для экрана выбора вариантов загрузки (lilo и syslinux) 
 License: GPL
 
@@ -43,6 +44,9 @@ Provides: design-bootloader-system-%theme design-bootloader-livecd-%theme design
 
 Obsoletes: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootloader ";done )
+
+%define grub_normal white/black
+%define grub_high black/white
 
 %description bootloader
 Here you find the graphical boot logo for Simply Linux distribution. 
@@ -57,9 +61,9 @@ Summary: Theme for splash animations during bootup
 Summary(ru_RU.UTF-8): Тема для экрана загрузки для дистрибутива "Просто Линукс"
 License: Distributable
 Group:  System/Configuration/Boot and Init
-Provides: design-bootsplash design-bootsplash-%theme  branding-alt-%theme-bootsplash
-Requires: bootsplash >= 3.3
-Obsoletes:  branding-alt-%theme-bootsplash
+Provides: plymouth-theme-%theme
+Requires: plymouth-plugin-script
+PreReq: plymouth
 
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootsplash ";done )
 
@@ -100,6 +104,8 @@ Group: Graphics
 
 Provides: design-graphics-%theme  branding-alt-%theme-graphics
 Obsoletes:  branding-alt-%theme-graphics design-graphics-%theme
+Provides: design-graphics = 12.0.0
+
 PreReq(post,preun): alternatives >= 0.2
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-graphics ";done )
 
@@ -217,55 +223,10 @@ autoconf
 THEME=%theme NAME='%Name' STATUS=%status VERSION=%version ./configure 
 make
 
-#bootloader
-    pushd design-bootloader-source/
-    DEFAULT_LANG='--lang-to-subst--' PATH=$PATH:/usr/sbin %make
-    popd
-
-#altarator
-    pushd alterator
-    %make_build
-    popd
-
 %install
-#bootloader
-    pushd design-bootloader-source
-    install -d -m 755 %buildroot/boot/splash/%theme
-    install -d -m 755 %buildroot/%_datadir/gfxboot/%theme
-    install -m 644 message %buildroot/boot/splash/%theme
-    install -m 644 bootlogo %buildroot%_datadir/gfxboot/%theme
-    popd
+%makeinstall
+make x86 DESTDIR=%buildroot datadir=%buildroot%_datadir sysconfdir=%buildroot%_sysconfdir
 
-#bootsplash
-## create directory structure
-mkdir -p $RPM_BUILD_ROOT/%_sysconfdir/bootsplash/themes/%theme
-cp -a bootsplash/* $RPM_BUILD_ROOT%_sysconfdir/bootsplash/themes/%theme
-
-pushd $RPM_BUILD_ROOT%_sysconfdir/bootsplash/themes/%theme/config
-#for i in 1 2 3 4 5 11; do \
-for i in 1; do \
- for f in bootsplash-*.cfg; do \
-    res=`echo "$f"| sed 's|.*\-\(.*\)\.cfg|\1|'`
-    ln -s $f vt${i}-${res}.cfg
- done
-done
-popd
-
-#alterator
-pushd alterator
-mkdir -p %buildroot/usr/share/alterator-browser-qt/design
-
-install theme.rcc %buildroot/usr/share/alterator-browser-qt/design/%theme.rcc
-
-mkdir -p %buildroot/usr/share/alterator/design/
-cp -a images %buildroot/usr/share/alterator/design/
-cp -a styles %buildroot/usr/share/alterator/design/
-popd
-
-mkdir -p %buildroot/%_altdir
-cat >%buildroot/%_altdir/%name-browser-qt <<__EOF__
-/etc/alterator/design-browser-qt	/usr/share/alterator-browser-qt/design/%theme.rcc 50
-__EOF__
 
 #graphics
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
@@ -313,6 +274,12 @@ mkdir -p %buildroot/etc/skel/.gconf/desktop/gnome/session
 mkdir -p %buildroot/etc/skel/.config/xfce4/desktop
 mkdir -p %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
 mkdir -p %buildroot/etc/skel/.config/xfce4/panel
+
+mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-5
+mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-6
+mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-8
+mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-9
+
 mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf
 mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 
@@ -349,13 +316,10 @@ install slideshow/*  %buildroot/usr/share/install2/slideshow/
 #indexhtml
 %define _altdocsdir %_defaultdocdir/alt-docs
 %define _indexhtmldir %_defaultdocdir/indexhtml
-pushd indexhtml
-mkdir -p %buildroot{%_indexhtmldir/,%_desktopdir/}
-cp -r * %buildroot%_indexhtmldir/
-rm -f %buildroot%_indexhtmldir/*.in
-touch %buildroot%_indexhtmldir/index.html
-popd
-install -m644 indexhtml.desktop %buildroot%_desktopdir/
+install components/indexhtml/*.html %buildroot%_defaultdocdir/indexhtml/
+mkdir -p %buildroot%_defaultdocdir/indexhtml/img
+install components/indexhtml/img/* %buildroot%_defaultdocdir/indexhtml/img/
+#install -m644 components/indexhtml.desktop %buildroot%_desktopdir/
 
 #bootloader
 %pre bootloader
@@ -368,6 +332,10 @@ lang=$(echo $LANG | cut -d. -f 1)
 cd boot/splash/%theme/
 echo $lang > lang
 [ "$lang" = "C" ] || echo lang | cpio -o --append -F message
+. shell-config
+shell_config_set /etc/sysconfig/grub2 GRUB_THEME /boot/grub/themes/%theme
+shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_NORMAL %grub_normal
+shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 
 
 %preun bootloader
@@ -381,20 +349,18 @@ echo $lang > lang
 %files bootloader
 %_datadir/gfxboot/%theme
 /boot/splash/%theme
+/boot/grub/themes/%theme
 
 #bootsplash
 %post bootsplash
-%__ln_s -nf %theme %_sysconfdir/bootsplash/themes/current
-
-%preun bootsplash
-[ $1 = 0 ] || exit 0
-[ "`readlink %_sysconfdir/bootsplash/themes/current`" != %theme ] ||
-    %__rm -f %_sysconfdir/bootsplash/themes/current
-
+subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
+[ -f /etc/sysconfig/grub2 ] && \
+      subst "s|GRUB_WALLPAPER=.*|GRUB_WALLPAPER=/usr/share/plymouth/theme/grub.jpg|" \
+             /etc/sysconfig/grub2 ||:
 
 %files alterator
-%config %_altdir/%name-browser-qt
-/usr/share/alterator-browser-qt/design/%theme.rcc
+%config %_altdir/*.rcc
+/usr/share/alterator-browser-qt/design/*.rcc
 /usr/share/alterator/design/*
 
 %files graphics
@@ -404,8 +370,7 @@ echo $lang > lang
 %_iconsdir/altlinux.png
 
 %files bootsplash
-%_sysconfdir/bootsplash/themes/%theme/
-
+%_datadir/plymouth/themes/%theme/*
 
 %files release
 %_sysconfdir/*-*
@@ -428,12 +393,23 @@ echo $lang > lang
 %files slideshow
 /usr/share/install2/slideshow
 
+%define indexhtmldir %_defaultdocdir/indexhtml
+
 %files indexhtml
-%ghost %_indexhtmldir/index.html
-%_indexhtmldir/*
-%_desktopdir/*
+#%ghost %_indexhtmldir/index.html
+#%_indexhtmldir/*
+#%_desktopdir/*
+
+%ghost %indexhtmldir/index.html
+%indexhtmldir/index-*.html
+%indexhtmldir/index.css
+%indexhtmldir/img
+%_desktopdir/indexhtml.desktop
 
 %changelog
+* Wed Apr 13 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt1
+- new version
+
 * Fri Dec 17 2010 Alexandra Panyukova <mex3@altlinux.ru> 5.0.2-alt1
 - version for 5.0.2:
 -- new wallpapers

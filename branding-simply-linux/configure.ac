@@ -25,16 +25,16 @@ AC_SUBST(TITLE_COLOR)
 
 AC_CONFIG_FILES([
 		 Makefile
-		 bootloader/config
+		 components/bootloader/config
 		 components/bootsplash/theme.plymouth
-		 alterator/design/design.ini
-		 bootloader/gfxboot.cfg
+		 components/browser-qt/design/design.ini
+		 components/bootloader/gfxboot.cfg
 		 notes/release-notes.ru.html
 		 notes/release-notes.all.html
 		 notes/license.ru.html
 		 notes/license.all.html
-		 indexhtml.desktop
-		 indexhtml/index-ru.html
-		 indexhtml/index-en.html
+		 components/indexhtml/indexhtml.desktop
+		 components/indexhtml/index-ru.html
+		 components/indexhtml/index-en.html
 ])
 AC_OUTPUT
