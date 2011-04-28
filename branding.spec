@@ -10,7 +10,7 @@ Version: 6.0.0
 Release: alt1
 BuildArch: noarch
 
-BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu
+BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
 BuildRequires: design-bootloader-source >= 5.0-alt2
 
 BuildRequires(pre): libqt4-core 
@@ -262,51 +262,52 @@ pushd notes
 popd
 
 #xfce-settings
-pushd xfce-settings
-mkdir -p %buildroot/etc/skel/.config/Terminal
-mkdir -p %buildroot/etc/skel/.config/Thunar
-mkdir -p %buildroot/etc/skel/.config/autostart
-mkdir -p %buildroot/etc/skel/.config/sonata
+#pushd xfce-settings
+#mkdir -p %buildroot/etc/skel/.config/Terminal
+#mkdir -p %buildroot/etc/skel/.config/Thunar
+#mkdir -p %buildroot/etc/skel/.config/autostart
+#mkdir -p %buildroot/etc/skel/.config/sonata
 
-mkdir -p %buildroot/etc/skel/.gconf/apps/gnome-screensaver
-mkdir -p %buildroot/etc/skel/.gconf/desktop/gnome/session
+#mkdir -p %buildroot/etc/skel/.gconf/apps/gnome-screensaver
+#mkdir -p %buildroot/etc/skel/.gconf/desktop/gnome/session
 
-mkdir -p %buildroot/etc/skel/.config/xfce4/desktop
-mkdir -p %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
-mkdir -p %buildroot/etc/skel/.config/xfce4/panel
+#mkdir -p %buildroot/etc/skel/.config/xfce4/desktop
+#mkdir -p %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
+#mkdir -p %buildroot/etc/skel/.config/xfce4/panel
 
-mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-5
-mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-6
-mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-8
-mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-9
+#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-5
+#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-6
+#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-8
+#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-9
 
-mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf
-mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+#mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf
+#mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 
 mkdir -p %buildroot/etc/skel/.local/share/applications
-mkdir -p %buildroot/etc/skel/Шаблоны
-mkdir -p %buildroot/etc/skel/Музыка
+#mkdir -p %buildroot/etc/skel/Шаблоны
+#mkdir -p %buildroot/etc/skel/Музыка
 mkdir -p %buildroot/etc/skel/Музыка/mpd
 mkdir -p %buildroot/etc/skel/Музыка/mpd/playlists
 
-cp etcskel/Шаблоны/* %buildroot/etc/skel/Шаблоны
+#cp xfce-settings/etcskel/Шаблоны %buildroot/etc/skel/
 
-cp -ra etcskel/.config/* %buildroot/etc/skel/.config
-cp -ra etcskel/.gconf/* %buildroot/etc/skel/.gconf
+cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
+cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
+cp -r xfce-settings/etcskel/.gconf %buildroot/etc/skel/
 
-install -m 644 etcskel/.local/share/applications/*  %buildroot/etc/skel/.local/share/applications
-install -m 644 etcskel/.wm-select %buildroot/etc/skel/
-install -m 644 etcskel/.fonts.conf %buildroot/etc/skel/
-install -m 644 etcskel/.mpdconf %buildroot/etc/skel/
+install -m 644 xfce-settings/etcskel/.local/share/applications/*  %buildroot/etc/skel/.local/share/applications
+install -m 644 xfce-settings/etcskel/.wm-select %buildroot/etc/skel/
+install -m 644 xfce-settings/etcskel/.fonts.conf %buildroot/etc/skel/
+install -m 644 xfce-settings/etcskel/.mpdconf %buildroot/etc/skel/
 
 mkdir -p %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200
 mkdir -p %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050
-cp -P backgrounds/*.jpg %buildroot/usr/share/xfce4/backdrops/
-install -m 644 backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/xfce4/backdrops/vladstudio.com/
-install -m 644 backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/
-install -m 644 backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050/
-install -m 644 backgrounds/new*.png %buildroot/usr/share/xfce4/backdrops/
-popd
+cp -P xfce-settings/backgrounds/*.jpg %buildroot/usr/share/xfce4/backdrops/
+install -m 644 xfce-settings/backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/xfce4/backdrops/vladstudio.com/
+install -m 644 xfce-settings/backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/
+install -m 644 xfce-settings/backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050/
+install -m 644 xfce-settings/backgrounds/new*.png %buildroot/usr/share/xfce4/backdrops/
+#popd
 
 
 #slideshow
@@ -323,7 +324,8 @@ install components/indexhtml/img/* %buildroot%_defaultdocdir/indexhtml/img/
 
 #bootloader
 %pre bootloader
-[ -s /boot/splash/%theme ] && rm -rf  /boot/splash/%theme ||:
+[ -s /usr/share/gfxboot/%theme ] && rm -fr  /usr/share/gfxboot/%theme ||:
+[ -s /boot/splash/%theme ] && rm -fr  /boot/splash/%theme ||:
 
 %post bootloader
 %__ln_s -nf %theme/message /boot/splash/message
@@ -333,10 +335,10 @@ cd boot/splash/%theme/
 echo $lang > lang
 [ "$lang" = "C" ] || echo lang | cpio -o --append -F message
 . shell-config
-shell_config_set /etc/sysconfig/grub2 GRUB_THEME /boot/grub/themes/%theme
+shell_config_set /etc/sysconfig/grub2 GRUB_THEME /boot/grub/themes/%theme/theme.txt
+#shell_config_set /etc/sysconfig/grub2 GRUB_THEME /boot/grub/themes/%theme
 shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_NORMAL %grub_normal
 shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
-
 
 %preun bootloader
 [ $1 = 0 ] || exit 0
@@ -355,7 +357,7 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 %post bootsplash
 subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 [ -f /etc/sysconfig/grub2 ] && \
-      subst "s|GRUB_WALLPAPER=.*|GRUB_WALLPAPER=/usr/share/plymouth/theme/grub.jpg|" \
+      subst "s|GRUB_WALLPAPER=.*|GRUB_WALLPAPER=/usr/share/plymouth/themes/%theme/grub.jpg|" \
              /etc/sysconfig/grub2 ||:
 
 %files alterator

@@ -24,6 +24,8 @@
         <value type="int" value="14"/>
         <value type="int" value="15"/>
         <value type="int" value="17"/>
+        <value type="int" value="16"/>
+        <value type="int" value="19"/>
         <value type="int" value="18"/>
       </property>
       <property name="horizontal" type="bool" value="true"/>
@@ -104,12 +106,13 @@
       <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-15" type="string" value="xfce4-mixer-plugin"/>
-    <property name="plugin-16" type="string" value="orageclock"/>
     <property name="plugin-17" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
     </property>
     <property name="plugin-18" type="string" value="actions">
       <property name="first-action" type="uint" value="0"/>
     </property>
+    <property name="plugin-16" type="string" value="clock"/>
+    <property name="plugin-19" type="string" value="places"/>
   </property>
 </channel>
