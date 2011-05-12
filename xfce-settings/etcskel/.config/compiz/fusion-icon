@@ -4,3 +4,4 @@ loose binding = false
 
 [window manager]
 active wm = xfwm4
+
