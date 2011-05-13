@@ -13,7 +13,7 @@
 
 [base]
 ; theme name
-theme=slinux
+theme=ALTLinux
 ; other sections to read
 layout=800x600,install
 ; penguin theme likelihood (in percent, -1 = auto)
@@ -23,48 +23,51 @@ talk=0
 ; sound volume (0..100)
 volume=70
 ; menu background transparency (0..255)
-menu.transparency=0x10
+menu.transparency=0x20
 ; default font
-font.normal=16x16.fnt
+font.normal=drs16.fnt
 ; main menu font
-font.large=16x16.fnt
+font.large=drs16.fnt
+; bold main menu font
+font.large.bold=drs16b.fnt
 ; background image
 background=back.jpg
 ; max. visible main menu items
 mainmenu.entries=8
 ; minimal main menu selection bar width
-mainmenu.bar.minwidth=300
+mainmenu.bar.minwidth=294
 ; main menu selection bar transparency (0..255)
-mainmenu.bar.transparency=50
+mainmenu.bar.transparency=0
 ; main menu colors
-mainmenu.bar.color=0xffffff
-mainmenu.normal.fg=0xffffff
-mainmenu.selected.fg=0x00a1e4
+mainmenu.bar.color=0x001056
+mainmenu.normal.fg=0x001056
+mainmenu.selected.fg=0xffffff
 ; boot option colors
 bootopt.label.fg=0xffffff
 bootopt.text.fg=0xffffff
 ; progress bar color
-progress.bar.color=0x@PROGRESS_COLOR@
+progress.bar.color=0x@MIDDLE_COLOR_HEX@
 ; menu colors
-menu.normal.bg=0x00a1e4
-menu.normal.fg=0xffffff
-menu.selected.bg=0xffffff
-menu.selected.fg=0x00a1e4
+menu.normal.bg=0x798491
+menu.normal.fg=@DARK_LABELS_HEX@
+menu.selected.bg=0x@LIGHT_COLOR_HEX@
+menu.selected.fg=@DARK_LABELS_HEX@
 ; window colors
-window.bg=0xe9eef1
+window.bg=0xd8deed
 window.fg=0x000000
 window.title.bg=0x@TITLE_COLOR@
-window.title.fg=0xffffff
+window.title.fg=0x@DARK_LABELS_HEX@
 window.title.error.bg=0xc00000
 ; help system colors
-help.link.fg=0x0000a0
-help.link.selected.fg=0x68d2fc
-help.link.selected.bg=0x00a1e4
-help.highlight.fg=0x68d2fc
+help.link.fg=0x@DARK_COLOR_HEX@
+help.link.selected.fg=0xffffff
+help.link.selected.bg=0x@DARK_COLOR_HEX@
+help.highlight.fg=0x@DARK_COLOR_HEX@
 ; panel colors
-panel.fg=0xffffff
+panel.fg=0x000000
 panel.title.fg=0xffffff
-panel.f-key.fg=0x68d2fc
+panel.normal.fg=0xffffff
+panel.f-key.fg=0xffffff
 ; default keymap (e.g. de_DE, czech)
 keymap=
 
@@ -72,15 +75,15 @@ keymap=
 ; screen size
 screen.size=800,600
 ; upper left corner
-mainmenu.pos=283,257
+mainmenu.pos=253,210
 ; boot option input field position
-bootopt.pos=263,480
+bootopt.pos=200,480
 
 [640x480]
 ; screen size
 screen.size=640,480
 ; upper left corner
-mainmenu.pos=160,209
+mainmenu.pos=130,122
 ; boot option input field position
 bootopt.pos=263,380
 
@@ -89,7 +92,7 @@ bootopt.pos=263,380
 ; show welcome animation
 welcome=0
 ; beep when menu is ready
-beep=1
+beep=0
 ; main menu item shown only if iso is tagged for media check
 mediacheck=mediachk
 ; main menu items where user can't add boot options
@@ -144,7 +147,7 @@ keymap.mainmenu=0
 ; show welcome animation
 welcome=0
 ; beep when menu is ready
-beep=1
+beep=0
 ; show keymap menu as submenu in lang dialog
 keymap.submenu=0
 ; show keymap in main menu
