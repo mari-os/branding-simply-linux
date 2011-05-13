@@ -19,8 +19,6 @@ BuildRequires: libqt4-devel
 
 BuildRequires: ImageMagick fontconfig bc libGConf-devel
 
-Packager: Denis Koryavov <dkoryavov@altlinux.org>
-
 Source: %name-%version.tar
 
 Group: Graphics
@@ -49,12 +47,12 @@ Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-b
 %define grub_high black/white
 
 %description bootloader
-Here you find the graphical boot logo for Simply Linux distribution. 
+Here you find the graphical boot logo for Simply Linux distribution.
 Suitable for both lilo and syslinux.
 
 %description bootloader -l ru_RU.UTF-8
 В данном пакете находится тема для экрана выбора вариантов загрузки (lilo и syslinux) 
-для дистрибутива "Просто Линукс" (Simply Linux). 
+для дистрибутива "Просто Линукс" (Simply Linux).
 
 %package bootsplash
 Summary: Theme for splash animations during bootup
@@ -72,15 +70,14 @@ This package contains graphics for boot process for Simply Linux
 (needs console splash screen enabled).
 
 %description bootsplash -l ru_RU.UTF-8
-В данном пакете находится тема для экрана загрузки для дистрибутива 
-"Просто Линукс" (Simply Linux). 
+В данном пакете находится тема для экрана загрузки для дистрибутива
+"Просто Линукс" (Simply Linux).
 
 %package alterator
 Summary: Design for alterator for Simply Linux 
 Summary(ru_RU.UTF-8): Тема для "Центра управления системой" и QT для дистрибутива "Просто Линукс"
 License: GPL
 Group: System/Configuration/Other
-Packager: Denis Koryavov <dkoryavov@altlinux.org>
 Provides: design-alterator-browser-%theme  branding-alt-%theme-browser-qt branding-altlinux-%theme-browser-qt
 Provides: alterator-icons design-alterator design-alterator-%theme
 Obsoletes:  branding-alt-%theme-browser-qt  branding-altlinux-%theme-browser-qt 
@@ -94,7 +91,7 @@ Design for QT and web alterator for Simply Linux.
 
 %description alterator -l ru_RU.UTF-8
 В данном пакете находится тема для "Центра управления системой" (Alterator)
-и модулей библиотеки QT для дистрибутива "Просто Линукс" (Simply Linux). 
+и модулей библиотеки QT для дистрибутива "Просто Линукс" (Simply Linux).
 
 %package graphics
 Summary: Design for Simply Linux
@@ -114,7 +111,7 @@ This package contains some graphics for Simply Linux design.
 
 %description graphics -l ru_RU.UTF-8
 В данном пакете находится необходимые графические элементы для дистрибутива 
-"Просто Линукс" (Simply Linux). 
+"Просто Линукс" (Simply Linux).
 
 
 %define provide_list altlinux fedora redhat system altlinux
@@ -124,9 +121,8 @@ This package contains some graphics for Simply Linux design.
 
 Summary: Simply Linux release file
 Summary(ru_RU.UTF-8): Описание дистрибутива "Просто Линукс"
-Copyright: GPL
+License: GPL
 Group: System/Configuration/Other
-Packager: Denis Koryavov <dkoryavov@altlinux.org>
 Provides: %(for n in %provide_list; do echo -n "$n-release = %version-%release "; done) altlinux-release-%theme  branding-alt-%theme-release
 Obsoletes: %obsolete_list  branding-alt-%theme-release
 Conflicts: %conflicts_list
@@ -136,7 +132,7 @@ Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-r
 Simply Linux %version release file.
 
 %description release -l ru_RU.UTF-8
-В данном пакете находится описание версии %version дистрибутива 
+В данном пакете находится описание версии %version дистрибутива
 "Просто Линукс" (Simply Linux).
 
 %package notes
@@ -153,7 +149,7 @@ Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-n
 Distribution license and release notes
 
 %description notes -l ru_RU.UTF-8
-В данном пакете находится лицензия и дополнительные сведения для версии %version 
+В данном пакете находится лицензия и дополнительные сведения для версии %version
 дистрибутива "Просто Линукс" (Simply Linux).
 
 %package xfce-settings
@@ -210,7 +206,7 @@ Requires(post): indexhtml-common
 Simply Linux index.html welcome page.
 
 %description indexhtml -l ru_RU.UTF-8
-В данном пакете содержится стартовая страница для дистрибутива 
+В данном пакете содержится стартовая страница для дистрибутива
 "Просто Линукс" (Simply Linux).
 
 
