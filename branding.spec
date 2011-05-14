@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt2
+Release: alt3
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -405,6 +405,11 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_desktopdir/indexhtml.desktop
 
 %changelog
+* Sat May 14 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt3
+- Minor spec cleanup.
+- Add compiz configs to /etc/skel.
+- Fix fusion-icon config: newline at the end.
+
 * Fri May 13 2011 Anton V. Boyarshinov <boyarsh@altlinux.ru> 6.0.0-alt2
 - gear repo structure changed to comply other brandings
 - gfxboot colors changed
