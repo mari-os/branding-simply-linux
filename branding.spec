@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt3
+Release: alt4
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -257,35 +257,9 @@ pushd notes
 %makeinstall
 popd
 
-#xfce-settings
-#pushd xfce-settings
-#mkdir -p %buildroot/etc/skel/.config/Terminal
-#mkdir -p %buildroot/etc/skel/.config/Thunar
-#mkdir -p %buildroot/etc/skel/.config/autostart
-#mkdir -p %buildroot/etc/skel/.config/sonata
-
-#mkdir -p %buildroot/etc/skel/.gconf/apps/gnome-screensaver
-#mkdir -p %buildroot/etc/skel/.gconf/desktop/gnome/session
-
-#mkdir -p %buildroot/etc/skel/.config/xfce4/desktop
-#mkdir -p %buildroot/etc/skel/.config/xfce4/notication-daemon-xfce
-#mkdir -p %buildroot/etc/skel/.config/xfce4/panel
-
-#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-5
-#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-6
-#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-8
-#mkdir -p %buildroot/etc/skel/.config/xfce4/panel/launcher-9
-
-#mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf
-#mkdir -p %buildroot/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
-
 mkdir -p %buildroot/etc/skel/.local/share/applications
-#mkdir -p %buildroot/etc/skel/Шаблоны
-#mkdir -p %buildroot/etc/skel/Музыка
 mkdir -p %buildroot/etc/skel/Музыка/mpd
 mkdir -p %buildroot/etc/skel/Музыка/mpd/playlists
-
-#cp xfce-settings/etcskel/Шаблоны %buildroot/etc/skel/
 
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
@@ -405,6 +379,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_desktopdir/indexhtml.desktop
 
 %changelog
+* Mon May 16 2011 Anton V. Boyarshinov <boyarsh@altlinux.ru> 6.0.0-alt4
+- fix automatic boot from usb disk
+
 * Sat May 14 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt3
 - Minor spec cleanup.
 - Add compiz configs to /etc/skel.

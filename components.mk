@@ -36,6 +36,7 @@ boot:
 	cp -a components/bootsplash/* $(datadir)/plymouth/themes/$(THEME)
 	mv $(datadir)/plymouth/themes/$(THEME)/theme.plymouth $(datadir)/plymouth/themes/$(THEME)/$(THEME).plymouth
 #bootloader
+	subst 's/label:ALT/label:Simply/g' design-bootloader-source/src/dia_install.inc
 	DEFAULT_LANG='--lang-to-subst--' PATH=$(PATH):/usr/sbin make -C design-bootloader-source
 	install -d -m 755  $(sysconfdir)/../boot/splash/$(THEME)
 	install -d -m 755 $(datadir)/gfxboot/$(THEME)
