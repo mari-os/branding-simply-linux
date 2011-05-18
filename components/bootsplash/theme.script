@@ -11,14 +11,7 @@ fun imgscale2( image, scaleX, scaleY )
 }
 
 # background
-if( Window.GetWidth()/Window.GetHeight() > 1.5 )
-{
-   logo.raw = Image("background16x9.png");
-}
-else
-{
-   logo.raw = Image("background4x3.png");
-}
+logo.raw = Image("wallpaper.png");
 
 logo.image = imgscale2( logo.raw, 
                         Window.GetWidth()/logo.raw.GetWidth(),
@@ -123,48 +116,34 @@ progress_box.x = Window.GetX() + Window.GetWidth() / 2 - progress_box.image.GetW
 progress_box.y = Window.GetY() + Window.GetHeight() / 2 - progress_box.image.GetHeight() / 2;
 progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 0);
 
-progress_bar.status.raw = Image("segment_status.png");
-progress_bar.runner = Sprite();
-progress_bar.runner.SetImage ( imgscale(progress_bar.status.raw, scale_factor));
+progress_bar.original_image = imgscale(Image("progress_bar.png"), scale_factor);
+progress_bar.sprite = Sprite();
 
+progress_bar.x = progress_box.x ; 
+progress_bar.y = Window.GetY() + Window.GetHeight() / 2 - progress_box.image.GetHeight() / 2 + (progress_box.image.GetHeight() - progress_bar.original_image.GetHeight()) / 2;
 
-progress_bar.x = Window.GetX() + Window.GetWidth()  / 2 -  progress_box.image.GetWidth() / 2;
-progress_bar.y = Window.GetY() + Window.GetHeight() / 2 - progress_box.image.GetHeight() / 2 +
-	(progress_box.image.GetHeight() - progress_box.image.GetHeight()) / 2;
-
-#Total steps
-steps=33;
 
 #left corner
 progress_bar.l = imgscale( Image("segment_cornerL.png") , scale_factor );
 progress_bar.spriteL = Sprite();
 progress_bar.spriteL.SetImage (progress_bar.l);
 progress_bar.spriteL.SetPosition(progress_bar.x,progress_bar.y, 2) ;
-progress_bar.x += progress_bar.l.GetWidth()-1;
+progress_bar.x += progress_bar.l.GetWidth();
+progress_bar.sprite.SetPosition(progress_bar.x, progress_bar.y, 1);
 
-#middle
-progress_bar.image = imgscale(Image("segment_middle.png"), scale_factor);
-step = progress_bar.image.GetWidth()-1;
-for( i=0; i<steps; i++ ) 
-{
-	progress_bar.sprites[i] = Sprite();
-        progress_bar.sprites[i].SetImage (progress_bar.image);
-	progress_bar.sprites[i].SetPosition(progress_bar.x+i*step,progress_bar.y, -1000) ;
-}
 #right corner
-progress_bar.r = imgscale( Image("segment_cornerR.png") , scale_factor );
-progress_bar.sprites[steps+1] = Sprite();
-progress_bar.sprites[steps+1].SetImage (progress_bar.r);
-progress_bar.sprites[steps+1].SetPosition(progress_bar.x+step*steps,progress_bar.y, -1000) ;
+#progress_bar.r = imgscale( Image("segment_cornerR.png") , scale_factor );
+#progress_bar.sprites[steps+1] = Sprite();
+#progress_bar.sprites[steps+1].SetImage (progress_bar.r);
+#progress_bar.sprites[steps+1].SetPosition(progress_bar.x+step*steps,progress_bar.y, -1000) ;
 
 fun progress_callback (duration, progress)
 {
-	for( i=0; i< progress*steps; i++ )
-         	progress_bar.sprites[i].SetZ(2);
-	if( progress > 0.99 ) 
-         	progress_bar.sprites[i+1].SetZ(2);
-	if( progress < 0.96 )
-         	progress_bar.runner.SetPosition(progress_bar.x+progress*step*steps, progress_bar.y, 1);
+	if (progress_bar.image.GetWidth () != Math.Int (progress_bar.original_image.GetWidth () * progress))
+	{
+		progress_bar.image = progress_bar.original_image.Scale(progress_bar.original_image.GetWidth(progress_bar.original_image) * progress, progress_bar.original_image.GetHeight());
+		progress_bar.sprite.SetImage (progress_bar.image);
+	}
 }
 
 Plymouth.SetBootProgressFunction(progress_callback);
