@@ -23,7 +23,7 @@ talk=0
 ; sound volume (0..100)
 volume=70
 ; menu background transparency (0..255)
-menu.transparency=0x20
+menu.transparency=60
 ; default font
 font.normal=drs16.fnt
 ; main menu font
@@ -37,26 +37,26 @@ mainmenu.entries=8
 ; minimal main menu selection bar width
 mainmenu.bar.minwidth=294
 ; main menu selection bar transparency (0..255)
-mainmenu.bar.transparency=0
+mainmenu.bar.transparency=60
 ; main menu colors
-mainmenu.bar.color=0x001056
-mainmenu.normal.fg=0x001056
+mainmenu.bar.color=0x787878
+mainmenu.normal.fg=0x787878
 mainmenu.selected.fg=0xffffff
 ; boot option colors
-bootopt.label.fg=0xffffff
-bootopt.text.fg=0xffffff
+bootopt.label.fg=0x787878
+bootopt.text.fg=0x787878
 ; progress bar color
-progress.bar.color=0x@MIDDLE_COLOR_HEX@
+progress.bar.color=0xd4ecfa
 ; menu colors
 menu.normal.bg=0x798491
-menu.normal.fg=@DARK_LABELS_HEX@
-menu.selected.bg=0x@LIGHT_COLOR_HEX@
-menu.selected.fg=@DARK_LABELS_HEX@
+menu.normal.fg=0xffffff
+menu.selected.bg=0x787878
+menu.selected.fg=0xffffff
 ; window colors
-window.bg=0xd8deed
+window.bg=0xffffff
 window.fg=0x000000
-window.title.bg=0x@TITLE_COLOR@
-window.title.fg=0x@DARK_LABELS_HEX@
+window.title.bg=0x787878
+window.title.fg=0x000000
 window.title.error.bg=0xc00000
 ; help system colors
 help.link.fg=0x@DARK_COLOR_HEX@
@@ -65,9 +65,9 @@ help.link.selected.bg=0x@DARK_COLOR_HEX@
 help.highlight.fg=0x@DARK_COLOR_HEX@
 ; panel colors
 panel.fg=0x000000
-panel.title.fg=0xffffff
-panel.normal.fg=0xffffff
-panel.f-key.fg=0xffffff
+panel.title.fg=0x787878
+panel.normal.fg=0x787878
+panel.f-key.fg=0x787878
 ; default keymap (e.g. de_DE, czech)
 keymap=
 

@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt5
+Release: alt6
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -379,6 +379,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_desktopdir/indexhtml.desktop
 
 %changelog
+* Fri May 20 2011 Anton V. Boyarshinov <boyarsh@altlinux.ru> 6.0.0-alt6
+- gfxboot colors changed
+
 * Tue May 17 2011 Anton V. Boyarshinov <boyarsh@altlinux.ru> 6.0.0-alt5
 - bootsplash changed from centaurus to simply
 
