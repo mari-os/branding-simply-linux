@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt7
+Release: alt8
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -379,6 +379,10 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_desktopdir/indexhtml.desktop
 
 %changelog
+* Mon May 23 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt8
+- Font: Droid Sans.
+- Cursor theme: jimmac.
+
 * Fri May 20 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt7
 - helpers.rc: Add more defaults.
 
