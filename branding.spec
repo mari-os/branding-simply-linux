@@ -258,8 +258,8 @@ pushd notes
 popd
 
 mkdir -p %buildroot/etc/skel/.local/share/applications
-mkdir -p %buildroot/etc/skel/Музыка/mpd
-mkdir -p %buildroot/etc/skel/Музыка/mpd/playlists
+mkdir -p %buildroot/etc/skel/Документы/Музыка/mpd
+mkdir -p %buildroot/etc/skel/Документы/Музыка/mpd/playlists
 
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
@@ -353,7 +353,6 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 
 %files xfce-settings
 /etc/skel/Документы
-/etc/skel/Музыка/mpd/playlists
 /etc/skel/.wm-select
 /etc/skel/.fonts.conf
 /etc/skel/.mpdconf
