@@ -352,7 +352,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_datadir/alt-notes/*
 
 %files xfce-settings
-/etc/skel/Шаблоны
+/etc/skel/Документы
 /etc/skel/Музыка/mpd/playlists
 /etc/skel/.wm-select
 /etc/skel/.fonts.conf
