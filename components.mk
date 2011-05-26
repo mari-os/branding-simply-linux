@@ -22,13 +22,15 @@ ahttpd:
 boot:
 	cp -a  /usr/src/design-bootloader-source ./
 	cp -a components/bootloader/config design-bootloader-source/
+	cp -af components/bootloader/menu.inc design-bootloader-source/src/
+	cp -al components/bootloader/menu_*.jpg  design-bootloader-source/data-install/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-install/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-boot/
 	for size in 1024x768 800x600 640x480; do \
 		convert images/boot.jpg -quality 97 -resize "$$size!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' boot-$$size.jpg ;\
 	done
 	cp -al boot-800x600.jpg design-bootloader-source/data-boot/back.jpg
-	convert images/boot.png -resize "800x600!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' design-bootloader-source/data-install/back.jpg
+	convert images/boot.jpg -resize "800x600!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' design-bootloader-source/data-install/back.jpg
 #bootsplash
 	mkdir -p $(datadir)/plymouth/themes/$(THEME)
 	cp -al boot-800x600.jpg $(datadir)/plymouth/themes/$(THEME)/grub.jpg

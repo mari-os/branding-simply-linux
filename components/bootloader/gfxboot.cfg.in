@@ -35,13 +35,13 @@ background=back.jpg
 ; max. visible main menu items
 mainmenu.entries=8
 ; minimal main menu selection bar width
-mainmenu.bar.minwidth=294
+mainmenu.bar.minwidth=270
 ; main menu selection bar transparency (0..255)
-mainmenu.bar.transparency=60
+mainmenu.bar.transparency=0
 ; main menu colors
-mainmenu.bar.color=0x787878
+mainmenu.bar.color=0xffffff
 mainmenu.normal.fg=0x787878
-mainmenu.selected.fg=0xffffff
+mainmenu.selected.fg=0x118bca
 ; boot option colors
 bootopt.label.fg=0x787878
 bootopt.text.fg=0x787878
@@ -75,7 +75,7 @@ keymap=
 ; screen size
 screen.size=800,600
 ; upper left corner
-mainmenu.pos=253,210
+mainmenu.pos=280,250
 ; boot option input field position
 bootopt.pos=200,480
 
