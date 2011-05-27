@@ -267,14 +267,13 @@
   menu.status {
       -18 3 rmoveto
       "menu_blue.jpg" findfile setimage
-      0 0 image.size image            
       18 -3 rmoveto
+
     /font.selected font.large.bold def
     menu.text.select
-} {
+  } {
       -18 3 rmoveto
       "menu_gray.jpg" findfile setimage
-      0 0 image.size image            
       18 -3 rmoveto
     /font.selected font.large def
     menu.text.normal
