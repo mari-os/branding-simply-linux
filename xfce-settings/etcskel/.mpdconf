@@ -5,12 +5,12 @@
 # You can put symlinks in here, if you like. Make sure that
 # the user that mpd runs as (see the 'user' config parameter)
 # can read the files in this directory.
-music_directory		"~/Музыка"
-playlist_directory	"~/Музыка/mpd/playlists"
-db_file			"~/Музыка/mpd/tag_cache"
-log_file		"~/Музыка/mpd/mpd.log"
-error_file		"~/Музыка/mpd/errors.log"
-pid_file		"~/Музыка/mpd/pid"
+music_directory		"~/Документы/Музыка"
+playlist_directory	"~/Документы/Музыка/mpd/playlists"
+db_file			"~/Документы/Музыка/mpd/tag_cache"
+log_file		"~/Документы/Музыка/mpd/mpd.log"
+error_file		"~/Документы/Музыка/mpd/errors.log"
+pid_file		"~/Документы/Музыка/mpd/pid"
 ################################################################
 
 
@@ -20,7 +20,7 @@ pid_file		"~/Музыка/mpd/pid"
 # current song, playing/paused, etc.) at exit.  This will be
 # used to restore the session the next time it is run.
 #
-state_file		"~/Музыка/mpd/state"
+state_file		"~/Документы/Музыка/mpd/state"
 #
 ################################################################
 

@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt9
+Release: alt10
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -258,8 +258,8 @@ pushd notes
 popd
 
 mkdir -p %buildroot/etc/skel/.local/share/applications
-mkdir -p %buildroot/etc/skel/Музыка/mpd
-mkdir -p %buildroot/etc/skel/Музыка/mpd/playlists
+mkdir -p %buildroot/etc/skel/Документы/Музыка/mpd
+mkdir -p %buildroot/etc/skel/Документы/Музыка/mpd/playlists
 
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
@@ -352,8 +352,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_datadir/alt-notes/*
 
 %files xfce-settings
-/etc/skel/Шаблоны
-/etc/skel/Музыка/mpd/playlists
+/etc/skel/Документы
 /etc/skel/.wm-select
 /etc/skel/.fonts.conf
 /etc/skel/.mpdconf
@@ -379,6 +378,12 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_desktopdir/indexhtml.desktop
 
 %changelog
+* Fri May 27 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt10
+- Tune desktop: show trash, don't show removable disks.
+- etcskel: Move Russian Music to Documents.
+- etcskel: Move Russian Templates to Documents.
+- etcskel: Drop sonata config.
+
 * Thu May 26 2011 Anton V. Boyarshinov <boyarsh@altlinux.ru> 6.0.0-alt9
 - gfxboot design
 
