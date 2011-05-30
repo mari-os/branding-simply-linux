@@ -205,6 +205,11 @@
 %
 /main.drawmenu {
   menu.text.normal setcolor
+  -18 3 rmoveto
+  "menu_gray.jpg" findfile setimage
+  18 -3 rmoveto
+  /font.selected font.large def
+  menu.text.normal
 
   /x menu.start.x def
   /y menu.start.y def
