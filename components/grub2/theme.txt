@@ -59,8 +59,8 @@ terminal-font: "Droid Sans Regular 12"
 	scrollbar_width = 20
 	scrollbar_thumb = "scrollbar_slider_*.png"
 	scrollbar_frame = "scrollbar_border_*.png"
-	item_color = "#001056"
-	selected_item_color = "#ffffff"
+	item_color = "#676769"
+	selected_item_color = "#4f88c7"
 }
 
 + circular_progress
