@@ -204,12 +204,16 @@
 % ( ) == > ( )
 %
 /main.drawmenu {
-  menu.text.normal setcolor
-  -18 3 rmoveto
+
+  "menu_blue.jpg" findfile setimage
+  0 0 16 16 unpackimage
+  /menu_blue exch def
+  
   "menu_gray.jpg" findfile setimage
-  18 -3 rmoveto
-  /font.selected font.large def
-  menu.text.normal
+  0 0 16 16 unpackimage
+  /menu_gray exch def
+
+  menu.text.normal setcolor
 
   /x menu.start.x def
   /y menu.start.y def
@@ -224,6 +228,7 @@
   0 1 menu.visible.entries 1 sub {
    x y moveto currentpoint menu.bar.width.old menu.bar.height image
    x config.rtl { menu.bar.width menu.text.xofs sub } { menu.text.xofs } ifelse add
+   0 0 menu_gray restorescreen
    y menu.text.yofs add moveto
    menu.texts exch menu.shift add get menuitemmap
    currentfont exch font.large setfont show.rtl setfont
@@ -271,14 +276,14 @@
   menu.text.yofs rmoveto
   menu.status {
       -18 3 rmoveto
-      "menu_blue.jpg" findfile setimage
+      menu_blue restorescreen
       18 -3 rmoveto
 
     /font.selected font.large.bold def
     menu.text.select
   } {
       -18 3 rmoveto
-      "menu_gray.jpg" findfile setimage
+      menu_gray restorescreen
       18 -3 rmoveto
     /font.selected font.large def
     menu.text.normal
