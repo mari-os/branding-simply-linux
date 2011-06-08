@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=StarDict GTK version
+Name[cs]=StarDict GTK
+Name[de]=StarDict GTK
+Name[hr]=StarDict GTK
+Name[hu]=StarDict GTK
+Name[ku]=StarDict GTK
+Name[mk]=StarDict GTK
+Name[nl]=StarDict GTK
+Name[ru]=Словарь StarDict
+Name[sk]=StarDict GTK
+Name[tt]=StarDict GTK
+Name[uk]=Зоряний словник :: StarDict GTK
+Name[vi]=StarDict GTK
+Name[zh_CN]=星际译王 GTK
+Name[zh_TW]=星際譯王 GTK
+Comment=Lookup words
+Exec=stardict-gtk
+Terminal=false
+Type=Application
+Icon=stardict
+StartupNotify=true
+Categories=GTK;Office;TextTools;Dictionary;
+X-GNOME-DocPath=stardict/stardict.xml
