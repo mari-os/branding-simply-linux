@@ -42,19 +42,18 @@ terminal-font: "Droid Sans Regular 12"
 
 #menu
 + boot_menu {
-	left = 21%
-	width = 58%
-	top = 30%
+	left = 30%
+	width = 40%
+	top = 32%
 	height = 40%
-	item_font = "Droid Sans Regular 12"
-	selected_item_font = "Droid Sans Bold 14"
+	item_font = "Droid Sans Regular 14"
+	selected_item_font = "Droid Sans Bold 16"
 	icon_height = 24
 	icon_width = 24
 	item_height = 26
 	item_padding = 0
 	item_icon_space = 0
 	item_spacing = 1
-	selected_item_pixmap_style = "selected_blob_*.png"
 	scrollbar = true
 	scrollbar_width = 20
 	scrollbar_thumb = "scrollbar_slider_*.png"
