@@ -209,6 +209,17 @@ Simply Linux index.html welcome page.
 В данном пакете содержится стартовая страница для дистрибутива
 "Просто Линукс" (Simply Linux).
 
+%package menu
+
+Summary: menu for Simply Linux
+License: Distributable
+Group: Graphical desktop/Other
+Requires(pre): altlinux-freedesktop-menu-common altlinux-menus
+Requires: altlinux-freedesktop-menu-common altlinux-menus
+
+%description menu
+Menu for Simply Linux
+
 
 %prep
 %setup -q
@@ -257,7 +268,6 @@ pushd notes
 %makeinstall
 popd
 
-mkdir -p %buildroot/etc/skel/.local/share/applications
 mkdir -p %buildroot/etc/skel/Документы/Музыка/mpd
 mkdir -p %buildroot/etc/skel/Документы/Музыка/mpd/playlists
 
@@ -265,7 +275,6 @@ cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.gconf %buildroot/etc/skel/
 
-install -m 644 xfce-settings/etcskel/.local/share/applications/*  %buildroot/etc/skel/.local/share/applications
 install -m 644 xfce-settings/etcskel/.wm-select %buildroot/etc/skel/
 install -m 644 xfce-settings/etcskel/.fonts.conf %buildroot/etc/skel/
 install -m 644 xfce-settings/etcskel/.mpdconf %buildroot/etc/skel/
@@ -291,6 +300,12 @@ install components/indexhtml/*.html %buildroot%_defaultdocdir/indexhtml/
 mkdir -p %buildroot%_defaultdocdir/indexhtml/img
 install components/indexhtml/img/* %buildroot%_defaultdocdir/indexhtml/img/
 #install -m644 components/indexhtml.desktop %buildroot%_desktopdir/
+
+#menu
+mkdir -p %buildroot/usr/share/slinux-style/applications
+install menu/applications/* %buildroot/usr/share/slinux-style/applications/
+mkdir -p %buildroot/etc/xdg/menus/applications-merged
+cp menu/50-slinux-menu-style.menu %buildroot/etc/xdg/menus/applications-merged/
 
 #bootloader
 %pre bootloader
@@ -357,7 +372,6 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/skel/.fonts.conf
 /etc/skel/.mpdconf
 /etc/skel/.config
-/etc/skel/.local
 /etc/skel/.gconf
 /usr/share/xfce4/backdrops
 
@@ -376,6 +390,10 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %indexhtmldir/index.css
 %indexhtmldir/img
 %_desktopdir/indexhtml.desktop
+
+%files menu
+/usr/share/slinux-style
+/etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
 
 %changelog
 * Fri May 27 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt10
