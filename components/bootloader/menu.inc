@@ -179,6 +179,7 @@
 
   boot.text.options setcolor
   window.current .font get setfont
+  40 470 boot_parameters restorescreen
   boot.ed.list {
     dup .inp_x get 10 sub over .inp_y get moveto
     currentpoint
@@ -212,6 +213,8 @@
   "menu_gray.jpg" findfile setimage
   0 0 16 16 unpackimage
   /menu_gray exch def
+  
+  40 470 moveto 795 520 savescreen /boot_parameters exch def
 
   menu.text.normal setcolor
 
@@ -227,8 +230,10 @@
 
   0 1 menu.visible.entries 1 sub {
    x y moveto currentpoint menu.bar.width.old menu.bar.height image
+   -8 6 rmoveto
+   menu_gray restorescreen
+   8 -6 rmoveto
    x config.rtl { menu.bar.width menu.text.xofs sub } { menu.text.xofs } ifelse add
-   0 0 menu_gray restorescreen
    y menu.text.yofs add moveto
    menu.texts exch menu.shift add get menuitemmap
    currentfont exch font.large setfont show.rtl setfont
