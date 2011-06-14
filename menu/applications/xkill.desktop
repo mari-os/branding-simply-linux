@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Xkill
+Comment=Kill X clients
+Icon=xkill.xpm
+Exec=xkill
+Terminal=false
+Categories=Application;System;Monitor;
