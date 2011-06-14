@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt10
+Release: alt11
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -396,6 +396,22 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
 
 %changelog
+* Tue Jun 14 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt11
+- new desktop files for libreoffice and xkill (by Alexandra Panyukova).
+- new images for installer steps (by Alexandra Panyukova).
+- menu subpackage added (by Alexandra Panyukova).
+- trying to replace some elements in bootloader (by Alexandra Panyukova).
+- style changes in grub theme (by Alexandra Panyukova).
+- trying to read images less times in bootloader (by Alexandra Panyukova).
+- new menu items (by Alexandra Panyukova).
+- new grub theme (by Alexandra Panyukova).
+- etcskel: Drop xfce4-terminal.desktop.
+- etcskel: Drop ristretto.desktop.
+- Show gnome-screensever preferences in xfce4 settings.
+- etcskel: Drop nm-applet.desktop.
+- making grey points in menu from the beginning (by Alexandra Panyukova).
+- testing default version of menu.inc (by Alexandra Panyukova).
+
 * Fri May 27 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt10
 - Tune desktop: show trash, don't show removable disks.
 - etcskel: Move Russian Music to Documents.
