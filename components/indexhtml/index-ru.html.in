@@ -56,8 +56,7 @@
 <div id="documentation">
 <h2>Документация</h2>
 <ul>
- <li><a href="../alt-docs/index.html">Руководство пользователя</a></li>
- <li><a href="../alt-docs/modules/index.html">Дополнительная документация</a></li>
+ <li><a href="../@DOCDIR@/index.html">Руководство пользователя</a></li>
 </ul>
 </div>
 
