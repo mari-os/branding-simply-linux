@@ -2,7 +2,7 @@
 Type=Application
 Name=Mozilla Firefox
 Comment=Интернет-проводник
-Icon=web-browser
+Icon=firefox
 Exec=exo-open --launch WebBrowser
 Path=
 Terminal=false
