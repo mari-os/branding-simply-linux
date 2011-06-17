@@ -306,6 +306,8 @@ mkdir -p %buildroot/usr/share/slinux-style/applications
 install menu/applications/* %buildroot/usr/share/slinux-style/applications/
 mkdir -p %buildroot/etc/xdg/menus/applications-merged
 cp menu/50-slinux-menu-style.menu %buildroot/etc/xdg/menus/applications-merged/
+mkdir -p %buildroot/etc/xdg/menus/xfce-applications-merged
+cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-merged/
 
 #bootloader
 %pre bootloader
@@ -394,6 +396,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %files menu
 /usr/share/slinux-style
 /etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
+/etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
 * Tue Jun 14 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt11
