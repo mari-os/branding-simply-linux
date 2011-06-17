@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Type=Application
 Name=Xkill
+Name[ru]=Аварийное закрытие программы
 Comment=Kill X clients
 Icon=xkill.xpm
 Exec=xkill

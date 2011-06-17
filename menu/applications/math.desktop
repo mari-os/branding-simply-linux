@@ -7,6 +7,7 @@ Categories=Application;Office;WordProcessor;
 Exec=lomath %U
 MimeType=application/vnd.oasis.opendocument.formula;application/vnd.sun.xml.math;application/vnd.stardivision.math;
 Name=LibreOffice Math
+Name[ru]=LibreOffice Редактор формул
 GenericName=Formula editor
 GenericName[ru]=Редактор формул
 GenericName[tt_RU]=Формула редакторы
