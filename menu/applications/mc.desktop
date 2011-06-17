@@ -6,4 +6,5 @@ Comment=Midnight Commander
 Icon=mc
 Exec=mc
 Terminal=true
+Hidden=true
 Categories=ConsoleOnly;System;FileTools;FileManager;
