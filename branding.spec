@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt11
+Release: alt12
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -396,6 +396,11 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
 
 %changelog
+* Thu Jun 16 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt12
+- indexhtml: change link to user manual (by Artem Zolochevskiy).
+- menu: Drop unneeded desktop files.
+- etcscel: Changed display type of xkb plugin.
+
 * Tue Jun 14 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt11
 - new desktop files for libreoffice and xkill (by Alexandra Panyukova).
 - new images for installer steps (by Alexandra Panyukova).
