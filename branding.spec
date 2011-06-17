@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt12
+Release: alt13
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -399,6 +399,11 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Fri Jun 17 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt13
+- translation of desktop-files for libreoffice, xkill and eiskaltdcpp-gt
+- web-browser icon on xfce panel changed on firefox icon
+- new icons on livecd installer steps
+
 * Thu Jun 16 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt12
 - indexhtml: change link to user manual (by Artem Zolochevskiy).
 - menu: Drop unneeded desktop files.
