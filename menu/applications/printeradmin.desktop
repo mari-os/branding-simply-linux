@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Terminal=false
+Hidden=true
 Icon=libreoffice-printeradmin.png
 Type=Application
 Categories=Settings;Application;HardwareSettings;
