@@ -2,7 +2,7 @@
 Type=Application
 Name=Thunar
 Comment=Менеджер файлов
-Icon=Thunar
+Icon=slinux-thunar
 Exec=thunar
 Path=
 Terminal=false
