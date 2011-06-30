@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt14
+Release: alt15
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -401,6 +401,11 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Wed Jun 30 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt15
+- wallpapers path fixed
+- more sizes of thunar icons
+- greeting, installer, lilo and finish step icons added
+
 * Tue Jun 28 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt14
 - new wallpapers
 - new thunar icon
