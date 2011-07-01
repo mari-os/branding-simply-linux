@@ -214,8 +214,8 @@ Simply Linux index.html welcome page.
 Summary: menu for Simply Linux
 License: Distributable
 Group: Graphical desktop/Other
-Requires(pre): altlinux-freedesktop-menu-common altlinux-menus
-Requires: altlinux-freedesktop-menu-common altlinux-menus
+Requires(pre): altlinux-freedesktop-menu-common
+Requires: altlinux-freedesktop-menu-common
 
 %description menu
 Menu for Simply Linux
