@@ -286,7 +286,7 @@ cp -P xfce-settings/backgrounds/*.jpg %buildroot/usr/share/xfce4/backdrops/
 install -m 644 xfce-settings/backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/xfce4/backdrops/vladstudio.com/
 install -m 644 xfce-settings/backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/
 install -m 644 xfce-settings/backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050/
-install -m 644 xfce-settings/backgrounds/slinux*.png %buildroot/usr/share/xfce4/backdrops/
+install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot/usr/share/xfce4/backdrops/
 #popd
 
 
