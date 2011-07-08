@@ -32,13 +32,6 @@
       <property name="position" type="string" value="p=10;x=0;y=767"/>
       <property name="leave-opacity" type="uint" value="20"/>
       <property name="enter-opacity" type="uint" value="100"/>
-      <property name="background-style" type="uint" value="1"/>
-      <property name="background-color" type="array">
-        <value type="uint" value="57054"/>
-        <value type="uint" value="57054"/>
-        <value type="uint" value="57054"/>
-        <value type="uint" value="65535"/>
-      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
