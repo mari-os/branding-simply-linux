@@ -291,7 +291,9 @@ install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot/usr/share/xfce4/
 
 #slideshow
 mkdir -p %buildroot/usr/share/install2/slideshow
-install slideshow/*  %buildroot/usr/share/install2/slideshow/
+mkdir -p %buildroot/etc/alterator
+install slideshow/slides/*  %buildroot/usr/share/install2/slideshow/
+install slideshow/slideshow.conf %buildroot/etc/alterator/
 
 #indexhtml
 %define _altdocsdir %_defaultdocdir/alt-docs
@@ -378,6 +380,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/xfce4/backdrops
 
 %files slideshow
+/etc/alterator/slideshow.conf
 /usr/share/install2/slideshow
 
 %define indexhtmldir %_defaultdocdir/indexhtml
