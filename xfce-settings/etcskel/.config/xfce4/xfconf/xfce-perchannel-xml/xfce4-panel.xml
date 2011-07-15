@@ -74,13 +74,6 @@
         <value type="string" value="13015098300.desktop"/>
       </property>
     </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="move-first" type="bool" value="false"/>
-      <property name="arrow-position" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="13015098300.desktop"/>
-      </property>
-    </property>
     <property name="plugin-10" type="string" value="pager">
       <property name="rows" type="uint" value="2"/>
       <property name="show-names" type="bool" value="false"/>
