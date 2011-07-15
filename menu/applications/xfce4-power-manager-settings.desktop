@@ -80,6 +80,7 @@ Comment[pt]=Definições para a gestão de energia Xfce
 Comment[ru]=Настройка менеджера питания Xfce
 Comment[zh_CN]=Xfce 电源管理器设置
 Exec=xfce4-power-manager-settings
+TryExec=xfce4-power-manager-settings
 Icon=xfpm-ac-adapter
 Terminal=false
 Type=Application

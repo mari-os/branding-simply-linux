@@ -16,6 +16,7 @@ Name[zh_CN]=星际译王 GTK
 Name[zh_TW]=星際譯王 GTK
 Comment=Lookup words
 Exec=stardict-gtk
+TryExec=stardict-gtk
 Terminal=false
 Type=Application
 Icon=stardict

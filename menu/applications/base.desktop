@@ -5,6 +5,7 @@ Icon=libreoffice-base.png
 Type=Application
 Categories=Application;Office;Database;
 Exec=lobase %U
+TryExec=lobase %U
 MimeType=application/vnd.oasis.opendocument.database;application/vnd.sun.xml.base;
 Name=LibreOffice Base
 Name[ru]=LibreOffice Базы данных

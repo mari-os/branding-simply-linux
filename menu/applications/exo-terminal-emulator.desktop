@@ -2,6 +2,7 @@
 Version=1.0
 Type=Application
 Exec=exo-open --launch TerminalEmulator
+TryExec=exo-open --launch TerminalEmulator
 Icon=utilities-terminal
 StartupNotify=false
 Terminal=false

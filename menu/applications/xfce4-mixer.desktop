@@ -65,6 +65,7 @@ Comment[ur_PK]=صوتی مکسر برائے ایکسفس ڈیسک ٹاپ ماح�
 Comment[zh_CN]=Xfce 桌面环境混音器
 Icon=multimedia-volume-control
 Exec=xfce4-mixer
+TryExec=xfce4-mixer
 Type=Application
 StartupNotify=true
 Terminal=false

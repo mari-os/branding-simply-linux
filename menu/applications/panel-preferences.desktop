@@ -1,6 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Exec=xfce4-panel -p
+TryExec=xfce4-panel -p
 Icon=xfce4-panel
 Type=Application
 Categories=X-XFCE;Settings;DesktopSettings;

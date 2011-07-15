@@ -79,6 +79,7 @@ Comment[ur_PK]=کیبورڈ کی ترتیبات اور اطلاقیوں کے ش�
 Comment[zh_CN]=编辑键盘设置和应用程序快捷键
 Comment[zh_TW]=編輯鍵盤設定值與應用程式捷徑
 Exec=xfce4-keyboard-settings
+TryExec=xfce4-keyboard-settings
 Icon=preferences-desktop-keyboard
 Terminal=false
 Type=Application

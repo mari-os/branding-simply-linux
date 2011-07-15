@@ -73,6 +73,7 @@ Comment[uk]=Налаштуйте показ повідомлень на Вашо
 Comment[zh_CN]=自定义通知在您屏幕上的显示方式
 Comment[zh_TW]=自訂通知該如何在您螢幕上顯示
 Exec=xfce4-notifyd-config
+TryExec=xfce4-notifyd-config
 Icon=xfce4-notifyd
 Terminal=false
 StartupNotify=true

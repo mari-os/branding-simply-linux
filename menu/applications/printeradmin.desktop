@@ -6,6 +6,7 @@ Icon=libreoffice-printeradmin.png
 Type=Application
 Categories=Settings;Application;HardwareSettings;
 Exec=/usr/lib/libreoffice/program/spadmin
+TryExec=/usr/lib/libreoffice/program/spadmin
 Name=LibreOffice Printer Administration
 Name[en]=LibreOffice Printer Administration
 Name[de]=LibreOffice Drucker Verwaltung

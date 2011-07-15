@@ -18,6 +18,7 @@ Comment[ru]=EasyTAG -- это программа для просмотра и р
 Comment[sv]=EasyTAG är ett verktyg för att undersöka, editera och skriva taggar för dina MP3-, MP2-, FLAC- och Ogg Vorbis-filer, och använder ett enkelt och trevligt GTK+-gränssnitt.
 Comment[uk]=EasyTAG - утиліта для перегляду, редагування та запису тегів у файли MP3, MP2, FLAC, Ogg Vorbis, MusePack та Monkey's Audio. Простий та приємний інтерфейс GTK+ допоможе процесу запису тегів.
 Exec=easytag %F
+TryExec=easytag %F
 Icon=easytag
 Terminal=false
 Type=Application

@@ -117,6 +117,7 @@ Comment[vi]=Cấu hình máy in
 Comment[zh_CN]=配置打印机
 Comment[zh_TW]=設定印表機
 Exec=system-config-printer
+TryExec=system-config-printer
 Terminal=false
 Type=Application
 Icon=printer

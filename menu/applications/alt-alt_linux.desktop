@@ -6,6 +6,7 @@ GenericName=
 Comment=ALT Linux Documentation main page
 Icon=altlinux.png
 Exec=/bin/sh -c "$BROWSER /usr/share/doc/alt-docs/index.html"
+TryExec=/bin/sh -c "$BROWSER /usr/share/doc/alt-docs/index.html"
 Terminal=false
 Hidden=true
 Categories=Utility;

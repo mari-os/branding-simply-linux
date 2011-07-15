@@ -69,6 +69,7 @@ Comment[ur_PK]=قابلِ فصل ڈرائیوز اور میڈیا کی ادار�
 Comment[zh_CN]=配置可移动驱动器和介质管理
 Comment[zh_TW]=管理可移除裝置與媒體的設定值
 Exec=thunar-volman-settings
+TryExec=thunar-volman-settings
 Icon=drive-removable-media
 Terminal=false
 StartupNotify=true

@@ -4,6 +4,7 @@
 Name=UXTerm
 Comment=standard terminal emulator for the X window system
 Exec=uxterm
+TryExec=uxterm
 Terminal=false
 Type=Application
 Hidden=true

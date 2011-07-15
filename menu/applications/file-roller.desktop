@@ -190,6 +190,7 @@ Comment[zh_HK]=建立及更改壓縮檔
 Comment[zh_TW]=建立及更改壓縮檔
 TryExec=file-roller
 Exec=file-roller %U
+TryExec=file-roller %U
 StartupNotify=true
 Terminal=false
 Type=Application

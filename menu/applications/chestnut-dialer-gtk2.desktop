@@ -8,6 +8,7 @@ Comment=Connect to the Internet
 Comment[ru]=Подключится к Интернет
 Comment[uk]=Підключитися до Інтернет
 Exec=/usr/bin/chestnut-dialer -i gtk2
+TryExec=/usr/bin/chestnut-dialer -i gtk2
 NotShowIn=KDE;
 Terminal=false
 Type=Application

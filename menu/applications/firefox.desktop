@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Exec=firefox %u
+TryExec=firefox %u
 Icon=firefox
 Type=Application
 Name=Mozilla Firefox

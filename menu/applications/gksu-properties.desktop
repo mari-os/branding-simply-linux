@@ -21,6 +21,7 @@ Comment[sv]=Konfigurera beteendet för verktyget för rättighetstilldelning
 Comment[th]=ตั้งค่าพฤติกรรมของเครื่องมืออนุญาตสิทธิ์พิเศษ
 Comment[zh_CN]=配置权限授予工具的行为
 Exec=gksu-properties
+TryExec=gksu-properties
 Icon=gksu
 StartupNotify=true
 Terminal=false

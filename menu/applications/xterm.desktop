@@ -4,6 +4,7 @@
 Name=XTerm
 Comment=standard terminal emulator for the X window system
 Exec=xterm -name XTerm
+TryExec=xterm -name XTerm
 Terminal=false
 Type=Application
 Hidden=true

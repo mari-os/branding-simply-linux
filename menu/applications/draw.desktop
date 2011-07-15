@@ -5,6 +5,7 @@ Icon=libreoffice-draw.png
 Type=Application
 Categories=Application;Office;Chart;
 Exec=lodraw %U
+TryExec=lodraw %U
 MimeType=application/vnd.oasis.opendocument.graphics;application/vnd.oasis.opendocument.graphics-template;application/vnd.sun.xml.draw;application/vnd.sun.xml.draw.template;application/vnd.stardivision.draw;
 Name=LibreOffice Draw
 Name[ru]=LibreOffice Векторная графика

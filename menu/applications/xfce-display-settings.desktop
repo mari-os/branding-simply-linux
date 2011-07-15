@@ -82,6 +82,7 @@ Comment[ur_PK]=سکرین کی ترتیبات اور خاکہ مرتب کریں
 Comment[zh_CN]=设置屏幕参数及布局
 Comment[zh_TW]=調整螢幕設定值與配置
 Exec=xfce4-display-settings
+TryExec=xfce4-display-settings
 Icon=video-display
 Terminal=false
 Type=Application

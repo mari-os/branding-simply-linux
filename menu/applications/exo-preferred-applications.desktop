@@ -1,6 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Exec=exo-preferred-applications
+TryExec=exo-preferred-applications
 Icon=preferences-desktop-default-applications
 Type=Application
 Categories=X-XFCE;Settings;DesktopSettings;X-XfceSettingsDialog;

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Categories=System;Printing;HardwareSettings;X-Red-Hat-Base;
 Exec=/usr/bin/xdg-open http://localhost:631/
+TryExec=/usr/bin/xdg-open http://localhost:631/
 Icon=cups
 StartupNotify=false
 Terminal=false

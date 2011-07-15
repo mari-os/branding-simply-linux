@@ -4,6 +4,7 @@ Name[ru]=Compiz Fusion
 Comment=Start and manage Compiz Fusion
 Name[ru]=Запуск и управление Compiz Fusion
 Exec=fusion-icon
+TryExec=fusion-icon
 Icon=fusion-icon
 Terminal=false
 Type=Application

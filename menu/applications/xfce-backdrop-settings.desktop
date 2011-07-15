@@ -84,6 +84,7 @@ Comment[ur_PK]=ڈیسک ٹاپ پس منظر، مینیو اور آئکن کا �
 Comment[zh_CN]=设置桌面背景，菜单，及图标属性
 Comment[zh_TW]=設定桌面背景、選單與圖示行為
 Exec=xfdesktop-settings
+TryExec=xfdesktop-settings
 Icon=preferences-desktop-wallpaper
 Terminal=false
 Type=Application

@@ -88,6 +88,7 @@ Comment[ur_PK]=ونڈو کا سلوک اور ایفیکٹ مرتب کریں
 Comment[zh_CN]=微调窗口行为及效果
 Comment[zh_TW]=微調視窗視窗行為與效果
 Exec=xfwm4-tweaks-settings
+TryExec=xfwm4-tweaks-settings
 Icon=wmtweaks
 Terminal=false
 Type=Application

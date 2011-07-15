@@ -5,6 +5,7 @@ Icon=libreoffice-impress.png
 Type=Application
 Categories=Application;Office;Presentation;
 Exec=loimpress %U
+TryExec=loimpress %U
 MimeType=application/vnd.oasis.opendocument.presentation;application/vnd.oasis.opendocument.presentation-template;application/vnd.sun.xml.impress;application/vnd.sun.xml.impress.template;application/vnd.stardivision.impress;application/mspowerpoint;application/vnd.ms-powerpoint;application/vnd.ms-powerpoint.slideshow.macroEnabled.12;application/vnd.openxmlformats-officedocument.presentationml.slideshow;application/vnd.ms-powerpoint.presentation.macroEnabled.12;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.ms-powerpoint.template.macroEnabled.12;application/vnd.openxmlformats-officedocument.presentationml.template;
 Name=LibreOffice Impress
 Name[ru]=LibreOffice Презентации

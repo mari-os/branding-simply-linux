@@ -2,6 +2,7 @@
 Version=1.0
 Type=Application
 Exec=exo-open --launch MailReader %u
+TryExec=exo-open --launch MailReader %u
 Icon=thunderbird
 StartupNotify=false
 Terminal=false

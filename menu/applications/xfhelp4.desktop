@@ -3,6 +3,7 @@ Hidden=true
 Version=1.0
 Type=Application
 Exec=xfhelp4
+TryExec=xfhelp4
 Icon=help-contents
 StartupNotify=false
 Terminal=false

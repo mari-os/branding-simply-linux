@@ -11,6 +11,7 @@ Comment[ca]=Un programa per a treballar amb escànners. Es pot utilitzar com una
 Comment[es]=Un programa para trabajar con escáners. Se puede utilizar como una herramienta para escanear, copiar, OCR y fax.
 Comment[fr]=Un programme d'acquisition d'images pour votre scanner. Peut également photocopier, faxer ou faire de la reconnaissance de caractères.
 Exec=xsane
+TryExec=xsane
 Icon=xsane
 Terminal=false
 Type=Application

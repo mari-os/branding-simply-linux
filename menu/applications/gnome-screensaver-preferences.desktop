@@ -154,6 +154,7 @@ Comment[zh_HK]=設定螢幕保護程式
 Comment[zh_TW]=設定螢幕保護程式
 Icon=preferences-desktop-screensaver
 Exec=gnome-screensaver-preferences
+TryExec=gnome-screensaver-preferences
 Terminal=false
 Type=Application
 Categories=GTK;Settings;DesktopSettings;X-XFCE;

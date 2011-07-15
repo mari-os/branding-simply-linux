@@ -16,6 +16,7 @@ Comment[nl]=Teksteditor
 Comment[ru]=Текстовый редактор 
 Comment[zh_CN]=文本编辑器
 Exec=medit %F
+TryExec=medit %F
 Terminal=false
 Type=Application
 StartupNotify=true

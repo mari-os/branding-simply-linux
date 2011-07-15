@@ -2,6 +2,7 @@
 Name=Java Plugin Control Panel (java-1.6.0-sun)
 Comment=Java Control Panel
 Exec=jcontrol
+TryExec=jcontrol
 Icon=java-1.6.0-sun
 Terminal=false
 Type=Application

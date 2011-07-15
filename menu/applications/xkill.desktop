@@ -6,5 +6,6 @@ Name[ru]=Аварийное закрытие программы
 Comment=Kill X clients
 Icon=xkill.xpm
 Exec=xkill
+TryExec=xkill
 Terminal=false
 Categories=Application;System;Monitor;

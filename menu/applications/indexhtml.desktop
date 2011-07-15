@@ -2,6 +2,7 @@
 Version=1.0
 Type=Application
 Exec=xdg-open /usr/share/doc/indexhtml/index.html
+TryExec=xdg-open /usr/share/doc/indexhtml/index.html
 StartupNotify=false
 Icon=altlinux
 Name=Simply Linux 6.0.0 : start page

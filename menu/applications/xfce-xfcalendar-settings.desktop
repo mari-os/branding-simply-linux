@@ -49,6 +49,7 @@ Comment[tr]=Xfce4 Takvim Uygulaması (Orage) için Ayarlar
 Comment[uk]=Налаштування для програми Календар (Orage) з Xfce 4 
 Comment[zh_CN]=Xfce 4 日历程序设定 (Orage)
 Exec=orage -p
+TryExec=orage -p
 Icon=xfcalendar
 Terminal=false
 Type=Application

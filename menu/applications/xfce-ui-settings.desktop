@@ -83,6 +83,7 @@ Comment[ur_PK]=اپنے ڈیسک ٹاپ کا حلیہ مرتب کریں
 Comment[zh_CN]=设置桌面外观
 Comment[zh_TW]=自訂您桌面的外觀
 Exec=xfce4-appearance-settings
+TryExec=xfce4-appearance-settings
 Icon=preferences-desktop-theme
 Terminal=false
 Type=Application

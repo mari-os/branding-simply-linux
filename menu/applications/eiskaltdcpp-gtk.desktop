@@ -3,6 +3,7 @@ Name=EiskaltDC++ Gtk
 Name[ru]=Клиент сетей DC++
 Type=Application
 Exec=eiskaltdcpp-gtk
+TryExec=eiskaltdcpp-gtk
 Icon=eiskaltdcpp
 Terminal=false
 GenericName=DC++ client

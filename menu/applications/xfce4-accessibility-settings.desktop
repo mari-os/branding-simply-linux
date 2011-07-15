@@ -80,6 +80,7 @@ Comment[ur_PK]=کیبورڈ اور ماؤس کی قابلیت رسائی بہت�
 Comment[zh_CN]=使您的键盘和鼠标更好用
 Comment[zh_TW]=改善鍵盤與滑鼠的輔助能力
 Exec=xfce4-accessibility-settings
+TryExec=xfce4-accessibility-settings
 Icon=preferences-desktop-accessibility
 Terminal=false
 Type=Application

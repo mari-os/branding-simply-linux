@@ -4,6 +4,7 @@ Name=APT Indicator
 Name[ru]=Индикатор обновлений
 Type=Application
 Exec=apt-indicator
+TryExec=apt-indicator
 Icon=altlinux
 Terminal=false
 StartupNotify=false

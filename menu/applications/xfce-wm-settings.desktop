@@ -100,6 +100,7 @@ Comment[ur_PK]=ونڈو کا سلوک اور شارٹ کٹ وضع کریں
 Comment[zh_CN]=配置窗口行为及快捷方式
 Comment[zh_TW]=調整視窗行為與捷徑
 Exec=xfwm4-settings
+TryExec=xfwm4-settings
 Icon=xfwm4
 Terminal=false
 Type=Application

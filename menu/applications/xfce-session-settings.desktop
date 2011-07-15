@@ -76,6 +76,7 @@ Comment[ur_PK]=ڈیسک ٹاپ سٹارٹ اپ اور سپلیش سکرین وض
 Comment[zh_CN]=自定义桌面启动和启动闪屏
 Comment[zh_TW]=自訂桌面起始與開機畫面
 Exec=xfce4-session-settings
+TryExec=xfce4-session-settings
 Icon=xfce4-session
 Terminal=false
 StartupNotify=true

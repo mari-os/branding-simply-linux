@@ -32,6 +32,7 @@ Comment[tr]=Ses ve görüntü oynatıcı
 Comment[ru]=Воспроизведение мультимедиа
 Comment[zh_CN]=播放常见格式媒体文件
 Exec=gnome-mplayer %U
+TryExec=gnome-mplayer %U
 Icon=gnome-mplayer
 StartupNotify=true
 Terminal=false

@@ -79,6 +79,7 @@ Comment[ur_PK]=پؤائینٹر ڈیوائس کا سلوک اور مظہر مت�
 Comment[zh_CN]=设置定位设备（比如鼠标）行为和外观
 Comment[zh_TW]=調整指標裝置行為與外觀
 Exec=xfce4-mouse-settings
+TryExec=xfce4-mouse-settings
 Icon=preferences-desktop-peripherals
 Terminal=false
 Type=Application

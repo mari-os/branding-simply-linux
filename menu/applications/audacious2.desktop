@@ -5,6 +5,7 @@ Comment=Play music
 Comment[hu]=Zene lejátszása
 Comment[de]=Musik abspielen
 Exec=audacious2 %U
+TryExec=audacious2 %U
 Icon=audacious2
 Hidden=true
 MimeType=application/x-ogg;audio/mp3;audio/mpeg;audio/mpegurl;audio/prs.sid;audio/x-flac;audio/x-it;audio/x-mod;audio/x-mp3;audio/x-mpeg;audio/x-mpegurl;a

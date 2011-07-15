@@ -92,6 +92,7 @@ Comment[ur_PK]=نظام میں نصب اطلاقیے تلاش کریں اور چ
 Comment[zh_CN]=查找并启动您系统上安装的程序
 Comment[zh_TW]=尋找並啟動您系統上安裝的應用程式
 Exec=xfce4-appfinder
+TryExec=xfce4-appfinder
 Icon=xfce4-appfinder
 StartupNotify=true
 Terminal=false
