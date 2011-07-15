@@ -239,7 +239,6 @@ make x86 DESTDIR=%buildroot datadir=%buildroot%_datadir sysconfdir=%buildroot%_s
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
 mkdir -p %buildroot/%_niconsdir
 install graphics/icons/slinux.png %buildroot/%_niconsdir/slinux.png
-install graphics/icons/slinux-thunar.png %buildroot/%_niconsdir/slinux-thunar.png
 install graphics/icons/mini/slinux.png %buildroot/%_iconsdir/altlinux.png
 cp -ar graphics/* %buildroot/%_datadir/design/%theme
 
@@ -357,7 +356,6 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %config /etc/alternatives/packages.d/%name-graphics
 %_datadir/design
 %_niconsdir/slinux.png
-%_niconsdir/slinux-thunar.png
 %_iconsdir/altlinux.png
 
 %files bootsplash
