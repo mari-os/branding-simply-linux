@@ -1,8 +1,10 @@
 /* Customize any plain widget that is a child of a QMainWindow. */
 .AWizardFace {
     border-style: none;
-    background-image: url(:/design/bg.png);
-    background-position: bottom right;
+/*    background-image: url(:/design/bg.png);*/
+    background-color: rgb(0,139,209);
+    background-position: center;
+    color: white;
     background-repeat: no-repeat
 }
 
