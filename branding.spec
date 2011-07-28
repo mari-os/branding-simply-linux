@@ -159,7 +159,7 @@ License: Distributable
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
 Requires: etcskel gtk2-theme-simplicity
-Requires: gnome-icon-theme icon-theme-simple tango-icon-theme
+Requires: gnome-icon-theme icon-theme-simple
 Requires: branding-simply-linux-graphics
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-xfce-settings ";done )
