@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt16
+Release: alt17
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -402,6 +402,12 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Thu Jul 28 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt17
+- new color for alterator
+- thunderbird and Terminal removed from panel
+- changing codename
+- wide wallpaper
+
 * Fri Jul 01 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt16
 - Drop altlinux-menus requires.
 - Rename and fix fusion-icon.desktop for autostart.
