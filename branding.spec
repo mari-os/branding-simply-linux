@@ -1,6 +1,6 @@
 %define theme slinux
 %define Name Simply Linux
-%define codename Billy
+%define codename Flounder
 %define status %nil
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
 %define brand simply
