@@ -5,8 +5,17 @@
     background-color: rgb(0,139,209);
     background-position: center;
     wizardface_title_text: white;
+    wizardface_title_text: rgb(255,255,255);
     background-repeat: no-repeat
 }
+
+.AWizardFace #wizardface_title_text {
+    color: white;
+}
+
+.AWizardFace#wizardface_title_text: rgb(255,255,255);
+
+AWizardFace#wizardface_title_text: rgb(255,255,255);
 
 .ACenterFace {
     border-style: none;
