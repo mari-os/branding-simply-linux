@@ -402,11 +402,22 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
-* Thu Jul 28 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt17
-- new color for alterator
-- thunderbird and Terminal removed from panel
-- changing codename
-- wide wallpaper
+* Fri Jul 29 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt17
+- removing thunderbird and Terminal from panel (by Alexandra Panyukova).
+- codename Flounder (by Alexandra Panyukova).
+- wide wallpaper became default (by Alexandra Panyukova).
+- s/slinux/simplylinux/ (by Alexandra Panyukova).
+- new color for alterator background (by Alexandra Panyukova).
+- New slinux logo.
+- New slides.
+- Add TryExec into menu desktop files (closes: #25859).
+- Add slideshow.
+- Drop slinux-thunar icon.
+- Drop Thunar launcher from panel.
+- Change theme to Clearlooks.
+- Fix steps icons location.
+- Don't show frame around clock.
+- Revert "panel became gray".
 
 * Fri Jul 01 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt16
 - Drop altlinux-menus requires.
