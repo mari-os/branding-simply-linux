@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt17
+Release: alt18
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -399,6 +399,13 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Wed Aug 10 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt18
+- New slides.
+- Drop mpd stuff.
+- xfce4-mixer: Set pulseaudio as default device.
+- text for first installer step on livecd added (by Alexandra Panyukova).
+- white color for installer titles (by Alexandra Panyukova).
+
 * Fri Jul 29 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt17
 - removing thunderbird and Terminal from panel (by Alexandra Panyukova).
 - codename Flounder (by Alexandra Panyukova).
