@@ -28,7 +28,7 @@
       </property>
       <property name="horizontal" type="bool" value="true"/>
       <property name="position" type="string" value="p=10;x=0;y=767"/>
-      <property name="leave-opacity" type="uint" value="20"/>
+      <property name="leave-opacity" type="uint" value="100"/>
       <property name="enter-opacity" type="uint" value="100"/>
     </property>
   </property>
