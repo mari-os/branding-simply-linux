@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt18
+Release: alt19
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -399,6 +399,12 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Fri Aug 19 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt19
+- slideshow: timeout 30sec, repeat slideshow.
+- Drop xfce4-popup-menu shortcut.
+- Set panel opacity to 100 by default.
+- index.html: Fix FAQ link.
+
 * Wed Aug 10 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt18
 - New slides.
 - Drop mpd stuff.
