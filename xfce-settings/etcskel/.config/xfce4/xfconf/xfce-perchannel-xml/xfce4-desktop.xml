@@ -8,7 +8,7 @@
         <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/vladstudio_blex_1600x1200.jpg"/>
         <property name="last-single-image" type="string" value="/usr/share/xfce4/backdrops/slinux_spring_1680x1050.jpg"/>
         <property name="color-style" type="int" value="3"/>
-        <property name="image-style" type="int" value="3"/>
+        <property name="image-style" type="int" value="0"/>
       </property>
     </property>
   </property>
