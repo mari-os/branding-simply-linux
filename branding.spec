@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt19
+Release: alt20
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -399,6 +399,10 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Mon Aug 22 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt20
+- grub: Change letters colour to dark-gray (closes: #25889).
+- xfdesktop: Set image-style to 'auto'.
+
 * Fri Aug 19 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt19
 - slideshow: timeout 30sec, repeat slideshow.
 - Drop xfce4-popup-menu shortcut.
