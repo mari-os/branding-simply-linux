@@ -1,8 +1,9 @@
 [Desktop Entry]
 Type=Application
-Name=Mozilla Firefox
+Name=Web browser
+Name[ru]=Веб-браузер
 Comment=Интернет-проводник
-Icon=firefox
+Icon=web-browser
 Exec=exo-open --launch WebBrowser
 Path=
 Terminal=false
