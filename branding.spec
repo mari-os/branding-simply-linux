@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt20
+Release: alt21
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -399,6 +399,11 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Thu Aug 25 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt21
+- menu: Change 'Xfce about' icon.
+- desktop: Fix trash icon position.
+- Fix web browser's and mail client's icons.
+
 * Mon Aug 22 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt20
 - grub: Change letters colour to dark-gray (closes: #25889).
 - xfdesktop: Set image-style to 'auto'.
