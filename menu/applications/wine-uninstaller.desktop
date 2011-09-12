@@ -6,6 +6,7 @@ Comment[ru]=Удаление программ из Wine
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=wine uninstaller
+TryExec=wine uninstaller
 Terminal=false
 Type=Application
 Icon=wine-uninstaller

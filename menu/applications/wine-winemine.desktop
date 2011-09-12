@@ -6,6 +6,7 @@ Comment[ru]=Минёр Wine
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=winemine
+TryExec=winemine
 Terminal=false
 Type=Application
 Icon=wine-winemine

@@ -6,6 +6,7 @@ Comment[ru]=Файловый менеджер Wine
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=winefile
+TryExec=winefile
 Terminal=false
 Type=Application
 Icon=wine-winefile
