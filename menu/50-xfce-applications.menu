@@ -15,6 +15,10 @@
             <Filename>xfce-settings-manager.desktop</Filename>
             <Filename>acc.desktop</Filename>
             <Separator/>
+            <Filename>wine-regedit.desktop</Filename>
+            <Filename>wine-uninstaller.desktop</Filename>
+            <Filename>winecfg.desktop</Filename>
+            <Separator/>
             <Merge type="all"/>
         </Layout>
 

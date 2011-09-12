@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Wine RegEdit
+Name[ru]=Редактор реестра
+Comment=Wine Registry Editor
+Comment[ru]=Редактор реестра Wine
+GenericName=Windows environment
+GenericName[ru]=Запуск Windows-программ
+Exec=regedit
+Terminal=false
+Type=Application
+Icon=wine-regedit
+Categories=Wine;Settings;

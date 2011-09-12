@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Wine Configuration
+Name[ru]=Настройки Wine
+Comment=Setup the compatibility layer for Windows programs
+Comment[ru]=Программа для настройки параметров Wine
+GenericName=Windows environment
+GenericName[ru]=Запуск Windows-программ
+Exec=winecfg
+Terminal=false
+Icon=wine-winecfg
+Type=Application
+Categories=Wine;Settings;
