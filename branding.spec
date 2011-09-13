@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt22
+Release: alt23
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -399,6 +399,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Tue Sep 13 2011 Andrey Cherepanov <cas@altlinux.org> 6.0.0-alt23
+- Fix build
+
 * Tue Sep 13 2011 Andrey Cherepanov <cas@altlinux.org> 6.0.0-alt22
 - New indexhtml design with more links
 
