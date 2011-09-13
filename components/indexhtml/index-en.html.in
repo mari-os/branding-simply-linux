@@ -1,74 +1,101 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
-  <title>Simply Linux @VERSION@ @STATUS@</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="index.css">
+<!-- Disto name in title -->
+<title>@NAME@ @VERSION@ @STATUS@</title>
+
+<link href="index.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
-<div id=lang>
- <a href="index-ru.html">Русский</a>
-</div>
 
 <div id="content">
 
-<table border="0" cellspacing="10"><tr>
-<td width="99%" valign="bottom"><h1 class="shadow" title="Simply Linux @VERSION@ @STATUS@"><nobr>Simply Linux @VERSION@ @STATUS@</nobr></h1></td>
-</tr></table>
+<!-- Language selection -->
+<div id="languages">
+    <a href="index-ru.html">Русский</a> 
+</div>
+
+<!-- Disto name -->
+<div id="title">@NAME@ @VERSION@ @STATUS@</div>
 
 <div id="main">
+<!-- Links columns -->
+<table border="0" width="100%">
+<tr>
+<th width="33%"><img src="images/documentation.png" alt="Documentation"></th>
+<th width="33%"><img src="images/altlinux-logo.png" alt="Company" class="icon_big"></th>
+<th width="34%"><img src="images/community.png" alt="Community" class="icon"></th>
+</tr>
 
-<div id="pane">
-<div class="footer">Search on community resources</div>
-<!-- Google CSE Search Box Begins  -->
-<form action="http://www.google.com/cse" id="searchbox_014412136813254060649:m2__wfh9ajy">
-<!--table border="1" width="100%">
-<tbody><tr><td-->
-<input type="hidden" name="cx" value="014412136813254060649:m2__wfh9ajy" />
-<input type="text" name="q" size="23" />
-<input type="submit" name="sa" value="Поиск" id="button" />
-<!--/td></tr></tbody></table-->
+<tr>
+<td width="33%" class="column"> <!-- First column: documentation -->
+<ul>
+<li><a href="file:///usr/share/doc/documentation/index.html">User Manual</a></li>
+<li><a href="file:///usr/share/doc/alt-docs/modules/index.html">Local Documentation</a></li>
+<li><a href="http://docs.altlinux.org">Online Documentation</a></li>
+<li><a href="http://shop.altlinux.ru/index.php?categoryID=559">Books</a></li>
+<li><a href="http://altlinux.org/">Wiki</a></li>
+<li><a href="http://altlinux.org/FAQ">FAQ</a></li>
+</ul>
+</td>
+
+<td width="33%" id="central_pane"> <!-- Second column: Company -->
+<ul>
+<li><a href="http://www.altlinux.ru">ALT Linux Website</a></li>
+<li><a href="http://shop.altlinux.ru">Internet Shop</a></li>
+<li><a href="http://support.altlinux.ru">Technical Support</a></li>
+<li><a href="http://www.altlinux.com/en/go/about-company/contacts/">Contacts</a></li>
+<li><a href="http://www.altlinux.com/en/go/download/">Download</a></li>
+<li><a href="http://torrent.altlinux.org/">Torrents</a></li>
+</ul>
+</td>
+
+<td width="34%" class="column"> <!-- Third column: community -->
+<ul>
+<li><a href="http://lists.altlinux.org">Mailing Lists</a></li>
+<li><a href="http://forum.altlinux.org">User Forum</a></li>
+<li><a href="http://bugs.altlinux.org">Report a Bug</a></li>
+<li><a href="http://planet.altlinux.org">ALT Linux Planet</a></li>
+<li><a href="http://packages.altlinux.org">Software Repository</a></li>
+<li><a href="http://git.altlinux.org">Сборочная среда</a></li>
+</ul>
+</td>
+
+</tr>
+
+<tr><td colspan="3" id="search">
+<!-- Search pane -->
+<form action="http://www.google.com/search" method="get">
+<img src="images/magnifier.png" alt="Search on online resources">
+<input type="hidden" name="cx" value="009267546552065786736:rwjixpf6cv8">
+<input id="search_string" type="text" name="q" size="35">
+<input id="search_button" type="submit" name="sa" value="Search in Internet">
 </form>
-<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_014412136813254060649%3Am2__wfh9ajy"></script>
-<!-- Google CSE Search Box Ends -->
+</td></tr>
 
-<div id="team">
-<h2>ALT Linux Team</h2>
+<!-- Social networks -->
+<tr><td colspan="3" id="social">We will be glade to meet you in social networks:</td></tr>
+<tr>
+<th><a href="http://twitter.com/#!/altlinuxru" class="image"><img src="images/twitter.png" alt="Twitter" class="banner"></a></th>
+<th><a href="http://www.facebook.com/groups/simplylinux/" class="image"><img src="images/facebook.png" alt="Facebook" class="banner"></a></th>
+<th><a href="http://vkontakte.ru/club16711511" class="image"><img src="images/vkontakte.png" alt="VKontakte" class="banner"></a></th>
+</tr>
 
-<img src="img/alt-linux-team.png" width="144" height="55">
+</table>
 
-<p align="justify" style="padding: 15px;">This distribution would never be accomplished without active efforts put by ALT Linux Team&nbsp;&mdash; a community of free/libre software developers.</p>
-<ul>
- <li><a href="http://www.altlinux.org/">Community Wiki</a></li>
- <li><a href="http://forum.altlinux.org/">Community Forum</a></li>
- <li><a href="http://www.altlinux.ru/online_help/users_mailing_lists.html">Mailing lists</a></li>
-</ul>
-</div>
-</div>
-
-<p align="justify">Welcome to <nobr>Simply Linux @VERSION@ @STATUS@</nobr>. The distribution is set up and ready to use, you may proceed. We hope that results of our work will be of use to you.</p>
-
-<div id="documentation">
-<h2>Documentation</h2>
-<ul>
- <li><a href="../@DOCDIR@/index.html">User manual</a></li>
-</ul>
-</div>
-
-<div id="web">
-<h2>In Internet</h2>
-<ul>
- <li><a href="http://www.simplylinux.ru">Simply Linux Site</a></li>
- <li><a href="http://altlinux.org/FAQ">Frequently Asked QUestion</a></li>
-  <li><a href="http://bugs.altlinux.org/">Report a bug</a></li>
-</ul>
-</div>
+<!-- Copyright information -->
+<div id="footer">
+<table border="0" width="100%">
+<tr>
+<td id="left_footer">&copy; 2011 ALT Linux. All rights reserved.</td>
+<td id="right_footer">
+Tel/fax: +7 (495) 662-3883<br>
+119334, Russian Federation, Moscow, 5-th Donskoy proezd, 15, build 6.
+</td>
+</tr></table>
 </div>
 
 </div>
 
+</div>
 </body>
-</html>

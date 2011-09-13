@@ -1,109 +1,123 @@
-/* Stylesheet for index file */
-
+/* CSS file for indexhtml page in ALT Linux distros */
 body {
-	font-family: Verdana,'DejaVu Sans',Helvetica,sans;
-	text-align:  left;
-	font-size: 12px;
-	background: #FFF;
-	background-image: url('img/bg.png');
+    font-family: Verdana,'DejaVu Sans',Helvetica,sans;
+    text-align: left;
+    font-size: 12px;
+    background: #f8f8f8;
+    background-image: url('images/dotted-background.png');
 }
-
-.shadow  { position:relative; display:block; color:black; }
-.shadow nobr { position:absolute; display:block; top:0px;  }
-.shadow:before { display:block; padding:2px; content: attr(title); color:#CCC;  } 
-
-h1 {
-	font-size: 28px;
-	font-weight: bold;
-	color: black;
-	/*text-shadow: #CCC 2px 2px 3px;*/
-	vertical-align: baseline;
+div#content {
+    background: white;
+    border: solid 6px #d0d0d0;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 7px; 
+    -khtml-border-radius: 12px;
+    padding: 0;
+    position: relative;
+    width: 780px;
+    margin: 40px auto;
 }
-
-h2 h3 {
-	color: black;
+div#languages {
+    text-align: right;
+    font-size: x-small;
+    padding: 12px;
 }
-
-p { text-align: justify; }
-
-a:link, a:visited { 
-	text-decoration: none; 
-	color: #39c;
+div#title {
+    font-weight: normal;
+    font-size: 18pt;
+    font-family: Verdana, Helvetica;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+    background: #d3eaf9;
+    padding: 6px 0 6px 0;
+    border-top: solid 1px #81c3eb;
+    border-bottom: solid 1px #81c3eb;
+    background-image: url('images/lines.png');
 }
-
-a:hover { 
-	text-decoration: underline; 
-	color: #f60;
-}
-
-ul li {
-   	padding-left: 3px;
-   	text-align: left;
-   	list-style: square url('img/bullet.png');
-}
-
-li.spacebefore { margin-top: 1em;}
-
-form {
-	margin: 5px;
-}
-
-input#button {
-	height: 20px;
-}
-
-div#logo {
- 	float: right;
- 	margin-left: 10px;
-}
-
-div#content, div#lang {
-	position: relative;
-	width: 780px;
-	margin: 40px auto;
-}
-
 div#main {
-    background: #FFF;
-    width: 100%;
-	border: 1px solid #CCC;
-	padding: 2mm;
-	padding-left: 5mm;
+    padding: 12px;
 }
-
-div#pane {
-	float: right;
-	width: 260px;
-	text-align: center;
-	margin: 15px;
-	padding: 0px;
+th {
+    vertical-align: bottom;
+    text-align: center;
+    padding-top: 5px;
 }
-
-div#team {
-	background: #E5FFE5;
-	width: 100%;
-	text-align: center;
-	margin: 0px;
-	padding: 0px;
-	border: 1px solid #66CC66;
+img.icon {
+    width: 48px;
+    height: 48px;
 }
-
-.footer {
-	font-size: 9px;
-	color: #666;
+img.icon_big {
+    width: 60px;
+    height: 60px;
 }
-
-div.columns  { float: left; }
-
-div#firstcolumn { width: 27em; }
-
-div.indent { padding-left: 5mm; }
-
-div.spacer { clear: both; }
-
-div#lang {
-  text-align: center;
-  background: #fff;
-  padding: 0.2em;
-  border: 1px solid #CCC;
+img.banner {
+    width: 130px;
+    height: 30px;
+    margin: 6px;
+}
+li {
+    line-height: 1.35em;
+}
+td#central_pane {
+    border-left:  dotted 1px #ccc;
+    border-right: dotted 1px #ccc;
+    text-align: center;
+}
+.column {
+    text-align: center;
+}
+td#search {
+    text-align: center;
+    padding: 12px;
+}
+input#search_string {
+    position: relative;
+    vertical-align: top;
+    margin-top: 12px;
+    font-size: 130%;
+    background: white;
+    border: solid 1px #81c3eb;
+    border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -khtml-border-radius: 2px;
+}
+input#search_button {
+    margin-top: 12px;
+    vertical-align: top;
+    font-size: 130%;
+}
+td#social {
+    text-align: center;
+    border-bottom: dotted 1px #ccc;
+    font-size: xx-small;
+    color: #999;
+}
+td#left_footer, td#right_footer {
+    font-size: xx-small;
+    color: #999;
+    vertical-align: bottom;
+    padding-top: 15px;
+}
+td#right_footer {
+    text-align: right;
+}
+ul li {
+    text-align: left;
+    list-style: square url('bullet.png');
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #2e7194;
+}
+a:hover {
+    text-decoration: none;
+    color: #f60;
+    border-bottom: 1px dotted #f60;
+}
+a.image:hover, a.image:link, a.image:visited {
+    text-decoration: none;
+    border: 0;
 }
