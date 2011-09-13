@@ -36,6 +36,13 @@ div#title {
     border-bottom: solid 1px #81c3eb;
     background-image: url('images/lines.png');
 }
+div#top-site {
+    font-size: 120%;
+    font-weight: normal;
+    font-family: Verdana, Helvetica;
+    text-align: center;
+    padding: 4px;
+}
 div#main {
     padding: 12px;
 }

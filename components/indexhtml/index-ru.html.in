@@ -18,6 +18,8 @@
 <!-- Disto name -->
 <div id="title">Simply Linux. Выпуск 4 (6.0)</div>
 
+<div id="top-site">Веб-сайт проекта: <a href="http://www.simplylinux.ru">http://www.simplylinux.ru</a></div>
+
 <div id="main">
 <!-- Links columns -->
 <table border="0" width="100%">

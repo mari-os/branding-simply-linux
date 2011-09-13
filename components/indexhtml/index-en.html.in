@@ -18,6 +18,8 @@
 <!-- Disto name -->
 <div id="title">@NAME@ @VERSION@ @STATUS@</div>
 
+<div id="top-site">Project Website: <a href="http://www.simplylinux.ru">http://www.simplylinux.ru</a></div>
+
 <div id="main">
 <!-- Links columns -->
 <table border="0" width="100%">
@@ -41,7 +43,7 @@
 
 <td width="33%" id="central_pane"> <!-- Second column: Company -->
 <ul>
-<li><a href="http://www.altlinux.ru">ALT Linux Website</a></li>
+<li><a href="http://www.altlinux.com">ALT Linux Website</a></li>
 <li><a href="http://shop.altlinux.ru">Internet Shop</a></li>
 <li><a href="http://support.altlinux.ru">Technical Support</a></li>
 <li><a href="http://www.altlinux.com/en/go/about-company/contacts/">Contacts</a></li>
