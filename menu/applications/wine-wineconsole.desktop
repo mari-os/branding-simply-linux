@@ -6,6 +6,7 @@ Comment[ru]=Командная строка Wine
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=wineconsole cmd
+TryExec=wineconsole cmd
 Terminal=false
 Type=Application
 Icon=wine

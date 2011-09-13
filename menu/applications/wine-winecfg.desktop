@@ -6,6 +6,7 @@ Comment[ru]=Программа для настройки параметров Wi
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=winecfg
+TryExec=winecfg
 Terminal=false
 Icon=wine-winecfg
 Type=Application

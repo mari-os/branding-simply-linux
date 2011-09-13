@@ -6,6 +6,7 @@ Comment[ru]=Текстовый редактор Wine
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=notepad
+TryExec=notepad
 Terminal=false
 Type=Application
 Icon=wine-notepad

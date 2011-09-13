@@ -6,6 +6,7 @@ Comment[ru]=Редактор реестра Wine
 GenericName=Windows environment
 GenericName[ru]=Запуск Windows-программ
 Exec=regedit
+TryExec=regedit
 Terminal=false
 Type=Application
 Icon=wine-regedit

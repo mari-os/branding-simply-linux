@@ -23,6 +23,7 @@ Name[sr@latin]=Wine - dizač Windows programa
 Name[hr]=Wine - dizač Windows programa
 Name[he]=Wine — מריץ תכניות Windows
 Exec=wine start /unix %f
+TryExec=wine start /unix %f
 MimeType=application/x-ms-dos-executable;application/x-msi;application/x-ms-shortcut;
 Icon=wine
 NoDisplay=true
