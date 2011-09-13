@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt21
+Release: alt22
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -297,8 +297,8 @@ install slideshow/slideshow.conf %buildroot/etc/alterator/
 %define _altdocsdir %_defaultdocdir/alt-docs
 %define _indexhtmldir %_defaultdocdir/indexhtml
 install components/indexhtml/*.html %buildroot%_defaultdocdir/indexhtml/
-mkdir -p %buildroot%_defaultdocdir/indexhtml/img
-install components/indexhtml/img/* %buildroot%_defaultdocdir/indexhtml/img/
+mkdir -p %buildroot%_defaultdocdir/indexhtml/images
+install components/indexhtml/images/* %buildroot%_defaultdocdir/indexhtml/images/
 #install -m644 components/indexhtml.desktop %buildroot%_desktopdir/
 
 #menu
@@ -383,14 +383,14 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %define indexhtmldir %_defaultdocdir/indexhtml
 
 %files indexhtml
-#%ghost %_indexhtmldir/index.html
-#%_indexhtmldir/*
-#%_desktopdir/*
+#%%ghost %%_indexhtmldir/index.html
+#%%_indexhtmldir/*
+#%%_desktopdir/*
 
 %ghost %indexhtmldir/index.html
 %indexhtmldir/index-*.html
 %indexhtmldir/index.css
-%indexhtmldir/img
+%indexhtmldir/images
 %_desktopdir/indexhtml.desktop
 
 %files menu
@@ -399,6 +399,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Tue Sep 13 2011 Andrey Cherepanov <cas@altlinux.org> 6.0.0-alt22
+- New indexhtml design with more links
+
 * Thu Aug 25 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt21
 - menu: Change 'Xfce about' icon.
 - desktop: Fix trash icon position.
