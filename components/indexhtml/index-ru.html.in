@@ -1,78 +1,103 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
-  <title>@NAME@ @VERSION@ @STATUS@</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="index.css">
+<!-- Disto name in title -->
+<title>Simply Linux. Выпуск 4 (6.0)</title>
+
+<link href="index.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
-<div id=lang>
- <a href="index-en.html">English</a>
-</div>
 
 <div id="content">
 
-<table border="0" cellspacing="10"><tr>
-<td width="99%" valign="bottom"><h1 class="shadow" title="Simply Linux @VERSION@ @STATUS@"><nobr>Simply Linux @VERSION@ @STATUS@</nobr></h1></td>
-</tr></table>
+<!-- Language selection -->
+<div id="languages">
+    <a href="index-en.html">English</a> 
+</div>
+
+<!-- Disto name -->
+<div id="title">Simply Linux. Выпуск 4 (6.0)</div>
+
+<div id="top-site">Веб-сайт проекта: <a href="http://www.simplylinux.ru">http://www.simplylinux.ru</a></div>
 
 <div id="main">
+<!-- Links columns -->
+<table border="0" width="100%">
+<tr>
+<th width="33%"><img src="images/documentation.png" alt="Документация"></th>
+<th width="33%"><img src="images/altlinux-logo.png" alt="Компания" class="icon_big"></th>
+<th width="34%"><img src="images/community.png" alt="Сообщество" class="icon"></th>
+</tr>
 
-<div id="pane">
-<div class="footer">Поиск по ресурсам сообщества</div>
-<!-- Google CSE Search Box Begins  -->
-<form action="http://www.google.com/cse" id="searchbox_014412136813254060649:m2__wfh9ajy">
-<!--table border="1" width="100%">
-<tbody><tr><td-->
-<input type="hidden" name="cx" value="014412136813254060649:m2__wfh9ajy" />
-<input type="text" name="q" size="23" />
-<input type="submit" name="sa" value="Искать" id="button" />
-<!--/td></tr></tbody></table-->
+<tr>
+<td width="33%" class="column"> <!-- First column: documentation -->
+<ul>
+<li><a href="file:///usr/share/doc/documentation/index.html">Руководство пользователя</a></li>
+<li><a href="file:///usr/share/doc/alt-docs/modules/index.html">Локальная документация</a></li>
+<li><a href="http://docs.altlinux.org">Онлайновая документация</a></li>
+<li><a href="http://shop.altlinux.ru/index.php?categoryID=559">Книги</a></li>
+<li><a href="http://altlinux.org/">Wiki</a></li>
+<li><a href="http://altlinux.org/FAQ">FAQ</a></li>
+</ul>
+</td>
+
+<td width="33%" id="central_pane"> <!-- Second column: Company -->
+<ul>
+<li><a href="http://www.altlinux.ru">Сайт компании</a></li>
+<li><a href="http://shop.altlinux.ru">Интернет-магазин</a></li>
+<li><a href="http://support.altlinux.ru">Техническая поддержка</a></li>
+<li><a href="http://www.altlinux.ru/go/about-company/contacts/">Контакты</a></li>
+<li><a href="http://www.altlinux.ru/products/downloads/">Загрузить</a></li>
+<li><a href="http://torrent.altlinux.org/">Торренты</a></li>
+</ul>
+</td>
+
+<td width="34%" class="column"> <!-- Third column: community -->
+<ul>
+<li><a href="http://lists.altlinux.org">Списки рассылки</a></li>
+<li><a href="http://forum.altlinux.org">Форум пользователей</a></li>
+<li><a href="http://bugs.altlinux.org">Сообщить об ошибке</a></li>
+<li><a href="http://planet.altlinux.org">Планета</a></li>
+<li><a href="http://packages.altlinux.org">Репозиторий</a></li>
+<li><a href="http://git.altlinux.org">Сборочная среда</a></li>
+</ul>
+</td>
+
+</tr>
+
+<tr><td colspan="3" id="search">
+<!-- Search pane -->
+<form action="http://www.google.com/search" method="get">
+<img src="images/magnifier.png" alt="Поиск по ресурсам ALT Linux">
+<input type="hidden" name="cx" value="009267546552065786736:rwjixpf6cv8">
+<input id="search_string" type="text" name="q" size="35">
+<input id="search_button" type="submit" name="sa" value="Поиск в Интернете">
 </form>
-<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_014412136813254060649%3Am2__wfh9ajy"></script>
-<!-- Google CSE Search Box Ends -->
+</td></tr>
 
-<div id="team">
-<h2>ALT Linux Team</h2>
+<!-- Social networks -->
+<tr><td colspan="3" id="social">Мы рады встретиться с вами в социальных сетях:</td></tr>
+<tr>
+<th><a href="http://twitter.com/#!/altlinuxru" class="image"><img src="images/twitter.png" alt="Twitter" class="banner"></a></th>
+<th><a href="http://www.facebook.com/groups/simplylinux/" class="image"><img src="images/facebook.png" alt="Facebook" class="banner"></a></th>
+<th><a href="http://vkontakte.ru/club16711511" class="image"><img src="images/vkontakte.png" alt="ВКонтакте" class="banner"></a></th>
+</tr>
 
-<img src="img/alt-linux-team.png" width="144" height="55">
+</table>
 
-<p align="justify" style="padding: 15px;">Этот дистрибутив не появился бы без активного участия ALT Linux Team &mdash; сообщества разработчиков свободного программного обеспечения.</p>
-<ul>
- <li><a href="http://www.altlinux.org/">Wiki сообщества</a></li>
-  <li><a href="http://forum.altlinux.org/">Форум сообщества</a></li>
-  <li><a href="http://www.altlinux.ru/online_help/users_mailing_lists.html">Списки рассылки</a></li>
- <!-- <li><a href="http://backports.altlinux.org/">Backports</a></li> -->
-
-</ul>
-</div>
-</div>
-
-<p align="justify">Добро пожаловать в <nobr>Simply Linux @VERSION@ @STATUS@</nobr>. Дистрибутив настроен и готов к работе, можно приступать. Мы надеемся, что наша работа будет для Вас полезной.</p>
-
-<div id="documentation">
-<h2>Документация</h2>
-<ul>
- <li><a href="../@DOCDIR@/index.html">Руководство пользователя</a></li>
-</ul>
-</div>
-
-<div id="web">
-<h2>Информация в Интернете</h2>
-<ul>
- <li><a href="http://www.simplylinux.ru">Сайт проекта</a></li>
- <li><a href="http://altlinux.org/FAQ">Ответы на часто задаваемые вопросы</a></li>
- <!-- <li><a href="http://search.altlinux.ru/">Поиск информации по ALT Linux</a></li> -->
-  <li><a href="http://bugs.altlinux.org/">Сообщить об ошибке</a></li>
- 
-</ul>
-</div>
+<!-- Copyright information -->
+<div id="footer">
+<table border="0" width="100%">
+<tr>
+<td id="left_footer">&copy; ALT Linux, 2011. Все права защищены.</td>
+<td id="right_footer">
+Телефон/факс: +7 (495) 662-3883<br>
+Москва, 5-й Донской проезд, д. 15, стр. 6
+</td>
+</tr></table>
 </div>
 
 </div>
 
+</div>
 </body>
-</html>
