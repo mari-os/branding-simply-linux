@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt27
+Release: alt28
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -401,6 +401,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 
 %changelog
+* Mon Sep 19 2011 Andrey Cherepanov <cas@altlinux.org> 6.0.0-alt28
+- Fix indexhtml translation on English
+
 * Fri Sep 16 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt27
 - wine menu section became below other sections (by Alexandra Panyukova).
 - Add TryExec into the wine's desktop files.
