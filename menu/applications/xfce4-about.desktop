@@ -2,6 +2,7 @@
 Version=1.0
 Type=Application
 Exec=xfce4-about
+TryExec=xfce4-about
 Icon=xfce4-panel-menu
 StartupNotify=false
 Terminal=false

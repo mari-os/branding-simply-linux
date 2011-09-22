@@ -43,6 +43,7 @@ GenericName[vi]=Trò chơi giáo dục đa hoạt động
 GenericName[zh_CN]=多样的教育游戏
 Comment=Educational game for ages 2 to 10
 Exec=gcompris
+TryExec=gcompris
 Icon=gcompris
 Terminal=false
 Type=Application

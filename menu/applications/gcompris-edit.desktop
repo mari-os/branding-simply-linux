@@ -6,6 +6,7 @@ GenericName[ru]=Административный интерфейс
 Comment=Administration for gcompris
 Comment[ru]=Административный интерфейс для gcompris
 Exec=gcompris -a --nolockcheck
+TryExec=gcompris -a --nolockcheck
 Icon=gcompris-edit
 Terminal=false
 Type=Application

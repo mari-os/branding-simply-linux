@@ -3,6 +3,7 @@ Name=TiMidity++
 Name[ru]=MIDI-плеер TiMidity++
 Icon=timidity
 Exec=timidity -igt
+TryExec=timidity -igt
 Comment=A midi to wav converter and midi file player
 Comment[de]=Ein Midi-zu-Wav-Konverter und Midi-Player
 Comment[ru]=Плейер/конвертор MIDI-файлов

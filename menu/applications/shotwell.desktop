@@ -5,6 +5,7 @@ Name[ru]=Программа управления фотографиями Shotwe
 GenericName=Photo Manager
 Comment=Organize your photos
 Exec=shotwell %U
+TryExec=shotwell %U
 Icon=shotwell
 Terminal=false
 Type=Application
