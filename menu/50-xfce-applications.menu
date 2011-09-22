@@ -13,23 +13,22 @@
             <Include>
                 <And>
                     <Category>Wine</Category>
-                    <Category>Settings<Category>
+                    <Category>Settings</Category>
                 </And>
             </Include>
         </Menu>
         <Include>
             <Category>Settings</Category>
         </Include>
+        <Exclude>
+			<Category>Wine</Category>
+        </Exclude>
 
         <Layout>
             <Filename>xfce-settings-manager.desktop</Filename>
             <Filename>acc.desktop</Filename>
             <Separator/>
             <Merge type="all"/>
-            <Separator/>
-            <Filename>wine-regedit.desktop</Filename>
-            <Filename>wine-uninstaller.desktop</Filename>
-            <Filename>wine-winecfg.desktop</Filename>
         </Layout>
 
         <Menu>
