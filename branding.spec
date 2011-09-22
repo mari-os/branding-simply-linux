@@ -308,6 +308,8 @@ mkdir -p %buildroot/etc/xdg/menus/applications-merged
 cp menu/50-slinux-menu-style.menu %buildroot/etc/xdg/menus/applications-merged/
 mkdir -p %buildroot/etc/xdg/menus/xfce-applications-merged
 cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-merged/
+mkdir -p %buildroot/usr/share/desktop-directories
+cp menu/altlinux-wine.directory %buildroot/usr/share/desktop-directories/
 
 #bootloader
 %pre bootloader
@@ -397,6 +399,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/slinux-style
 /etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
+/usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
 * Thu Aug 25 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt21
