@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Dropbox
+Name[ru]=Синхронизация файлов Dropbox
+GenericName=File Synchronizer
+Comment=Sync your files across computers and to the web
+Exec=dropbox-wrapper
+Terminal=false
+Type=Application
+Icon=dropbox
+Categories=Network;FileTransfer;
+StartupNotify=false

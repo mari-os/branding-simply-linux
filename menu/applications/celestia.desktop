@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Симуляция космоса Celestia
+Name[ru]=
+GenericName=Space simulation
+Encoding=UTF-8
+Comment=A real-time visual space simulation
+Exec=celestia %f
+Terminal=false
+Icon=celestia
+Type=Application
+Categories=Qt;KDE;Education;Science;Astronomy;
