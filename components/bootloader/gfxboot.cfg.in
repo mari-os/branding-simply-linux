@@ -35,7 +35,7 @@ background=back.jpg
 ; max. visible main menu items
 mainmenu.entries=8
 ; minimal main menu selection bar width
-mainmenu.bar.minwidth=270
+mainmenu.bar.minwidth=280
 ; main menu selection bar transparency (0..255)
 mainmenu.bar.transparency=0
 ; main menu colors
@@ -75,7 +75,7 @@ keymap=
 ; screen size
 screen.size=800,600
 ; upper left corner
-mainmenu.pos=280,250
+mainmenu.pos=280,200
 ; boot option input field position
 bootopt.pos=200,480
 
@@ -83,7 +83,7 @@ bootopt.pos=200,480
 ; screen size
 screen.size=640,480
 ; upper left corner
-mainmenu.pos=130,122
+mainmenu.pos=130,100
 ; boot option input field position
 bootopt.pos=263,380
 
