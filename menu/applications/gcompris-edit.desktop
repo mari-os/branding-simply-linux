@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=GCompris
+Name[ru]=Настройки Gcompris
+GenericName=Administration
+GenericName[ru]=Административный интерфейс
+Comment=Administration for gcompris
+Comment[ru]=Административный интерфейс для gcompris
+Exec=gcompris -a --nolockcheck
+Icon=gcompris-edit
+Terminal=false
+Type=Application
+Categories=Game;KidsGame;
+StartupNotify=true

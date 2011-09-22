@@ -7,6 +7,16 @@
     <Menu>
         <Name>ShallowSettings</Name>
         <Directory>altlinux-settings-desktop.directory</Directory>
+        <Menu>
+            <Name>WineSettings</Name>
+            <Directory>altlinux-wine.directory</Directory>
+            <Include>
+                <And>
+                    <Category>Wine</Category>
+                    <Category>Settings<Category>
+                </And>
+            </Include>
+        </Menu>
         <Include>
             <Category>Settings</Category>
         </Include>
@@ -60,12 +70,23 @@
 
     <Menu>
         <Name>Accessories</Name>
+        <Menu>
+            <Name>WineUtils</Name>
+            <Directory>altlinux-wine.directory</Directory>
+            <Include>
+                <And>
+                    <Category>Wine</Category>
+                    <Category>Utility</Category>
+                </And>
+            </Include>
+        </Menu>
         <Exclude>
             <Or>
                 <Filename>exo-file-manager.desktop</Filename>
                 <Filename>exo-terminal-emulator.desktop</Filename>
                 <Filename>xfce4-about.desktop</Filename>
                 <Filename>xfrun4.desktop</Filename>
+                <Category>Wine</Category>
             </Or>
         </Exclude>
 	<Menu>
