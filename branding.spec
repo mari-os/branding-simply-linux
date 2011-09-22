@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.0
-Release: alt28
+Release: alt29
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -404,6 +404,15 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Thu Sep 22 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt29
+- Use preferences-system icon for wine-regedit.
+- Add TryExec to desktop files.
+- Fix desktop file for celestia.
+- Fix wine menu.
+- gfxboot: Change menu position.
+- new desktop files (by Alexandra Panyukova).
+- Wine moved in subdirectory in menu (by Alexandra Panyukova).
+
 * Mon Sep 19 2011 Andrey Cherepanov <cas@altlinux.org> 6.0.0-alt28
 - Fix indexhtml translation on English
 
