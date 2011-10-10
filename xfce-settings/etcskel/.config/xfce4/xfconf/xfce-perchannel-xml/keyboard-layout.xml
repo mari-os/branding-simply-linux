@@ -3,8 +3,8 @@
 <channel name="keyboard-layout" version="1.0">
   <property name="Default" type="empty">
     <property name="XkbDisable" type="bool" value="true"/>
-    <property name="XkbLayout" type="string" value="ru,us"/>
+    <property name="XkbLayout" type="string" value="us,ru"/>
     <property name="XkbVariant" type="string" value=","/>
-    <property name="XkbModel" type="string" value="pc101"/>
+    <property name="XkbModel" type="string" value="pc104"/>
   </property>
 </channel>
