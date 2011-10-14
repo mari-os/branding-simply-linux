@@ -4,8 +4,8 @@ Type=Application
 Exec=xdg-open /usr/share/doc/indexhtml/index.html
 StartupNotify=false
 Icon=altlinux
-Name=Information about @NAME@ @VERSION@ @STATUS@
+Name=Simply Linux @VERSION@ : start page
 Categories=System;Documentation;
 
 # Translations
-Name[ru]=Сведения о @NAME@ @VERSION@ @STATUS@
+Name[ru]=Simply Linux @VERSION@ : cтартовая страница
