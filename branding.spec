@@ -6,8 +6,8 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.0.0
-Release: alt29
+Version: 6.0.1
+Release: alt1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -404,6 +404,14 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri Oct 14 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt1
+- Fix indexhtml.desktop.
+- menu: Add pavucontrol.desktop.
+- Drop not needed audacious2.desktop.
+- blueman settings: Set Thunar as browser for obex protocol.
+- xkb-plugin settings: Don't hardcode layout, model, etc.
+- Fix keyboard default settings.
+
 * Thu Sep 22 2011 Mikhail Efremov <sem@altlinux.org> 6.0.0-alt29
 - Use preferences-system icon for wine-regedit.
 - Add TryExec to desktop files.
