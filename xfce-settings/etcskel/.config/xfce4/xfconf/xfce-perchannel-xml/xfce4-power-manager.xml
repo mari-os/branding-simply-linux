@@ -2,11 +2,13 @@
 
 <channel name="xfce4-power-manager" version="1.0">
   <property name="xfce4-power-manager" type="empty">
-    <property name="lid-action-on-ac" type="string" value="Nothing"/>
-    <property name="lid-action-on-battery" type="string" value="Nothing"/>
+    <property name="lid-action-on-ac" type="uint" value="3"/>
+    <property name="lid-action-on-battery" type="uint" value="1"/>
     <property name="dpms-enabled" type="bool" value="true"/>
-    <property name="power-switch-action" type="string" value="Nothing"/>
-    <property name="sleep-switch-action" type="string" value="Nothing"/>
     <property name="critical-power-level" type="uint" value="10"/>
+    <property name="power-button-action" type="uint" value="3"/>
+    <property name="hibernate-button-action" type="uint" value="2"/>
+    <property name="sleep-button-action" type="uint" value="1"/>
+    <property name="critical-power-action" type="uint" value="3"/>
   </property>
 </channel>
