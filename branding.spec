@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.1
-Release: alt2
+Release: alt3
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -404,6 +404,10 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Tue Nov 01 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt3
+- Set elflord as colorscheme for vim.
+- Add apps/%%gconf.xml for gconf.
+
 * Tue Oct 25 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt2
 - Fix grub2 font.
 - Update xfce4-power-manager's settings.
