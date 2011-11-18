@@ -270,7 +270,7 @@ pushd notes
 %makeinstall
 popd
 
-mkdir -p %buildroot/etc/skel/Документы/
+mkdir -p %buildroot/etc/skel/Templates/
 
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
@@ -373,7 +373,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_datadir/alt-notes/*
 
 %files xfce-settings
-/etc/skel/Документы
+/etc/skel/Templates/
 /etc/skel/.wm-select
 /etc/skel/.fonts.conf
 /etc/skel/.config
