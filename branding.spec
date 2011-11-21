@@ -270,7 +270,7 @@ pushd notes
 %makeinstall
 popd
 
-mkdir -p %buildroot/etc/skel/Templates/
+mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
 
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
@@ -286,8 +286,8 @@ install -m 644 xfce-settings/backgrounds/vladstudio.com/LICENSE.txt %buildroot/u
 install -m 644 xfce-settings/backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/
 install -m 644 xfce-settings/backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050/
 install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot/usr/share/xfce4/backdrops/
-#popd
 
+install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh %buildroot%_sysconfdir/X11/profile.d/zdg-move-templates.sh
 
 #slideshow
 mkdir -p %buildroot/usr/share/install2/slideshow
@@ -373,7 +373,8 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_datadir/alt-notes/*
 
 %files xfce-settings
-/etc/skel/Templates/
+%_sysconfdir/X11/profile.d/zdg-move-templates.sh
+/etc/skel/XDG-Templates.skel/
 /etc/skel/.wm-select
 /etc/skel/.fonts.conf
 /etc/skel/.config
