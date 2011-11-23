@@ -15,6 +15,7 @@
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="string" value="gnome-system-monitor"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
       <property name="Print" type="string" value="xfce4-screenshooter"/>
+      <property name="Multi_key" type="string" value="xfce4-popup-applicationsmenu"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
