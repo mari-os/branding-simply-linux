@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.1
-Release: alt5
+Release: alt6
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -405,6 +405,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri Dec 09 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt6
+- menu: Added gsynaptics.desktop.
+
 * Thu Dec 08 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt5
 - Fix Win keys binding.
 
