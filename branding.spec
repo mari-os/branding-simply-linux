@@ -379,6 +379,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/skel/.fonts.conf
 /etc/skel/.config
 /etc/skel/.gconf
+/etc/skel/.vimrc
 /usr/share/xfce4/backdrops
 
 %files slideshow
