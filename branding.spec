@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.1
-Release: alt7
+Release: alt8
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -275,6 +275,7 @@ mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.gconf %buildroot/etc/skel/
+cp -r xfce-settings/etcskel/.vimrc %buildroot/etc/skel/
 
 install -m 644 xfce-settings/etcskel/.wm-select %buildroot/etc/skel/
 install -m 644 xfce-settings/etcskel/.fonts.conf %buildroot/etc/skel/
@@ -406,6 +407,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri Dec 23 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt8
+- Install /etc/skel/.vimrc.
+
 * Fri Dec 23 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt7
 - Package /etc/skel/.vimrc.
 - Disable tracker.
