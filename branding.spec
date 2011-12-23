@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 6.0.1
-Release: alt6
+Release: alt7
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -406,6 +406,10 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri Dec 23 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt7
+- Package /etc/skel/.vimrc.
+- Disable tracker.
+
 * Fri Dec 09 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt6
 - menu: Added gsynaptics.desktop.
 
