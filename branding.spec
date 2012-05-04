@@ -2,12 +2,12 @@
 %define Name Simply Linux
 %define codename Flounder
 %define status %nil
-%define variants altlinux-office-desktop altlinux-office-server altlinux-desktop
+%define variants altlinux-office-desktop altlinux-office-server altlinux-desktop sisyphus-server-light
 %define brand simply
 
 Name: branding-simply-linux
 Version: 6.0.1
-Release: alt8
+Release: alt9
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -82,7 +82,10 @@ Provides: design-alterator-browser-%theme  branding-alt-%theme-browser-qt brandi
 Provides: alterator-icons design-alterator design-alterator-%theme
 Obsoletes:  branding-alt-%theme-browser-qt  branding-altlinux-%theme-browser-qt 
 
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-browser-qt ";done )
+# lexicographically first of the village
+Conflicts: branding-sisyphus-server-light-alterator
+
+Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-alterator ";done )
 Obsoletes: design-alterator-server design-alterator-desktop design-altertor-browser-desktop  design-altertor-browser-server branding-altlinux-backup-server-alterator
 PreReq(post,preun): alternatives >= 0.2 alterator
 
@@ -407,6 +410,10 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri May 04 2012 Michael Shigorin <mike@altlinux.org> 6.0.1-alt9
+- Added sisyphus-server-light to conflicting list.
+- Fixed alterator subpackage Conflicts: list generation.
+
 * Fri Dec 23 2011 Mikhail Efremov <sem@altlinux.org> 6.0.1-alt8
 - Install /etc/skel/.vimrc.
 
