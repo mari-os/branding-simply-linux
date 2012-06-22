@@ -22,8 +22,6 @@ ahttpd:
 boot:
 	cp -a  /usr/src/design-bootloader-source ./
 	cp -a components/bootloader/config design-bootloader-source/
-	cp -af components/bootloader/menu.inc design-bootloader-source/src/
-	cp -al components/bootloader/menu_*.jpg  design-bootloader-source/data-install/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-install/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-boot/
 	for size in 1024x768 800x600 640x480; do \
