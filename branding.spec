@@ -283,13 +283,13 @@ cp -r xfce-settings/etcskel/.vimrc %buildroot/etc/skel/
 install -m 644 xfce-settings/etcskel/.wm-select %buildroot/etc/skel/
 install -m 644 xfce-settings/etcskel/.fonts.conf %buildroot/etc/skel/
 
-mkdir -p %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200
-mkdir -p %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050
-cp -P xfce-settings/backgrounds/*.jpg %buildroot/usr/share/xfce4/backdrops/
-install -m 644 xfce-settings/backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/xfce4/backdrops/vladstudio.com/
-install -m 644 xfce-settings/backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1600x1200/
-install -m 644 xfce-settings/backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/xfce4/backdrops/vladstudio.com/1680x1050/
-install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot/usr/share/xfce4/backdrops/
+mkdir -p %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1600x1200
+mkdir -p %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1680x1050
+cp -P xfce-settings/backgrounds/*.jpg %buildroot/usr/share/backgrounds/xfce
+install -m 644 xfce-settings/backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/backgrounds/xfce/vladstudio.com/
+install -m 644 xfce-settings/backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1600x1200/
+install -m 644 xfce-settings/backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1680x1050/
+install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot/usr/share/backgrounds/xfce/
 
 install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh %buildroot%_sysconfdir/X11/profile.d/zdg-move-templates.sh
 
@@ -384,7 +384,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/skel/.config
 /etc/skel/.gconf
 /etc/skel/.vimrc
-/usr/share/xfce4/backdrops
+/usr/share/backgrounds/xfce/*
 
 %files slideshow
 /etc/alterator/slideshow.conf
