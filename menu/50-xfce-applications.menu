@@ -44,7 +44,7 @@
     <MergeDir>applications-merged</MergeDir>
 
     <Layout>
-        <Filename>xfrun4.desktop</Filename>
+        <Filename>xfce4-run.desktop</Filename>
         <Filename>xfce4-appfinder.desktop</Filename>
         <Separator/>
         <Filename>exo-terminal-emulator.desktop</Filename>
@@ -57,7 +57,6 @@
         <Separator/>
         <Merge type="all"/>
         <Separator/>
-        <Filename>xfhelp4.desktop</Filename>
         <Filename>xfce4-about.desktop</Filename>
         <Filename>xfce4-session-logout.desktop</Filename>
     </Layout>
@@ -84,7 +83,7 @@
                 <Filename>exo-file-manager.desktop</Filename>
                 <Filename>exo-terminal-emulator.desktop</Filename>
                 <Filename>xfce4-about.desktop</Filename>
-                <Filename>xfrun4.desktop</Filename>
+                <Filename>xfce4-run.desktop</Filename>
                 <Category>Wine</Category>
             </Or>
         </Exclude>
@@ -96,7 +95,7 @@
 		    <Filename>exo-file-manager.desktop</Filename>
 		    <Filename>exo-terminal-emulator.desktop</Filename>
 		    <Filename>xfce4-about.desktop</Filename>
-		    <Filename>xfrun4.desktop</Filename>
+		    <Filename>xfce4-run.desktop</Filename>
 		</Or>
 	    </Exclude>
 	</Menu>
