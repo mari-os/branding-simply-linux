@@ -1,3 +1,4 @@
 card=PlaybackPulseAudioMixer
 track=Master
 command=xfce4-mixer
+
