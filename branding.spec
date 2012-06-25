@@ -6,8 +6,8 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.0.1
-Release: alt9
+Version: 6.990.0
+Release: alt1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -410,6 +410,12 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri Jun 22 2012 Mikhail Efremov <sem@altlinux.org> 6.990.0-alt1
+- menu: Updated for Xfce 4.10.
+- Update backgrounds location for Xfce 4.10.
+- Drop gfxboot menu.
+- Updated xfce panel configuration.
+
 * Fri May 04 2012 Michael Shigorin <mike@altlinux.org> 6.0.1-alt9
 - Added sisyphus-server-light to conflicting list.
 - Fixed alterator subpackage Conflicts: list generation.
