@@ -67,7 +67,12 @@
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
     </property>
-    <property name="plugin-11" type="string" value="xfce4-mixer-plugin"/>
+    <property name="plugin-11" type="string" value="mixer">
+      <property name="sound-card" type="string" value="PlaybackPulseAudioMixer"/>
+      <property name="track" type="string" value="Master"/>
+      <property name="command" type="string" value="xfce4-mixer"/>
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
     <property name="plugin-12" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
     </property>
