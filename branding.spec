@@ -1,6 +1,6 @@
 %define theme slinux
 %define Name Simply Linux
-%define codename UNKNOWN
+%define codename Dory
 %define status alpha
 %define variants altlinux-office-desktop altlinux-office-server altlinux-desktop sisyphus-server-light
 %define brand simply
