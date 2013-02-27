@@ -19,14 +19,14 @@ AWizardFace#wizardface_title_text: rgb(255,255,255);
 
 .ACenterFace {
     border-style: none;
-    }
+}
 
 .ACenterFace #modules_view {
     background-color: white;
 }
 
 /* Nice WindowsXP-style password character for password line edits. */
-QLineEdit[echoMode="2"] {
+QLineEdit {
     lineedit-password-character: 9679;
 }
 
