@@ -16,6 +16,7 @@ AC_SUBST(THEME)
 AC_SUBST(NAME)
 AC_SUBST(STATUS)
 AC_SUBST(VERSION)
+AC_SUBST(CODENAME)
 AC_SUBST(DOCDIR)
 AC_SUBST(PROGRESS_COLOR)
 AC_SUBST(LIGHT_COLOR_HEX)
@@ -39,5 +40,6 @@ AC_CONFIG_FILES([
 		 components/indexhtml/indexhtml.desktop
 		 components/indexhtml/index-ru.html
 		 components/indexhtml/index-en.html
+		 components/systemd/os-release
 ])
 AC_OUTPUT

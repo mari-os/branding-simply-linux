@@ -232,7 +232,7 @@ Menu for Simply Linux
 
 %build
 autoconf
-THEME=%theme NAME='%Name' STATUS=%status VERSION=%version ./configure 
+THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename ./configure
 make
 
 %install
@@ -267,6 +267,7 @@ echo "%Name %version %status (%codename)" >%buildroot%_sysconfdir/altlinux-relea
 for n in fedora redhat system; do
 	ln -s altlinux-release %buildroot%_sysconfdir/$n-release
 done
+install -pD -m644 components/systemd/os-release %buildroot%_sysconfdir/os-release
 
 #notes
 pushd notes
@@ -370,7 +371,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %_datadir/plymouth/themes/%theme/*
 
 %files release
-%_sysconfdir/*-*
+%_sysconfdir/*-release
 %_sysconfdir/buildreqs/packages/ignore.d/*
 
 %files notes
