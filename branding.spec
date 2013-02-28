@@ -6,8 +6,8 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.991.0
-Release: alt2
+Version: 6.992.0
+Release: alt1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -411,6 +411,15 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Thu Feb 28 2013 Mikhail Efremov <sem@altlinux.org> 6.992.0-alt1
+- Added os-release file.
+- Fix design.qss.
+- browser-qt design: Fix password characters.
+- Set all existing brandings in variant.
+- Set codename for SL-7.0.
+- xfce settings: Fix mixer plugin configuration.
+- livecd-start.ru.html: Fix align.
+
 * Tue Feb 12 2013 Mikhail Efremov <sem@altlinux.org> 6.991.0-alt2
 - Added gnome-authentication-agent autostart desktop-file.
 - release-notes: Fix align (thx cas@).
