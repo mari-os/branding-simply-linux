@@ -14,7 +14,7 @@ browser-qt:components/browser-qt/design/bg.png
 ahttpd:
 	install -d $(datadir)/alterator/design/styles
 	cp -a components/ahttpd/images $(datadir)/alterator/design
-	install -Dpm644 images/product-logo.png $(datadir)/alterator/design/images/product-logo.png
+#	install -Dpm644 images/product-logo.png $(datadir)/alterator/design/images/product-logo.png
 	cp -a components/ahttpd/styles/*.css $(datadir)/alterator/design/styles
 
 
@@ -55,5 +55,5 @@ indexhtml:
 	done
 	install -Dpm644 /dev/null $(INDEXHTML_DIR)/index.html
 	cp -a components/indexhtml/images $(INDEXHTML_DIR)
-	install -Dpm644 images/product-logo.png $(INDEXHTML_DIR)/images/product-logo.png
+#	install -Dpm644 images/product-logo.png $(INDEXHTML_DIR)/images/product-logo.png
 	install -Dpm644 components/indexhtml/indexhtml.desktop $(datadir)/applications/indexhtml.desktop
