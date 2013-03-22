@@ -161,7 +161,7 @@ Summary: default settings for Xfce 4.6 for Simply linux distribution
 License: Distributable
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
-Requires: etcskel gtk2-theme-simplicity
+Requires: etcskel gtk3-theme-clearlooks-phenix
 Requires: gnome-icon-theme icon-theme-simple
 Requires: branding-simply-linux-graphics
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
