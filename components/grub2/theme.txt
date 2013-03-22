@@ -26,7 +26,7 @@ title-text: ""
 message-color: "#000"
 message-bg-color: "#fff"
 desktop-image: "boot.png"
-terminal-font: "DejaVu Sans Regular 12"
+terminal-font: "Misc Fixed Regular 13"
 
 #help bar at the bottom
 + label {
@@ -37,7 +37,7 @@ terminal-font: "DejaVu Sans Regular 12"
 	text = "To boot the selected operating system using default settings, press return. For additional settings, press E"
 	align = "center"
 	font = "DejaVu Sans Regular 10"
-	color = "#000"
+	color = "#888"
 }
 
 #menu
@@ -46,8 +46,8 @@ terminal-font: "DejaVu Sans Regular 12"
 	width = 40%
 	top = 32%
 	height = 40%
-	item_font = "DejaVu Sans Regular 14"
-	selected_item_font = "DejaVu Sans Bold 16"
+	item_font = "DejaVu Sans Bold 14"
+	selected_item_font = "DejaVu Sans Bold 14"
 	icon_height = 24
 	icon_width = 24
 	item_height = 26

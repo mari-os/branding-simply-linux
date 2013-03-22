@@ -43,7 +43,7 @@ Provides: design-bootloader-system-%theme design-bootloader-livecd-%theme design
 Obsoletes: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootloader ";done )
 
-%define grub_normal dark-gray/white
+%define grub_normal white/dark-gray
 %define grub_high black/white
 
 %description bootloader
