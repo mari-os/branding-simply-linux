@@ -37,7 +37,7 @@ terminal-font: "Misc Fixed Regular 13"
 	text = "To boot the selected operating system using default settings, press return. For additional settings, press E"
 	align = "center"
 	font = "DejaVu Sans Regular 10"
-	color = "#888"
+	color = "#000"
 }
 
 #menu
