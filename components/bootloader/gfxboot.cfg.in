@@ -43,8 +43,8 @@ mainmenu.bar.color=0xffffff
 mainmenu.normal.fg=0x787878
 mainmenu.selected.fg=0x118bca
 ; boot option colors
-bootopt.label.fg=0x787878
-bootopt.text.fg=0x787878
+bootopt.label.fg=0x000000
+bootopt.text.fg=0x000000
 ; progress bar color
 progress.bar.color=0xd4ecfa
 ; menu colors
@@ -65,9 +65,9 @@ help.link.selected.bg=0x@DARK_COLOR_HEX@
 help.highlight.fg=0x@DARK_COLOR_HEX@
 ; panel colors
 panel.fg=0x000000
-panel.title.fg=0x787878
-panel.normal.fg=0x787878
-panel.f-key.fg=0x787878
+panel.title.fg=0x000000
+panel.normal.fg=0x000000
+panel.f-key.fg=0x000080
 ; default keymap (e.g. de_DE, czech)
 keymap=
 
