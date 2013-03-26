@@ -103,47 +103,17 @@ fun display_password_callback (prompt, bullets)
 Plymouth.SetDisplayNormalFunction(display_normal_callback);
 Plymouth.SetDisplayPasswordFunction(display_password_callback);
 
-#----------------------------------------- Progress Bar --------------------------------
+#----------------------------------------- Logo --------------------------------
+slinux_logo.image = Image ("slinux.png");
+slinux_logo.sprite = Sprite (slinux_logo.image);
 
-progress_box.raw = Image("progress_box.png");
-scale_factor = Window.GetWidth() / progress_box.raw.GetWidth() * 0.8; 
-
-progress_box.image = imgscale( progress_box.raw, scale_factor );
-
-progress_box.sprite = Sprite(progress_box.image);
-
-progress_box.x = Window.GetX() + Window.GetWidth() / 2 - progress_box.image.GetWidth() / 2;
-progress_box.y = Window.GetY() + Window.GetHeight() / 2 - progress_box.image.GetHeight() / 2;
-progress_box.sprite.SetPosition(progress_box.x, progress_box.y, 0);
-
-progress_bar.original_image = imgscale(Image("progress_bar.png"), scale_factor);
-progress_bar.sprite = Sprite();
-
-progress_bar.x = progress_box.x ; 
-progress_bar.y = Window.GetY() + Window.GetHeight() / 2 - progress_box.image.GetHeight() / 2 + (progress_box.image.GetHeight() - progress_bar.original_image.GetHeight()) / 2;
-
-
-#left corner
-progress_bar.l = imgscale( Image("segment_cornerL.png") , scale_factor );
-progress_bar.spriteL = Sprite();
-progress_bar.spriteL.SetImage (progress_bar.l);
-progress_bar.spriteL.SetPosition(progress_bar.x,progress_bar.y, 2) ;
-progress_bar.x += progress_bar.l.GetWidth();
-progress_bar.sprite.SetPosition(progress_bar.x, progress_bar.y, 1);
-
-#right corner
-#progress_bar.r = imgscale( Image("segment_cornerR.png") , scale_factor );
-#progress_bar.sprites[steps+1] = Sprite();
-#progress_bar.sprites[steps+1].SetImage (progress_bar.r);
-#progress_bar.sprites[steps+1].SetPosition(progress_bar.x+step*steps,progress_bar.y, -1000) ;
+slinux_logo.x = Window.GetX() + Window.GetWidth() / 2 - slinux_logo.image.GetWidth() / 2;
+slinux_logo.y = Window.GetY() + Window.GetHeight() / 2 - slinux_logo.image.GetHeight() / 2;
+slinux_logo.sprite.SetPosition (slinux_logo.x, slinux_logo.y, 0);
 
 fun progress_callback (duration, progress)
 {
-	if (progress_bar.image.GetWidth () != Math.Int (progress_bar.original_image.GetWidth () * progress))
-	{
-		progress_bar.image = progress_bar.original_image.Scale(progress_bar.original_image.GetWidth(progress_bar.original_image) * progress, progress_bar.original_image.GetHeight());
-		progress_bar.sprite.SetImage (progress_bar.image);
-	}
+  slinux_logo.sprite.SetOpacity (progress);
 }
 
 Plymouth.SetBootProgressFunction(progress_callback);
