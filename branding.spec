@@ -369,6 +369,7 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 
 %files bootsplash
 %_datadir/plymouth/themes/%theme/*
+%exclude %_datadir/plymouth/themes/%theme/*.in
 
 %files release
 %_sysconfdir/*-release
