@@ -6,7 +6,7 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.992.0
+Version: 6.993.0
 Release: alt1
 BuildArch: noarch
 
@@ -412,6 +412,29 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Wed Mar 27 2013 Mikhail Efremov <sem@altlinux.org> 6.993.0-alt1
+- Set status 'beta'.
+- Fix perms for acc group icons.
+- Add groups/firewall.png from Centaurus.
+- Update backgrounds.
+- Don't package theme.plymouth.in file.
+- plymouth: Replace progress bar with appearing logo.
+- Fix grub text colour.
+- Install *.png backgrounds too.
+- gfxboot: Fix font color.
+- Update wallpaper.png.
+- Set new default background.
+- Add new wallpapers.
+- New slideshow.
+- Replace gtk2-theme-simplicity with gtk3-theme-clearlooks-phenix.
+- Update boot images.
+- Drop parts of old Centaurus branding.
+- Change theme to Clearlooks-Phenix.
+- xfce settings: Suspend on lid close in case of AC too.
+- Fix grub fonts and colours.
+- Fix sysconfig-base installer step icon.
+- xfce settings: Lock screen when going for sleep.
+
 * Thu Feb 28 2013 Mikhail Efremov <sem@altlinux.org> 6.992.0-alt1
 - Added os-release file.
 - Fix design.qss.
