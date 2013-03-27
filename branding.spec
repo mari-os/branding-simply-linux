@@ -1,7 +1,7 @@
 %define theme slinux
 %define Name Simply Linux
 %define codename Dory
-%define status alpha
+%define status beta
 %define variants altlinux-backup-server altlinux-desktop altlinux-gnome-desktop altlinux-kdesktop altlinux-lite altlinux-lxdesktop altlinux-office-desktop altlinux-office-server altlinux-school-server altlinux-sisyphus altlinux-spt altlinux-tablet altlinux-workbench informika-schoolmaster ivk-chainmail lxde-desktop lxde-school-lite Platform6-server-light school-junior school-lite school-master school-server school-teacher school-terminal altlinux-centaurus sisyphus-server-light
 %define brand simply
 
