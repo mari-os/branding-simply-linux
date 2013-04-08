@@ -34,6 +34,7 @@
       <property name="show-button-title" type="bool" value="false"/>
       <property name="button-icon" type="string" value="slinux"/>
       <property name="show-tooltips" type="bool" value="false"/>
+      <property name="show-generic-names" type="bool" value="true"/>
     </property>
     <property name="plugin-2" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
