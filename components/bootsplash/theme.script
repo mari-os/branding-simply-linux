@@ -105,7 +105,7 @@ Plymouth.SetDisplayPasswordFunction(display_password_callback);
 
 #----------------------------------------- Logo --------------------------------
 slinux_logo.raw = Image ("slinux.png");
-scale_factor = Window.GetHeight() / slinux_logo.raw.GetHeight() * 0.5;
+scale_factor = Window.GetHeight() / slinux_logo.raw.GetHeight() * 0.3;
 slinux_logo.image = imgscale (slinux_logo.raw, scale_factor);
 slinux_logo.sprite = Sprite (slinux_logo.image);
 
