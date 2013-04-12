@@ -1,7 +1,8 @@
 [Desktop Entry]
-Name=Dropbox
+Name=Dropbox File Synchronizer
 Name[ru]=Синхронизация файлов Dropbox
-GenericName=File Synchronizer
+GenericName=Dropbox File Synchronizer
+GenericName[ru]=Синхронизация файлов Dropbox
 Comment=Sync your files across computers and to the web
 Exec=dropbox-wrapper
 TryExec=dropbox-wrapper

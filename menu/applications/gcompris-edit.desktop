@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=GCompris
 Name[ru]=Настройки Gcompris
-GenericName=Administration
-GenericName[ru]=Административный интерфейс
+GenericName=Gcompris Settings
+GenericName[ru]=Настройки Gcompris
 Comment=Administration for gcompris
 Comment[ru]=Административный интерфейс для gcompris
 Exec=gcompris -a --nolockcheck

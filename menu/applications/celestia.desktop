@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=Space simulator Celestia
 Name[ru]=Симуляция космоса Celestia
-GenericName=Space simulation
+GenericName=Space simulation Celestia
+GenericName[ru]=Симуляция космоса Celestia
 Encoding=UTF-8
 Comment=A real-time visual space simulation
 Exec=celestia %f
