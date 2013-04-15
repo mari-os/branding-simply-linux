@@ -41,7 +41,7 @@ mainmenu.bar.transparency=0
 ; main menu colors
 mainmenu.bar.color=0xffffff
 mainmenu.normal.fg=0x787878
-mainmenu.selected.fg=0x118bca
+mainmenu.selected.fg=0x000080
 ; boot option colors
 bootopt.label.fg=0x000000
 bootopt.text.fg=0x000000

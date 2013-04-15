@@ -59,7 +59,7 @@ terminal-font: "Misc Fixed Regular 13"
 	scrollbar_thumb = "scrollbar_slider_*.png"
 	scrollbar_frame = "scrollbar_border_*.png"
 	item_color = "#676769"
-	selected_item_color = "#4f88c7"
+	selected_item_color = "#000080"
 }
 
 + circular_progress
