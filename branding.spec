@@ -162,7 +162,7 @@ License: Distributable
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
 Requires: etcskel gtk3-theme-clearlooks-phenix
-Requires: gnome-icon-theme icon-theme-simple
+Requires: gnome-icon-theme icon-theme-simple-sl
 Requires: branding-simply-linux-graphics
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
 Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-xfce-settings ";done )
