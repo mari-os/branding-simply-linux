@@ -6,7 +6,7 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.993.0
+Version: 6.994.0
 Release: alt1
 BuildArch: noarch
 
@@ -412,6 +412,22 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Tue Apr 16 2013 Mikhail Efremov <sem@altlinux.org> 6.994.0-alt1
+- xfce settings: Change icon theme Simple -> SimpleSL.
+- slideshow: Update Slide_Simply7_spring_2013.png.
+- Replace stardict-gtk.desktop with stardict.desktop.
+- menu: Add glchess.desktop.
+- grub and gfxboot: Change seleted menuitems colour.
+- grub: Update menu position.
+- menu: Fix GenericNames.
+- menu: Hide X-XFCE-SettingsDialog category.
+- menu: Show Generic names by default.
+- plymouth theme: Update scale factor for new logo.
+- Update boot images.
+- menu: Drop not needed desktop files.
+- plymouth theme: Use scaling for logo.
+- Update groups/firewall.png for alterator (tnx cas@).
+
 * Wed Mar 27 2013 Mikhail Efremov <sem@altlinux.org> 6.993.0-alt1
 - Set status 'beta'.
 - Fix perms for acc group icons.
