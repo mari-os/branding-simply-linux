@@ -49,6 +49,7 @@ Comment[vi]=Tra từ
 Comment[zh_CN]=查询单词
 Comment[zh_TW]=查詢單字
 Exec=stardict
+TryExec=stardict
 Terminal=false
 Type=Application
 Icon=stardict

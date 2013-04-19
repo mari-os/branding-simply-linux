@@ -177,6 +177,7 @@ Keywords[zh_HK]=game;strategy;遊戲;策略;
 Keywords[zh_TW]=game;strategy;遊戲;策略;
 Version=1.0
 Exec=gnome-chess
+TryExec=gnome-chess
 Terminal=false
 Type=Application
 Categories=GNOME;Game;BoardGame;

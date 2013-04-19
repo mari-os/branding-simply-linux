@@ -5,6 +5,7 @@ Name=Ri-li
 GenericName=Ri-li
 Comment=Drive a toy wood engine
 Exec=Ri_li
+TryExec=Ri_li
 Icon=Ri-li
 Terminal=false
 StartupNotify=false
