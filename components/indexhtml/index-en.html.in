@@ -16,7 +16,7 @@
 </div>
 
 <!-- Disto name -->
-<div id="title">@NAME@ @VERSION@ @STATUS@</div>
+<div id="title">@NAME@ @VERSION@</div>
 
 <div id="top-site">Project Website: <a href="http://www.simplylinux.ru">http://www.simplylinux.ru</a></div>
 
@@ -89,7 +89,7 @@
 <div id="footer">
 <table border="0" width="100%">
 <tr>
-<td id="left_footer">&copy; 2011 ALT Linux. All rights reserved.</td>
+<td id="left_footer">&copy; 2011-2013 ALT Linux. All rights reserved.</td>
 <td id="right_footer">
 Tel/fax: +7 (495) 662-3883<br>
 119334, Russian Federation, Moscow, 5-th Donskoy proezd, 15, build 6.

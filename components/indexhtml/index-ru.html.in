@@ -16,7 +16,7 @@
 </div>
 
 <!-- Disto name -->
-<div id="title">Simply Linux. Выпуск 4 (6.0)</div>
+<div id="title">@NAME@ @VERSION@</div>
 
 <div id="top-site">Веб-сайт проекта: <a href="http://www.simplylinux.ru">http://www.simplylinux.ru</a></div>
 
@@ -89,7 +89,7 @@
 <div id="footer">
 <table border="0" width="100%">
 <tr>
-<td id="left_footer">&copy; ALT Linux, 2011. Все права защищены.</td>
+<td id="left_footer">&copy; ALT Linux, 2011-2013. Все права защищены.</td>
 <td id="right_footer">
 Телефон/факс: +7 (495) 662-3883<br>
 Москва, 5-й Донской проезд, д. 15, стр. 6
