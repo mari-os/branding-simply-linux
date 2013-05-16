@@ -297,7 +297,9 @@ install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh %buildroot%_sysconf
 #slideshow
 mkdir -p %buildroot/usr/share/install2/slideshow
 mkdir -p %buildroot/etc/alterator
-install slideshow/slides/*  %buildroot/usr/share/install2/slideshow/
+cp -a slideshow/slides-*  %buildroot/usr/share/install2/slideshow/
+# Set English slideshow as default
+ln -s slides-en %buildroot/usr/share/install2/slideshow/slides
 install slideshow/slideshow.conf %buildroot/etc/alterator/
 
 #indexhtml
