@@ -273,6 +273,7 @@ install -pD -m644 components/systemd/os-release %buildroot%_sysconfdir/os-releas
 pushd notes
 %makeinstall
 popd
+ln -s license.ru.html %buildroot%_datadir/alt-notes/license.uk.html
 
 mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
 
