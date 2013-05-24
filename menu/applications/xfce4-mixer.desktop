@@ -70,3 +70,4 @@ Type=Application
 StartupNotify=true
 Terminal=false
 Categories=X-XFCE;Audio;AudioVideo;
+NoDisplay=true
