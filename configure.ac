@@ -34,6 +34,7 @@ AC_CONFIG_FILES([
 		 components/browser-qt/design/design.ini
 		 components/bootloader/gfxboot.cfg
 		 notes/release-notes.ru.html
+		 notes/release-notes.uk.html
 		 notes/release-notes.all.html
 		 notes/license.ru.html
 		 notes/license.all.html

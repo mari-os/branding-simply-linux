@@ -274,7 +274,6 @@ pushd notes
 %makeinstall
 popd
 ln -s license.ru.html %buildroot%_datadir/alt-notes/license.uk.html
-ln -s release-notes.ru.html %buildroot%_datadir/alt-notes/release-notes.uk.html
 
 mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
 
