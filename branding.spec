@@ -6,7 +6,7 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.995.0
+Version: 6.996.0
 Release: alt1
 BuildArch: noarch
 
@@ -415,6 +415,17 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Fri Jun 07 2013 Mikhail Efremov <sem@altlinux.org> 6.996.0-alt1
+- menu: Add remmina.desktop.
+- Updated slideshow.
+- Add Ukrainian start/release-notes pages.
+- Really use russian license text for Ukrainian.
+- menu: Hide xfce4-mixer.
+- xfce settings: Use pavucontrol instead of xfce4-mixer.
+- Add Ukrainian slideshow.
+- Add English slideshow.
+- Support localized slideshow.
+
 * Mon May 13 2013 Mikhail Efremov <sem@altlinux.org> 6.995.0-alt1
 - Drop autostart/polkit-gnome-authentication-agent-1.desktop.
 - Update index.html.
