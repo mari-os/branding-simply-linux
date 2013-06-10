@@ -6,7 +6,7 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 6.996.0
+Version: 7.0.0
 Release: alt1
 BuildArch: noarch
 
@@ -415,6 +415,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %changelog
+* Mon Jun 10 2013 Mikhail Efremov <sem@altlinux.org> 7.0.0-alt1
+- Drop 'beta' status.
+
 * Fri Jun 07 2013 Mikhail Efremov <sem@altlinux.org> 6.996.0-alt1
 - menu: Add remmina.desktop.
 - Updated slideshow.
