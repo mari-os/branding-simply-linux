@@ -30,7 +30,7 @@
     <property name="command" type="string" value="gnome-mplayer %d"/>
   </property>
   <property name="autophoto" type="empty">
-    <property name="enabled" type="bool" value="true"/>
-    <property name="command" type="string" value="gthumb --import-photos"/>
+    <property name="enabled" type="bool" value="false"/>
+    <property name="command" type="string" value=""/>
   </property>
 </channel>
