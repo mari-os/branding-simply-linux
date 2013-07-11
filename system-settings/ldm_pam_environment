@@ -1,0 +1,4 @@
+# Workaround for ALT bug #29167.
+# Based on suggestion by Daniel Gnoutcheff (gnoutchd)
+# https://bugs.launchpad.net/lightdm/+bug/1024482/comments/18.
+GDK_CORE_DEVICE_EVENTS=true
