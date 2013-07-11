@@ -215,7 +215,6 @@ Simply Linux index.html welcome page.
 "Просто Линукс" (Simply Linux).
 
 %package menu
-
 Summary: menu for Simply Linux
 License: Distributable
 Group: Graphical desktop/Other
@@ -225,6 +224,13 @@ Requires: altlinux-freedesktop-menu-common
 %description menu
 Menu for Simply Linux
 
+%package system-settings
+Summary: Some system settings for Simply Linux
+License: GPLv2+
+Group: System/Base
+
+%description system-settings
+Some system settings for Simply Linux
 
 %prep
 %setup -q
@@ -321,6 +327,10 @@ cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-mer
 mkdir -p %buildroot/usr/share/desktop-directories
 cp menu/altlinux-wine.directory %buildroot/usr/share/desktop-directories/
 
+# system-settings
+mkdir -p %buildroot/%_sysconfdir/polkit-1/rules.d/
+cp -a system-settings/polkit-rules/*.rules %buildroot/%_sysconfdir/polkit-1/rules.d/
+
 #bootloader
 %pre bootloader
 [ -s /usr/share/gfxboot/%theme ] && rm -fr  /usr/share/gfxboot/%theme ||:
@@ -413,6 +423,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 /etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 /usr/share/desktop-directories/altlinux-wine.directory
+
+%files system-settings
+%_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
 * Thu Jul 04 2013 Mikhail Efremov <sem@altlinux.org> 7.0.0-alt6
