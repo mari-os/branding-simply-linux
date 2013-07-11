@@ -23,7 +23,7 @@ Source: %name-%version.tar
 
 Group: Graphics
 Summary: System/Base
-License: GPL
+License: GPLv2+
 
 %description
 Distro-specific packages with design and texts for Simply Linux distribution.
@@ -35,7 +35,7 @@ Distro-specific packages with design and texts for Simply Linux distribution.
 Group: System/Configuration/Boot and Init
 Summary: Graphical boot logo for grub2, lilo and syslinux
 Summary(ru_RU.UTF-8): Тема для экрана выбора вариантов загрузки (lilo и syslinux) 
-License: GPL
+License: GPLv2+
 
 PreReq: coreutils
 Provides: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
@@ -76,7 +76,7 @@ This package contains graphics for boot process for Simply Linux
 %package alterator
 Summary: Design for alterator for Simply Linux 
 Summary(ru_RU.UTF-8): Тема для "Центра управления системой" и QT для дистрибутива "Просто Линукс"
-License: GPL
+License: GPLv2+
 Group: System/Configuration/Other
 Provides: design-alterator-browser-%theme  branding-alt-%theme-browser-qt branding-altlinux-%theme-browser-qt
 Provides: alterator-icons design-alterator design-alterator-%theme
@@ -124,7 +124,7 @@ This package contains some graphics for Simply Linux design.
 
 Summary: Simply Linux release file
 Summary(ru_RU.UTF-8): Описание дистрибутива "Просто Линукс"
-License: GPL
+License: GPLv2+
 Group: System/Configuration/Other
 Provides: %(for n in %provide_list; do echo -n "$n-release = %version-%release "; done) altlinux-release-%theme  branding-alt-%theme-release
 Obsoletes: %obsolete_list  branding-alt-%theme-release
