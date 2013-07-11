@@ -6,12 +6,12 @@
 <body>
 
 <h2>License agreement</h2>
-<h3>for @NAME@ @VERSION@ @STATUS@ and included software applications</h3>
+<h3>for @NAME@ @VERSION@@STATUS@ and included software applications</h3>
 
 <p><b>1. Agreement information</b></p>
 <p>1.1 Parties to the contract</p>
 
-<p>This Software License Agreement ("Agreement") is made and effective by and between ALT Linux Ltd. ("DEVELOPER"), which owns rights for <strong>@NAME@ @VERSION@ @STATUS@</strong> ("Distribution") and you ("Licensee"), end-user of the Distribution.</p>
+<p>This Software License Agreement ("Agreement") is made and effective by and between ALT Linux Ltd. ("DEVELOPER"), which owns rights for <strong>@NAME@ @VERSION@@STATUS@</strong> ("Distribution") and you ("Licensee"), end-user of the Distribution.</p>
 
 <p>1.2 Agreement object</p>
 

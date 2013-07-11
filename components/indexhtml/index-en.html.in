@@ -2,7 +2,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!-- Disto name in title -->
-<title>@NAME@ @VERSION@ @STATUS@</title>
+<title>@NAME@ @VERSION@@STATUS@</title>
 
 <link href="index.css" rel="stylesheet" type="text/css">
 </head>
