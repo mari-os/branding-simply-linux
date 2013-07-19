@@ -36,6 +36,14 @@ video/x-theora+ogg=smplayer.desktop
 video/x-totem-stream=smplayer.desktop
 video/x-webm=smplayer.desktop
 video/mpeg=smplayer.desktop
+image/png=ristretto.desktop
+image/gif=ristretto.desktop
+image/jpeg=ristretto.desktop
+image/bmp=ristretto.desktop
+image/x-pixmap=ristretto.desktop
+image/tiff=ristretto.desktop
+image/svg+xml=ristretto.desktop
+image/x-xpixmap=ristretto.desktop
 
 [Default Applications]
 video/3gp=smplayer.desktop
@@ -75,3 +83,11 @@ video/x-theora+ogg=smplayer.desktop
 video/x-totem-stream=smplayer.desktop
 video/x-webm=smplayer.desktop
 video/mpeg=smplayer.desktop
+image/png=ristretto.desktop
+image/gif=ristretto.desktop
+image/jpeg=ristretto.desktop
+image/bmp=ristretto.desktop
+image/x-pixmap=ristretto.desktop
+image/tiff=ristretto.desktop
+image/svg+xml=ristretto.desktop
+image/x-xpixmap=ristretto.desktop
