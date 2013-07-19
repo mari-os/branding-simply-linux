@@ -228,6 +228,7 @@ Menu for Simply Linux
 Summary: Some system settings for Simply Linux
 License: GPLv2+
 Group: System/Base
+# Really we need lightdm only, but it can pull another greeter.
 Requires: lightdm-gtk-greeter
 
 %description system-settings
