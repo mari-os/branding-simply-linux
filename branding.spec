@@ -321,8 +321,6 @@ install components/indexhtml/images/* %buildroot%_defaultdocdir/indexhtml/images
 #menu
 mkdir -p %buildroot/usr/share/slinux-style/applications
 install menu/applications/* %buildroot/usr/share/slinux-style/applications/
-mkdir -p %buildroot/etc/xdg/menus/applications-merged
-cp menu/50-slinux-menu-style.menu %buildroot/etc/xdg/menus/applications-merged/
 mkdir -p %buildroot/etc/xdg/menus/xfce-applications-merged
 cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-merged/
 mkdir -p %buildroot/usr/share/desktop-directories
@@ -429,7 +427,6 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 
 %files menu
 /usr/share/slinux-style
-/etc/xdg/menus/applications-merged/50-slinux-menu-style.menu
 /etc/xdg/menus/xfce-applications-merged/50-xfce-applications.menu
 /usr/share/desktop-directories/altlinux-wine.directory
 

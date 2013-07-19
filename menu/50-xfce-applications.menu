@@ -3,6 +3,7 @@
 
 <Menu>
     <Name>Xfce</Name>
+    <AppDir>/usr/share/slinux-style/applications</AppDir>
 
     <Menu>
         <Name>ShallowSettings</Name>
@@ -40,9 +41,6 @@
             </Include>
         </Menu>
     </Menu>
-
-    <MergeFile>altlinux-applications.menu</MergeFile>
-    <MergeDir>applications-merged</MergeDir>
 
     <Layout>
         <Filename>xfce4-run.desktop</Filename>
@@ -151,7 +149,6 @@
         <Category>X-Xfce-Toplevel</Category>
     </Include>
 
-    <MergeDir>xfce-applications-merged</MergeDir>
     <MergeFile>applications-menueditor.menu</MergeFile>
     <MergeFile>xfce-applications-menueditor.menu</MergeFile>
 
