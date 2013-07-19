@@ -6,8 +6,8 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 7.0.0
-Release: alt6
+Version: 7.0.1
+Release: alt1
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
@@ -436,6 +436,18 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %config %_localstatedir/ldm/.pam_environment
 
 %changelog
+* Fri Jul 19 2013 Mikhail Efremov <sem@altlinux.org> 7.0.1-alt1
+- xfce settings: Set ristretto as default images viewer.
+- Replace gnome-mplayer with smplayer.
+- system-settings: Add comment about requires.
+- menu: Use 'xfce-applications-merged' directory only.
+- system-settings Add workaround for 'lightdm cursor' bug.
+- indexhtml: Fix title in the Russian index.html.
+- documentation: Drop space between VERSION and STATUS.
+- Add system-settings subpackage.
+- Allow 'wheel' group memebers to modify NM's systemwide connections.
+- Fix license tag.
+
 * Thu Jul 04 2013 Mikhail Efremov <sem@altlinux.org> 7.0.0-alt6
 - menu: Fix GenericName of winefile.
 
