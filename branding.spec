@@ -157,7 +157,7 @@ Distribution license and release notes
 
 %package xfce-settings
 
-Summary: default settings for Xfce 4.6 for Simply linux distribution
+Summary: default settings for Xfce for Simply linux distribution
 License: Distributable
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
@@ -169,7 +169,7 @@ Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-x
 Conflicts: xfce-settings-simply-linux
 
 %description xfce-settings
-This package contains default settings for Xfce 4.6 for Simply linux distribution.
+This package contains default settings for Xfce for Simply linux distribution.
 
 %package slideshow
 Summary: Slideshow for Simply Linux %version installer.
