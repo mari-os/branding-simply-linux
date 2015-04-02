@@ -10,7 +10,7 @@ Version: 7.0.4
 Release: alt1
 BuildArch: noarch
 
-BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-droid
+BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 BuildRequires: design-bootloader-source >= 5.0-alt2
 
 BuildRequires(pre): libqt4-core 
