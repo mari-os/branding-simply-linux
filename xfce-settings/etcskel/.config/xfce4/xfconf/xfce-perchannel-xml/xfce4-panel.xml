@@ -23,7 +23,7 @@
         <value type="int" value="10"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
-        <value type="int" value="13"/>
+        <value type="int" value="17"/>
         <value type="int" value="16"/>
         <value type="int" value="14"/>
       </property>
@@ -77,9 +77,6 @@
     <property name="plugin-12" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
     </property>
-    <property name="plugin-13" type="string" value="clock">
-      <property name="show-frame" type="bool" value="false"/>
-    </property>
     <property name="plugin-14" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
       <property name="items" type="array">
@@ -101,5 +98,6 @@
       <property name="expand" type="bool" value="true"/>
     </property>
     <property name="plugin-16" type="string" value="places"/>
+    <property name="plugin-17" type="string" value="xfce4-orageclock-plugin"/>
   </property>
 </channel>
