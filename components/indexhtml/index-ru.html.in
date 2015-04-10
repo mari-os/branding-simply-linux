@@ -77,8 +77,8 @@
 <!-- Social networks -->
 <tr><td colspan="3" id="social">Мы рады встретиться с вами в социальных сетях:</td></tr>
 <tr>
-<th><a href="http://twitter.com/#!/altlinuxru" class="image"><img src="images/twitter.png" alt="Twitter" class="banner"></a></th>
-<th><a href="http://www.facebook.com/groups/simplylinux/" class="image"><img src="images/facebook.png" alt="Facebook" class="banner"></a></th>
+<th><a href="https://twitter.com/#!/altlinuxru" class="image"><img src="images/twitter.png" alt="Twitter" class="banner"></a></th>
+<th><a href="https://www.facebook.com/groups/simplylinux/" class="image"><img src="images/facebook.png" alt="Facebook" class="banner"></a></th>
 <th><a href="https://vk.com/simplylinux" class="image"><img src="images/vkontakte.png" alt="ВКонтакте" class="banner"></a></th>
 </tr>
 
