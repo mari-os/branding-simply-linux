@@ -228,8 +228,6 @@ Menu for Simply Linux
 Summary: Some system settings for Simply Linux
 License: GPLv2+
 Group: System/Base
-# Really we need lightdm only, but it can pull another greeter.
-Requires: lightdm-gtk-greeter
 
 %description system-settings
 Some system settings for Simply Linux.
@@ -330,7 +328,6 @@ cp menu/altlinux-wine.directory %buildroot/usr/share/desktop-directories/
 # system-settings
 mkdir -p %buildroot/%_sysconfdir/polkit-1/rules.d/
 cp -a system-settings/polkit-rules/*.rules %buildroot/%_sysconfdir/polkit-1/rules.d/
-install -Dm644 system-settings/ldm_pam_environment %buildroot%_localstatedir/ldm/.pam_environment
 
 #bootloader
 %pre bootloader
@@ -357,13 +354,6 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 
 %post indexhtml
 %_sbindir/indexhtml-update
-
-%post system-settings
-chown _ldm:_ldm %_localstatedir/ldm/.pam_environment
-sed -i '/pam_env\.so/ {
-		/user_readenv/ b
-		s/pam_env\.so/pam_env.so user_readenv=1/ }
-' %_sysconfdir/pam.d/lightdm-greeter
 
 %files bootloader
 %_datadir/gfxboot/%theme
@@ -433,7 +423,6 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 
 %files system-settings
 %config %_sysconfdir/polkit-1/rules.d/*.rules
-%config %_localstatedir/ldm/.pam_environment
 
 %changelog
 * Wed Mar 05 2014 Mikhail Efremov <sem@altlinux.org> 7.0.4-alt1
