@@ -6,7 +6,7 @@
 %define brand simply
 
 Name: branding-simply-linux
-Version: 7.0.4
+Version: 7.95.0
 Release: alt1
 BuildArch: noarch
 
@@ -425,6 +425,17 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Tue Apr 14 2015 Mikhail Efremov <sem@altlinux.org> 7.95.0-alt1
+- system-settings: Drop lightdm hack (closes: #30901).
+- index.html: Use https for facebook and twitter.
+- index.html: Update "VKontakte" URL.
+- index.html: Update company address and copyright year.
+- xfce-settings: Replace clock plugin with xfce4-orageclock-plugin.
+- Fix font for background text.
+- Update BR for Droid fonts.
+- menu: Drop celestia.desktop.
+- menu: Fix dropbox.desktop.
+
 * Wed Mar 05 2014 Mikhail Efremov <sem@altlinux.org> 7.0.4-alt1
 - Bump version to 7.0.4.
 
