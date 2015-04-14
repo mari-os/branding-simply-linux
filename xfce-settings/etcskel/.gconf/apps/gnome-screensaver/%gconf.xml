@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="themes" mtime="1269339866" type="list" ltype="string">
-	</entry>
-	<entry name="mode" mtime="1269339866" type="string">
-		<stringvalue>blank-only</stringvalue>
-	</entry>
-</gconf>
