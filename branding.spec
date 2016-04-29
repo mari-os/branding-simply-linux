@@ -161,7 +161,8 @@ Summary: default settings for Xfce for Simply linux distribution
 License: Distributable
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
-Requires: etcskel gtk3-theme-clearlooks-phenix
+Requires: etcskel
+#Requires: gtk3-theme-clearlooks-phenix
 Requires: gnome-icon-theme icon-theme-simple-sl
 Requires: branding-simply-linux-graphics
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
