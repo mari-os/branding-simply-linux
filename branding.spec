@@ -163,6 +163,7 @@ Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
 Requires: etcskel
 #Requires: gtk3-theme-clearlooks-phenix
+Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl
 Requires: branding-simply-linux-graphics
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
