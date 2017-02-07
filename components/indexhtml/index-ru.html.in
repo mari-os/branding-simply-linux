@@ -33,11 +33,11 @@
 <td width="33%" class="column"> <!-- First column: documentation -->
 <ul>
 <li><a href="file:///usr/share/doc/documentation/index.html">Руководство пользователя</a></li>
-<li><a href="file:///usr/share/doc/alt-docs/modules/index.html">Локальная документация</a></li>
 <li><a href="http://docs.altlinux.org">Онлайновая документация</a></li>
 <li><a href="http://shop.altlinux.ru/index.php?categoryID=559">Книги</a></li>
 <li><a href="http://altlinux.org/">Wiki</a></li>
 <li><a href="http://altlinux.org/FAQ">FAQ</a></li>
+<li><a href="http://altlinux.org/Features">Особенности ALT Linux</a></li>
 </ul>
 </td>
 

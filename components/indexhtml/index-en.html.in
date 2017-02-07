@@ -33,11 +33,11 @@
 <td width="33%" class="column"> <!-- First column: documentation -->
 <ul>
 <li><a href="file:///usr/share/doc/documentation/index.html">User Manual</a></li>
-<li><a href="file:///usr/share/doc/alt-docs/modules/index.html">Local Documentation</a></li>
 <li><a href="http://docs.altlinux.org">Online Documentation</a></li>
 <li><a href="http://shop.altlinux.ru/index.php?categoryID=559">Books</a></li>
 <li><a href="http://altlinux.org/">Wiki</a></li>
 <li><a href="http://altlinux.org/FAQ">FAQ</a></li>
+<li><a href="http://altlinux.org/Features">ALT Linux Features</a></li>
 </ul>
 </td>
 

@@ -206,7 +206,6 @@ Conflicts: branding-altlinux-backup-server-indexhtml
 
 Requires: xdg-utils 
 Requires: docs-simply-linux
-Requires: docs-linux_intro
 Requires(post): indexhtml-common
 
 %description indexhtml
@@ -313,7 +312,6 @@ ln -s slides-en %buildroot/usr/share/install2/slideshow/slides
 install slideshow/slideshow.conf %buildroot/etc/alterator/
 
 #indexhtml
-%define _altdocsdir %_defaultdocdir/alt-docs
 %define _indexhtmldir %_defaultdocdir/indexhtml
 install components/indexhtml/*.html %buildroot%_defaultdocdir/indexhtml/
 mkdir -p %buildroot%_defaultdocdir/indexhtml/images
