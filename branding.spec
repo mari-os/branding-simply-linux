@@ -7,7 +7,7 @@
 
 Name: branding-simply-linux
 Version: 7.95.0
-Release: alt4
+Release: alt5
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -427,6 +427,9 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Tue Feb 07 2017 Artem Zolochevskiy <azol@altlinux.org> 7.95.0-alt5
+- indexhtml: Drop reference to alt-docs/modules
+
 * Fri Apr 29 2016 Mikhail Efremov <sem@altlinux.org> 7.95.0-alt4
 - Replace GTK theme Clearlooks-Phenix with Adwaita.
 
