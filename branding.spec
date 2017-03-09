@@ -2,7 +2,7 @@
 %define Name Simply Linux
 %define codename Dory
 %define status %nil
-%define variants altlinux-backup-server altlinux-desktop altlinux-gnome-desktop altlinux-kdesktop altlinux-lite altlinux-lxdesktop altlinux-office-desktop altlinux-office-server altlinux-school-server altlinux-sisyphus altlinux-spt altlinux-tablet altlinux-workbench informika-schoolmaster ivk-chainmail lxde-desktop lxde-school-lite Platform6-server-light school-junior school-lite school-master school-server school-teacher school-terminal altlinux-centaurus sisyphus-server-light
+
 %define brand simply
 
 Name: branding-simply-linux
@@ -13,6 +13,7 @@ BuildArch: noarch
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 BuildRequires: design-bootloader-source >= 5.0-alt2
 
+BuildRequires(pre): rpm-macros-branding
 BuildRequires(pre): libqt4-core 
 BuildRequires: libalternatives-devel
 BuildRequires: libqt4-devel
@@ -41,7 +42,7 @@ PreReq: coreutils
 Provides: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
 
 Obsoletes: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootloader ";done )
+%branding_add_conflicts simply-linux bootloader
 
 %define grub_normal white/dark-gray
 %define grub_high black/white
@@ -63,7 +64,7 @@ Provides: plymouth-theme-%theme
 Requires: plymouth-plugin-script
 PreReq: plymouth
 
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-bootsplash ";done )
+%branding_add_conflicts simply-linux bootsplash
 
 %description bootsplash
 This package contains graphics for boot process for Simply Linux
@@ -85,7 +86,7 @@ Obsoletes:  branding-alt-%theme-browser-qt  branding-altlinux-%theme-browser-qt
 # lexicographically first of the village
 Conflicts: branding-sisyphus-server-light-alterator
 
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-alterator ";done )
+%branding_add_conflicts simply-linux alterator
 Obsoletes: design-alterator-server design-alterator-desktop design-altertor-browser-desktop  design-altertor-browser-server branding-altlinux-backup-server-alterator
 PreReq(post,preun): alternatives >= 0.2 alterator
 
@@ -107,7 +108,7 @@ Obsoletes:  branding-alt-%theme-graphics design-graphics-%theme
 Provides: design-graphics = 12.0.0
 
 PreReq(post,preun): alternatives >= 0.2
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-graphics ";done )
+%branding_add_conflicts simply-linux graphics
 
 %description graphics
 This package contains some graphics for Simply Linux design.
@@ -129,7 +130,7 @@ Group: System/Configuration/Other
 Provides: %(for n in %provide_list; do echo -n "$n-release = %version-%release "; done) altlinux-release-%theme  branding-alt-%theme-release
 Obsoletes: %obsolete_list  branding-alt-%theme-release
 Conflicts: %conflicts_list
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-release ";done )
+%branding_add_conflicts simply-linux release
 
 %description release
 Simply Linux %version release file.
@@ -146,7 +147,7 @@ Summary(ru_RU.UTF-8): Лицензия и дополнительные свед�
 License: Distributable
 Group: Documentation
 Conflicts: alt-notes-children alt-notes-hpc alt-notes-junior alt-notes-junior-sj alt-notes-junior-sm alt-notes-school-server alt-notes-server-lite alt-notes-skif alt-notes-terminal alt-notes-desktop
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-notes ";done )
+%branding_add_conflicts simply-linux notes
 
 %description notes
 Distribution license and release notes
@@ -167,7 +168,7 @@ Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl
 Requires: branding-simply-linux-graphics
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-xfce-settings ";done )
+%branding_add_conflicts simply-linux xfce-settings
 Conflicts: xfce-settings-simply-linux
 
 %description xfce-settings
@@ -178,7 +179,7 @@ Summary: Slideshow for Simply Linux %version installer.
 Summary(ru_RU.UTF-8): Изображения для организации "слайдшоу" в установщике дистрибутива "Просто Линукс"
 License: Distributable
 Group: System/Configuration/Other 
-Conflicts: %(for n in %variants ; do [ "$n" = %theme ] || echo -n "branding-$n-slideshow ";done )
+%branding_add_conflicts simply-linux slideshow
 
 %description slideshow
 Slideshow for Simply Linux %version installer.
