@@ -5,9 +5,11 @@
 
 %define brand simply
 
+%define _unpackaged_files_terminate_build 1
+
 Name: branding-simply-linux
 Version: 7.95.0
-Release: alt5
+Release: alt6
 BuildArch: noarch
 
 BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -451,6 +453,12 @@ fi
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Fri Mar 10 2017 Mikhail Efremov <sem@altlinux.org> 7.95.0-alt6
+- Spec cleanup.
+- Don't change license and *-release files during update.
+- Use rpm-macros-branding.
+- Use Clearlooks-Phenix theme again.
+
 * Tue Feb 07 2017 Artem Zolochevskiy <azol@altlinux.org> 7.95.0-alt5
 - indexhtml: Drop reference to alt-docs/modules
 
