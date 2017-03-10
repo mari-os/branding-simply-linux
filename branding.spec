@@ -247,6 +247,8 @@ make
 %makeinstall
 make x86 DESTDIR=%buildroot datadir=%buildroot%_datadir sysconfdir=%buildroot%_sysconfdir
 
+%define data_cur_dir %_datadir/branding-data-current
+mkdir -p %buildroot%data_cur_dir
 
 #graphics
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
@@ -271,17 +273,23 @@ __EOF__
 
 #release
 install -pD -m644 /dev/null %buildroot%_sysconfdir/buildreqs/packages/ignore.d/%name-release
-echo "%Name %version %status (%codename)" >%buildroot%_sysconfdir/altlinux-release
+install -pD -m644 components/systemd/os-release %buildroot%data_cur_dir/release/os-release
+echo "%Name %version %status (%codename)" >%buildroot%data_cur_dir/release/altlinux-release
 for n in fedora redhat system; do
-	ln -s altlinux-release %buildroot%_sysconfdir/$n-release
+	ln -s altlinux-release %buildroot%data_cur_dir/release/$n-release
 done
-install -pD -m644 components/systemd/os-release %buildroot%_sysconfdir/os-release
+for r in %buildroot%data_cur_dir/release/*-release; do
+  touch %buildroot%_sysconfdir/"${r##*/}"
+done
 
 #notes
 pushd notes
 %makeinstall
 popd
-ln -s license.ru.html %buildroot%_datadir/alt-notes/license.uk.html
+ln -s license.ru.html %buildroot%data_cur_dir/alt-notes/license.uk.html
+for r in %buildroot%data_cur_dir/alt-notes/license.*.html; do
+  touch %buildroot%_datadir/alt-notes/"${r##*/}"
+done
 
 mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
 
@@ -369,6 +377,19 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
       subst "s|GRUB_WALLPAPER=.*|GRUB_WALLPAPER=/usr/share/plymouth/themes/%theme/grub.jpg|" \
              /etc/sysconfig/grub2 ||:
 
+#release
+%post release
+if ! [ -e %_sysconfdir/altlinux-release ] && \
+   ! [ -e %_sysconfdir/os-release ]; then
+	cp -a %data_cur_dir/release/*-release %_sysconfdir/
+fi
+
+#notes
+%post notes
+if ! [ -e %_datadir/alt-notes/license.all.html ]; then
+	cp -a %data_cur_dir/alt-notes/license.*.html %_datadir/alt-notes/
+fi
+
 %files alterator
 %config %_altdir/*.rcc
 /usr/share/alterator-browser-qt/design/*.rcc
@@ -385,11 +406,17 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 %exclude %_datadir/plymouth/themes/%theme/*.in
 
 %files release
-%_sysconfdir/*-release
+%dir %data_cur_dir
+%data_cur_dir/release/
 %_sysconfdir/buildreqs/packages/ignore.d/*
+%ghost %config(noreplace) %_sysconfdir/*-release
 
 %files notes
-%_datadir/alt-notes/*
+%dir %data_cur_dir
+%data_cur_dir/alt-notes
+%_datadir/alt-notes/livecd-*
+%_datadir/alt-notes/release-notes.*
+%ghost %config(noreplace) %_datadir/alt-notes/license.*.html
 
 %files xfce-settings
 %_sysconfdir/X11/profile.d/zdg-move-templates.sh
