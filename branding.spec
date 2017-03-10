@@ -345,7 +345,7 @@ cp -a system-settings/polkit-rules/*.rules %buildroot/%_sysconfdir/polkit-1/rule
 [ -s /boot/splash/%theme ] && rm -fr  /boot/splash/%theme ||:
 
 %post bootloader
-%__ln_s -nf %theme/message /boot/splash/message
+ln -snf %theme/message /boot/splash/message
 . /etc/sysconfig/i18n
 lang=$(echo $LANG | cut -d. -f 1)
 cd boot/splash/%theme/
@@ -360,7 +360,7 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 %preun bootloader
 [ $1 = 0 ] || exit 0
 [ "`readlink /boot/splash/message`" != "%theme/message" ] ||
-    %__rm -f /boot/splash/message
+    rm -f /boot/splash/message
 
 %post indexhtml
 %_sbindir/indexhtml-update
@@ -436,10 +436,6 @@ fi
 %define indexhtmldir %_defaultdocdir/indexhtml
 
 %files indexhtml
-#%%ghost %%_indexhtmldir/index.html
-#%%_indexhtmldir/*
-#%%_desktopdir/*
-
 %ghost %indexhtmldir/index.html
 %indexhtmldir/index-*.html
 %indexhtmldir/index.css
