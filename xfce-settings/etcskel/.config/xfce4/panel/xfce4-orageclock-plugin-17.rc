@@ -8,4 +8,6 @@ data0=%H:%M
 font0=
 tooltip=%A, %d %b, %Y
 hib_timing=true
+lines_vertically=false
+rotation=0
 

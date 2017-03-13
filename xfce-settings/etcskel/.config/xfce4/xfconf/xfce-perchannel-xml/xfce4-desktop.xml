@@ -9,6 +9,26 @@
         <property name="last-single-image" type="string" value="/usr/share/backgrounds/xfce/slinux_march_2013_1680x1050.png"/>
         <property name="color-style" type="int" value="3"/>
         <property name="image-style" type="int" value="0"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="3"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/slinux_march_2013_1680x1050.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="3"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/slinux_march_2013_1680x1050.png"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="3"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/slinux_march_2013_1680x1050.png"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="3"/>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/slinux_march_2013_1680x1050.png"/>
+        </property>
       </property>
     </property>
   </property>
