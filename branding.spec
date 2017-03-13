@@ -298,7 +298,6 @@ mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
 cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.local %buildroot/etc/skel/
-cp -r xfce-settings/etcskel/.gconf %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.vimrc %buildroot/etc/skel/
 cp -r xfce-settings/etcskel/.gtkrc-2.0 %buildroot/etc/skel/
 
@@ -426,7 +425,6 @@ fi
 /etc/skel/.wm-select
 /etc/skel/.config
 /etc/skel/.local
-/etc/skel/.gconf
 /etc/skel/.vimrc
 /etc/skel/.gtkrc-2.0
 /usr/share/backgrounds/xfce/*
