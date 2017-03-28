@@ -25,8 +25,8 @@
 <table border="0" width="100%">
 <tr>
 <th width="33%"><img src="images/documentation.png" alt="Документация"></th>
-<th width="33%"><img src="images/altlinux-logo.png" alt="Компания" class="icon_big"></th>
-<th width="34%"><img src="images/community.png" alt="Сообщество" class="icon"></th>
+<th width="33%"><img src="images/company-logo.png" alt="Компания"></th>
+<th width="34%"><img src="images/community.png" alt="Сообщество"></th>
 </tr>
 
 <tr>
@@ -43,11 +43,11 @@
 
 <td width="33%" id="central_pane"> <!-- Second column: Company -->
 <ul>
-<li><a href="http://www.altlinux.ru">Сайт компании</a></li>
-<li><a href="http://shop.altlinux.ru">Интернет-магазин</a></li>
+<li><a href="http://basealt.ru">Сайт компании</a></li>
 <li><a href="http://support.altlinux.ru">Техническая поддержка</a></li>
-<li><a href="http://www.altlinux.ru/go/about-company/contacts/">Контакты</a></li>
-<li><a href="http://www.altlinux.ru/products/downloads/">Загрузить</a></li>
+<li><a href="http://basealt.ru/pages/products.html">Дистрибутивы</a></li>
+<li><a href="http://basealt.ru/pages/about.html">Контакты</a></li>
+<li><a href="http://basealt.ru/pages/downloads.html">Загрузить</a></li>
 <li><a href="http://torrent.altlinux.org/">Торренты</a></li>
 </ul>
 </td>
@@ -88,11 +88,11 @@
 <div id="footer">
 <table border="0" width="100%">
 <tr>
-<td id="left_footer">&copy; ALT Linux, 2011-2015. Все права защищены.</td>
+<td id="left_footer">&copy; ООО «Базальт СПО», 2017. Все права защищены.</td>
 <td id="right_footer">
-Телефон/факс: +7 (495) 662-3883<br>
-5-й Донской проезд, д. 15, стр. 11<br>
-Москва, Россия, 119334
+Телефон: +7 (495) 123-4799<br>
+ул. Бутырская, д.75<br>
+Москва, Россия, 127015
 </td>
 </tr></table>
 </div>

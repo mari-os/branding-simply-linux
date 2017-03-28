@@ -25,8 +25,8 @@
 <table border="0" width="100%">
 <tr>
 <th width="33%"><img src="images/documentation.png" alt="Documentation"></th>
-<th width="33%"><img src="images/altlinux-logo.png" alt="Company" class="icon_big"></th>
-<th width="34%"><img src="images/community.png" alt="Community" class="icon"></th>
+<th width="33%"><img src="images/company-logo.png" alt="Company"></th>
+<th width="34%"><img src="images/community.png" alt="Community"></th>
 </tr>
 
 <tr>
@@ -43,11 +43,11 @@
 
 <td width="33%" id="central_pane"> <!-- Second column: Company -->
 <ul>
-<li><a href="http://www.altlinux.com">ALT Linux Website</a></li>
-<li><a href="http://shop.altlinux.ru">Internet Shop</a></li>
+<li><a href="http://basealt.ru">Company Website</a></li>
 <li><a href="http://support.altlinux.ru">Technical Support</a></li>
-<li><a href="http://www.altlinux.com/en/go/about-company/contacts/">Contacts</a></li>
-<li><a href="http://www.altlinux.com/en/go/download/">Download</a></li>
+<li><a href="http://basealt.ru/pages/products.html">Products</a></li>
+<li><a href="http://basealt.ru/pages/about.html">Contacts</a></li>
+<li><a href="http://basealt.ru/pages/downloads.html">Download</a></li>
 <li><a href="http://torrent.altlinux.org/">Torrents</a></li>
 </ul>
 </td>
@@ -88,13 +88,13 @@
 <div id="footer">
 <table border="0" width="100%">
 <tr>
-<td id="left_footer">&copy; 2011-2015 ALT Linux. All rights reserved.</td>
+<td id="left_footer">&copy; 2017 Basealt Ltd. All rights reserved.</td>
 <td id="right_footer">
-Tel/fax: +7 (495) 662-3883<br>
-15/11 5-th Donskoy proezd<br>
+Tel/fax: +7 (495) 123-4799<br>
+75 Butyrskaya<br>
 Moscow<br>
 Russian Federation<br>
-119334
+127015
 </td>
 </tr></table>
 </div>
