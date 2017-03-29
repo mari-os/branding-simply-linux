@@ -33,31 +33,31 @@
 <td width="33%" class="column"> <!-- First column: documentation -->
 <ul>
 <li><a href="file:///usr/share/doc/documentation/index.html">Руководство пользователя</a></li>
-<li><a href="http://docs.altlinux.org">Онлайновая документация</a></li>
-<li><a href="http://shop.altlinux.ru/index.php?categoryID=559">Книги</a></li>
-<li><a href="http://altlinux.org/">Wiki</a></li>
-<li><a href="http://altlinux.org/FAQ">FAQ</a></li>
-<li><a href="http://altlinux.org/Features">Особенности ALT Linux</a></li>
+<li><a href="https://docs.altlinux.org">Онлайновая документация</a></li>
+<li><a href="https://www.basealt.ru/courses/training/">Обучающие курсы</a></li>
+<li><a href="https://altlinux.org/">Wiki</a></li>
+<li><a href="https://altlinux.org/FAQ">FAQ</a></li>
+<li><a href="https://altlinux.org/Features">Особенности ALT Linux</a></li>
 </ul>
 </td>
 
 <td width="33%" id="central_pane"> <!-- Second column: Company -->
 <ul>
-<li><a href="http://basealt.ru">Сайт компании</a></li>
-<li><a href="http://support.altlinux.ru">Техническая поддержка</a></li>
-<li><a href="http://basealt.ru/pages/products.html">Дистрибутивы</a></li>
-<li><a href="http://basealt.ru/pages/about.html">Контакты</a></li>
-<li><a href="http://basealt.ru/pages/downloads.html">Загрузить</a></li>
-<li><a href="http://torrent.altlinux.org/">Торренты</a></li>
+<li><a href="https://basealt.ru">Сайт компании</a></li>
+<li><a href="https://www.basealt.ru/sales/support">Техническая поддержка</a></li>
+<li><a href="https://www.basealt.ru/products">Дистрибутивы</a></li>
+<li><a href="https://basealt.ru/pages/about.html">Контакты</a></li>
+<li><a href="https://www.basealt.ru/go/download">Загрузить</a></li>
+<li><a href="https://torrent.altlinux.org/">Торренты</a></li>
 </ul>
 </td>
 
 <td width="34%" class="column"> <!-- Third column: community -->
 <ul>
-<li><a href="http://lists.altlinux.org">Списки рассылки</a></li>
-<li><a href="http://forum.altlinux.org">Форум пользователей</a></li>
-<li><a href="http://bugs.altlinux.org">Сообщить об ошибке</a></li>
-<li><a href="http://packages.altlinux.org">Репозиторий</a></li>
+<li><a href="https://lists.altlinux.org">Списки рассылки</a></li>
+<li><a href="https://forum.altlinux.org">Форум пользователей</a></li>
+<li><a href="https://bugs.altlinux.org">Сообщить об ошибке</a></li>
+<li><a href="https://packages.altlinux.org">Репозиторий</a></li>
 <li><a href="http://git.altlinux.org">Сборочная среда</a></li>
 </ul>
 </td>

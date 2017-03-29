@@ -33,31 +33,31 @@
 <td width="33%" class="column"> <!-- First column: documentation -->
 <ul>
 <li><a href="file:///usr/share/doc/documentation/index.html">User Manual</a></li>
-<li><a href="http://docs.altlinux.org">Online Documentation</a></li>
-<li><a href="http://shop.altlinux.ru/index.php?categoryID=559">Books</a></li>
-<li><a href="http://altlinux.org/">Wiki</a></li>
-<li><a href="http://altlinux.org/FAQ">FAQ</a></li>
-<li><a href="http://altlinux.org/Features">ALT Linux Features</a></li>
+<li><a href="https://docs.altlinux.org">Online Documentation</a></li>
+<li><a href="https://https://www.basealt.ru/courses/training">Learning Courses</a></li>
+<li><a href="https://altlinux.org/">Wiki</a></li>
+<li><a href="https://altlinux.org/FAQ">FAQ</a></li>
+<li><a href="https://altlinux.org/Features">ALT Linux Features</a></li>
 </ul>
 </td>
 
 <td width="33%" id="central_pane"> <!-- Second column: Company -->
 <ul>
-<li><a href="http://basealt.ru">Company Website</a></li>
-<li><a href="http://support.altlinux.ru">Technical Support</a></li>
-<li><a href="http://basealt.ru/pages/products.html">Products</a></li>
-<li><a href="http://basealt.ru/pages/about.html">Contacts</a></li>
-<li><a href="http://basealt.ru/pages/downloads.html">Download</a></li>
-<li><a href="http://torrent.altlinux.org/">Torrents</a></li>
+<li><a href="https://basealt.ru">Company Website</a></li>
+<li><a href="https://www.basealt.ru/sales/support">Technical Support</a></li>
+<li><a href="https://www.basealt.ru/products">Products</a></li>
+<li><a href="https://basealt.ru/pages/about.html">Contacts</a></li>
+<li><a href="https://www.basealt.ru/go/download">Download</a></li>
+<li><a href="https://torrent.altlinux.org/">Torrents</a></li>
 </ul>
 </td>
 
 <td width="34%" class="column"> <!-- Third column: community -->
 <ul>
-<li><a href="http://lists.altlinux.org">Mailing Lists</a></li>
-<li><a href="http://forum.altlinux.org">User Forum</a></li>
-<li><a href="http://bugs.altlinux.org">Report a Bug</a></li>
-<li><a href="http://packages.altlinux.org">Software Repository</a></li>
+<li><a href="https://lists.altlinux.org">Mailing Lists</a></li>
+<li><a href="https://forum.altlinux.org">User Forum</a></li>
+<li><a href="https://bugs.altlinux.org">Report a Bug</a></li>
+<li><a href="https://packages.altlinux.org">Software Repository</a></li>
 <li><a href="http://git.altlinux.org">Build environment</a></li>
 </ul>
 </td>
