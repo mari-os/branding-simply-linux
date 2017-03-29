@@ -77,7 +77,6 @@
 <!-- Social networks -->
 <tr><td colspan="3" id="social">We will be glade to meet you on the following social networks:</td></tr>
 <tr>
-<th><a href="https://twitter.com/#!/altlinuxru" class="image"><img src="images/twitter.png" alt="Twitter" class="banner"></a></th>
 <th><a href="https://www.facebook.com/groups/simplylinux/" class="image"><img src="images/facebook.png" alt="Facebook" class="banner"></a></th>
 <th><a href="https://vk.com/simplylinux" class="image"><img src="images/vkontakte.png" alt="VKontakte" class="banner"></a></th>
 </tr>
