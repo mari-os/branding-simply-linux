@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Exec=xdg-open /usr/share/doc/indexhtml/index.html
 StartupNotify=false
-Icon=altlinux
+Icon=slinux
 Name=Simply Linux @VERSION@: start page
 Categories=System;Documentation;
 
