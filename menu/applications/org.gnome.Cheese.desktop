@@ -365,6 +365,7 @@ Keywords[zh_CN]=photo;video;webcam;视频;摄像头;拍照;
 Keywords[zh_HK]=photo;video;webcam;相片;影片;網絡攝影機;
 Keywords[zh_TW]=photo;video;webcam;相片;影片;網路攝影機;攝像;
 Exec=cheese
+TryExec=cheese
 Terminal=false
 Type=Application
 StartupNotify=true
