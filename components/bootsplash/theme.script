@@ -11,7 +11,14 @@ fun imgscale2( image, scaleX, scaleY )
 }
 
 # background
-logo.raw = Image("wallpaper.png");
+if( Window.GetWidth()/Window.GetHeight() > 1.5 )
+{
+   logo.raw = Image("background16x9.png");
+}
+else
+{
+   logo.raw = Image("background4x3.png");
+}
 
 logo.image = imgscale2( logo.raw, 
                         Window.GetWidth()/logo.raw.GetWidth(),
