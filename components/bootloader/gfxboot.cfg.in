@@ -37,7 +37,7 @@ mainmenu.entries=8
 ; minimal main menu selection bar width
 mainmenu.bar.minwidth=280
 ; main menu selection bar transparency (0..255)
-mainmenu.bar.transparency=0
+mainmenu.bar.transparency=255
 ; main menu colors
 mainmenu.bar.color=0xffffff
 mainmenu.normal.fg=0x787878
