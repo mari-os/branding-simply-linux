@@ -303,6 +303,11 @@ cp -r xfce-settings/etcskel/.gtkrc-2.0 %buildroot/etc/skel/
 
 install -m 644 xfce-settings/etcskel/.wm-select %buildroot/etc/skel/
 
+# balou splash theme
+mkdir -p %buildroot%_datadir/themes/SimplyLinux/balou/
+install -m644 xfce-settings/balou/themerc %buildroot%_datadir/themes/SimplyLinux/balou/
+install -m644 images/wallpaper.png %buildroot%_datadir/themes/SimplyLinux/balou/logo.png
+
 mkdir -p %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1600x1200
 mkdir -p %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1680x1050
 cp -P xfce-settings/backgrounds/*.jpg %buildroot/usr/share/backgrounds/xfce
@@ -428,6 +433,7 @@ fi
 /etc/skel/.vimrc
 /etc/skel/.gtkrc-2.0
 /usr/share/backgrounds/xfce/*
+%_datadir/themes/SimplyLinux/
 
 %files slideshow
 /etc/alterator/slideshow.conf

@@ -1,0 +1,28 @@
+# $Id$
+#
+# Simply Linux balou theme
+# Based on default balou theme
+
+#
+# Info section
+#
+[Info]
+Name=Simply Linux Theme
+Name[ru]=Тема Simply Linux
+Description=This is Simply Linux Balou splash theme.
+Description[ru]=Это тема Simply Linux для заставки Balou.
+
+#
+# splash screen settings
+#
+[Splash Screen]
+# The background color, can be a single color or a vertical gradient. The
+# latter is written as <color1>:<color2>.
+bgcolor=#38bbff
+# The foreground color, used for text.
+fgcolor=#000000
+# The logo file, if the extension is missing, xfce4-session will search
+# for .svg, .png, .jpeg, .jpg, .xpm
+logo=logo
+
+
