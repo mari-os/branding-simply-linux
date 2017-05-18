@@ -4,6 +4,7 @@ Name[ru]=Синхронизация файлов Dropbox
 GenericName=Dropbox File Synchronizer
 GenericName[ru]=Синхронизация файлов Dropbox
 Comment=Sync your files across computers and to the web
+Comment[ru]=Синхронизация ваших файлов между компьютерами
 Exec=dropbox start -i
 TryExec=dropbox start -i
 Terminal=false
