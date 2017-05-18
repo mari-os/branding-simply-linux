@@ -8,7 +8,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 7.97.0
+Version: 7.98.0
 Release: alt1
 BuildArch: noarch
 
@@ -457,6 +457,17 @@ fi
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Thu May 18 2017 Mikhail Efremov <sem@altlinux.org> 7.98.0-alt1
+- menu: Add gnome-chess.desktop.
+- menu: Add Russian comment to dropbox.desktop.
+- menu: Add shotwell*.desktop.
+- xfce-settings: Add balou splash theme.
+- Change home page link.
+- menu: Add sound-juicer.desktop.
+- gfxboot: Make menu bar transparent.
+- plymouth: Use 16x9 and 4x3 backgrounds.
+- New images for bootloader, splash and lightdm.
+
 * Mon Apr 24 2017 Mikhail Efremov <sem@altlinux.org> 7.97.0-alt1
 - xfce-settings: Use chromium instead of firefox.
 - menu: Don't expose cheese if not installed.
