@@ -1,0 +1,15 @@
+# $Id$
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=OpenTTD
+Name[ru]=OpenTTD
+Icon=openttd
+Exec=openttd
+TryExec=openttd
+Terminal=false
+Categories=Game;
+Comment=A clone of Transport Tycoon Deluxe
+Comment[ru]=Клон Transport Tycoon Deluxe
+Keywords=game;simulation;transport;tycoon;deluxe;economics;multiplayer;money;train;ship;bus;truck;aircraft;cargo;
