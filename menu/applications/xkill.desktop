@@ -4,6 +4,7 @@ Type=Application
 Name=Xkill
 Name[ru]=Аварийное закрытие программы
 Comment=Kill X clients
+Comment[ru]=Закрытие зависших окон
 Icon=xkill.xpm
 Exec=xkill
 TryExec=xkill
