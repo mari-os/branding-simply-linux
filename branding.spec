@@ -161,7 +161,7 @@ Distribution license and release notes
 %package xfce-settings
 
 Summary: default settings for Xfce for Simply linux distribution
-License: Distributable
+License: GPLv2+
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
 Requires: etcskel
@@ -173,8 +173,21 @@ Obsoletes: xfce-settings-lite xfce-settings-school-lite
 %branding_add_conflicts simply-linux xfce-settings
 Conflicts: xfce-settings-simply-linux
 
+# NOTE: Drop this requires when SL-9 will be released:
+# at that point these packages will be installed already.
+Requires: branding-simply-linux-backgrounds-legacy branding-simply-linux-backgrounds-vladstudio
+
 %description xfce-settings
 This package contains default settings for Xfce for Simply linux distribution.
+
+%package backgrounds8
+Group: Graphics
+Summary: Backgrounds for SL-8
+License: CC-BY-NC-SA-3.0+
+%branding_add_conflicts simply-linux backgrounds8
+
+%description backgrounds8
+This package contains backgrounds for Simply Linux 8.
 
 %package slideshow
 Summary: Slideshow for Simply Linux %version installer.
@@ -308,13 +321,9 @@ mkdir -p %buildroot%_datadir/themes/SimplyLinux/balou/
 install -m644 xfce-settings/balou/themerc %buildroot%_datadir/themes/SimplyLinux/balou/
 install -m644 images/wallpaper.png %buildroot%_datadir/themes/SimplyLinux/balou/logo.png
 
-mkdir -p %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1600x1200
-mkdir -p %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1680x1050
-cp -P xfce-settings/backgrounds/*.jpg %buildroot/usr/share/backgrounds/xfce
-install -m 644 xfce-settings/backgrounds/vladstudio.com/LICENSE.txt %buildroot/usr/share/backgrounds/xfce/vladstudio.com/
-install -m 644 xfce-settings/backgrounds/vladstudio.com/1600x1200/* %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1600x1200/
-install -m 644 xfce-settings/backgrounds/vladstudio.com/1680x1050/* %buildroot/usr/share/backgrounds/xfce/vladstudio.com/1680x1050/
-install -m 644 xfce-settings/backgrounds/slinux*.{jpg,png} %buildroot/usr/share/backgrounds/xfce/
+# backgrounds
+mkdir -p %buildroot%_datadir/backgrounds/xfce/
+install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot%_datadir/backgrounds/xfce/
 
 install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh %buildroot%_sysconfdir/X11/profile.d/zdg-move-templates.sh
 
@@ -432,8 +441,10 @@ fi
 /etc/skel/.local
 /etc/skel/.vimrc
 /etc/skel/.gtkrc-2.0
-/usr/share/backgrounds/xfce/*
 %_datadir/themes/SimplyLinux/
+
+%files backgrounds8
+/usr/share/backgrounds/xfce/*
 
 %files slideshow
 /etc/alterator/slideshow.conf
