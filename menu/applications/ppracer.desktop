@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=PP Racer
+Name[ru]=PP Racer
+Comment=PlanetPenguin Racer
+Comment[ru]=Гонщик планеты пингвинов
+Icon=ppracer
+Exec=ppracer
+TryExec=ppracer
+Terminal=false
+Categories=Game;ArcadeGame;
