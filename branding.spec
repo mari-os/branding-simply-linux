@@ -169,6 +169,7 @@ Requires: gtk3-theme-clearlooks-phenix
 Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl >= 2.7-alt3
 Requires: branding-simply-linux-graphics
+Requires: branding-simply-linux-backgrounds8
 Obsoletes: xfce-settings-lite xfce-settings-school-lite
 %branding_add_conflicts simply-linux xfce-settings
 Conflicts: xfce-settings-simply-linux
