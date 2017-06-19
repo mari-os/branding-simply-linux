@@ -193,7 +193,7 @@ This package contains backgrounds for Simply Linux 8.
 %package slideshow
 Summary: Slideshow for Simply Linux %version installer.
 Summary(ru_RU.UTF-8): Изображения для организации "слайдшоу" в установщике дистрибутива "Просто Линукс"
-License: Distributable
+License: CC-BY-NC-SA-3.0+
 Group: System/Configuration/Other 
 %branding_add_conflicts simply-linux slideshow
 
