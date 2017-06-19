@@ -8,7 +8,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 7.98.0
+Version: 7.98.1
 Release: alt1
 BuildArch: noarch
 
@@ -469,6 +469,25 @@ fi
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Mon Jun 19 2017 Mikhail Efremov <sem@altlinux.org> 7.98.1-alt1
+- slideshow: Change License to CC-BY-NC-SA-3.0+.
+- xfce-settings: Require backgrounds8 subpackage.
+- Drop legacy backgrounds.
+- menu: Add ppracer.desktop.
+- menu: Add freeciv-*.desktop files.
+- menu: Add Russian Comment.
+- menu: Add Russian comment for Ri-li.
+- menu: Add openttd.desktop.
+- menu: Fix fusion-icon.desktop.
+- menu: Add blender-win.desktop.
+- menu: Drop synfigstudio.desktop.
+- New slideshow.
+- xfce-settings: Use 1920x1080 backgrounds as default.
+- xfce4-settings: Change style for background.
+- steps: Add luks step icon.
+- xfce-settings: Set slinux_june_2017 background as default.
+- xfce-settings: Add slinux_june_2017* backgrounds.
+
 * Thu May 18 2017 Mikhail Efremov <sem@altlinux.org> 7.98.0-alt1
 - menu: Add gnome-chess.desktop.
 - menu: Add Russian comment to dropbox.desktop.
