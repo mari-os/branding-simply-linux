@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=OpenJDK 8 Policy Tool 1.8.0.71-alt4_1.b15jpp8.x86_64
+Comment=Manage OpenJDK policy files 1.8.0.71-alt4_1.b15jpp8.x86_64
+Exec=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.71-1.b15.x86_64/jre/bin/policytool
+Icon=java-1.8.0
+Terminal=false
+Type=Application
+StartupWMClass=sun-security-tools-PolicyTool
+Categories=Settings;Java;X-ALTLinux-Java;X-ALTLinux-Java-1.8.0-openjdk;
+Version=1.0
+X-Desktop-File-Install-Version=0.23
+NoDisplay=True
