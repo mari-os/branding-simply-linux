@@ -20,7 +20,7 @@ BuildRequires(pre): libqt4-core
 BuildRequires: libalternatives-devel
 BuildRequires: libqt4-devel
 
-BuildRequires: ImageMagick fontconfig bc libGConf-devel
+BuildRequires: ImageMagick fontconfig bc
 
 Source: %name-%version.tar
 
