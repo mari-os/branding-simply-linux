@@ -18,7 +18,7 @@
         <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="15"/>
-        <value type="int" value="8"/>
+        <value type="int" value="1"/>
         <value type="int" value="9"/>
         <value type="int" value="10"/>
         <value type="int" value="11"/>
@@ -30,6 +30,10 @@
     </property>
   </property>
   <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="xkb">
+      <property name="display-type" type="uint" value="1"/>
+      <property name="display-scale" type="uint" value="60"/>
+    </property>
     <property name="plugin-2" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
     </property>
@@ -49,7 +53,6 @@
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
     </property>
-    <property name="plugin-8" type="string" value="xkb-plugin"/>
     <property name="plugin-9" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="fusion-icon"/>
