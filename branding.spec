@@ -1,6 +1,6 @@
 %define theme slinux
 %define Name Simply Linux
-%define codename Cleo
+%define codename UNKNOWN
 %define status %nil
 
 %define brand simply
