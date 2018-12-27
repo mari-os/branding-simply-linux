@@ -8,7 +8,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 8.2.0
+Version: 8.900
 Release: alt1
 BuildArch: noarch
 
