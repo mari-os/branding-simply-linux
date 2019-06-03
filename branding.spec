@@ -16,9 +16,8 @@ BuildRequires: cpio gfxboot >= 4 fonts-ttf-dejavu fonts-ttf-google-droid-serif f
 BuildRequires: design-bootloader-source >= 5.0-alt2
 
 BuildRequires(pre): rpm-macros-branding
-BuildRequires(pre): libqt4-core 
 BuildRequires: libalternatives-devel
-BuildRequires: libqt4-devel
+BuildRequires: qt5-base-devel
 
 BuildRequires: ImageMagick fontconfig bc
 
