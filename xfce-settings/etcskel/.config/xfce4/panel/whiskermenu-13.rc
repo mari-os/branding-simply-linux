@@ -31,35 +31,3 @@ command-menueditor=menulibre
 show-command-menueditor=true
 command-profile=
 show-command-profile=false
-search-actions=5
-
-[action0]
-name=Man-страницы
-pattern=#
-command=exo-open --launch TerminalEmulator man %s
-regex=false
-
-[action1]
-name=Web-поиск
-pattern=?
-command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
-regex=false
-
-[action2]
-name=Википедия
-pattern=!w
-command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
-regex=false
-
-[action3]
-name=Выполнить в терминале
-pattern=!
-command=exo-open --launch TerminalEmulator %s
-regex=false
-
-[action4]
-name=Открыть URI
-pattern=^(file|http|https):\\/\\/(.*)$
-command=exo-open \\0
-regex=true
-

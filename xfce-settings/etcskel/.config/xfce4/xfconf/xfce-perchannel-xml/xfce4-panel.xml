@@ -57,7 +57,6 @@
       <property name="names-visible" type="array">
         <value type="string" value="fusion-icon"/>
         <value type="string" value="apt-indicator"/>
-        <value type="string" value="апплет networkmanager"/>
         <value type="string" value="blueman-applet"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
