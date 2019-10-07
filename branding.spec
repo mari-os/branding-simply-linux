@@ -164,7 +164,7 @@ License: GPLv2+
 Group: Graphical desktop/XFce
 Requires: PolicyKit-gnome
 Requires: etcskel
-Requires: gtk3-theme-clearlooks-phenix
+Requires: gtk-theme-classiclooks
 Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl >= 2.7-alt3
 Requires: branding-simply-linux-graphics
