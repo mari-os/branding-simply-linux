@@ -39,7 +39,7 @@ Summary: Graphical boot logo for grub2, lilo and syslinux
 Summary(ru_RU.UTF-8): Тема для экрана выбора вариантов загрузки (lilo и syslinux) 
 License: GPLv2+
 
-PreReq: coreutils
+Requires: coreutils
 Provides: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
 
 Obsoletes: design-bootloader-system-%theme design-bootloader-livecd-%theme design-bootloader-livecd-%theme design-bootloader-%theme branding-alt-%theme-bootloader
@@ -63,7 +63,7 @@ License: Distributable
 Group:  System/Configuration/Boot and Init
 Provides: plymouth-theme-%theme
 Requires: plymouth-plugin-script
-PreReq: plymouth
+Requires: plymouth
 
 %branding_add_conflicts simply-linux bootsplash
 
@@ -89,7 +89,7 @@ Conflicts: branding-sisyphus-server-light-alterator
 
 %branding_add_conflicts simply-linux alterator
 Obsoletes: design-alterator-server design-alterator-desktop design-altertor-browser-desktop  design-altertor-browser-server branding-altlinux-backup-server-alterator
-PreReq(post,preun): alternatives >= 0.2 alterator
+Requires(post,preun): alternatives >= 0.2 alterator
 
 %description alterator
 Design for QT and web alterator for Simply Linux.
@@ -108,7 +108,7 @@ Provides: design-graphics-%theme  branding-alt-%theme-graphics
 Obsoletes:  branding-alt-%theme-graphics design-graphics-%theme
 Provides: design-graphics = 12.0.0
 
-PreReq(post,preun): alternatives >= 0.2
+Requires(post,preun): alternatives >= 0.2
 %branding_add_conflicts simply-linux graphics
 
 %description graphics
