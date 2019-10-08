@@ -468,6 +468,24 @@ fi
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Tue Oct 08 2019 Mikhail Efremov <sem@altlinux.org> 8.900-alt1
+- Don't use deprecated PreReq.
+- Drop gnome-chess.desktop.
+- Change GTK theme to gtk-theme-classiclooks.
+- Set codename for SL-9.
+- xfce-settings: Drop Russian words.
+- slideshow: Russian slides for SL9.
+- xfce-settings: Replace gnome-system-monitor with xfce4-taskmanager.
+- Use Qt5 to generate theme.
+- Drop splash theme.
+- Drop libGConf-devel from BR.
+- xfce-settings: Update xfwm4 settings.
+- xfce-settings: Drop xfce4-volumed-pulse settings.
+- xfce-settings: Update xfce4-panel settings.
+- xfce-settings: Update xfce4-desktop settings.
+- xfce-settings: Drop xfce4-mixer settings.
+- xfce-settings: Requre plugins added on panel by default.
+
 * Thu Jul 06 2017 Mikhail Efremov <sem@altlinux.org> 8.2.0-alt1
 - Bump version to 8.2.
 - xfce-settings: Fix menu on window key.
