@@ -1,4 +1,5 @@
 # browser-qt
+ARCH=$(shell arch)
 
 components/browser-qt/design/bg.png: images/installer.png
 	convert $< -resize '800x600!' -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' $@
@@ -20,6 +21,7 @@ ahttpd:
 
 # bootloader and bootsplash
 boot:
+ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
 	cp -a  /usr/src/design-bootloader-source ./
 	cp -a components/bootloader/config design-bootloader-source/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-install/
@@ -42,10 +44,12 @@ boot:
 	install -d -m 755 $(datadir)/gfxboot/$(THEME)
 	install -m 644 design-bootloader-source/message $(sysconfdir)/../boot/splash/$(THEME)
 	install -m 644 design-bootloader-source/bootlogo $(datadir)/gfxboot/$(THEME)
+endif
 #grub2
 	install -d -m 755  $(sysconfdir)/../boot/grub/themes/$(THEME)
 	cp -a components/grub2/* $(sysconfdir)/../boot/grub/themes/$(THEME)/
-	 install -m 644 images/grub.png $(sysconfdir)/../boot/grub/themes/$(THEME)/boot.png
+	install -m 644 images/grub.png $(sysconfdir)/../boot/grub/themes/$(THEME)/boot.png
+
 
 # index html page, start page for all local browsers
 INDEXHTML_DIR=$(datadir)/doc/indexhtml
