@@ -13,7 +13,7 @@ Release: alt1
 
 %ifarch %ix86 x86_64
 BuildRequires: cpio fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
-BuildRequires: design-bootloader-source >= 5.0-alt2
+BuildRequires: design-bootloader-source >= 5.0-alt2 fribidi
 BuildRequires: gfxboot >= 4
 %endif
 
