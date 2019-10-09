@@ -9,7 +9,7 @@
 
 Name: branding-simply-linux
 Version: 8.900
-Release: alt1
+Release: alt2
 
 %ifarch %ix86 x86_64
 BuildRequires: cpio fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -494,6 +494,10 @@ fi
 %config %_sysconfdir/polkit-1/rules.d/*.rules
 
 %changelog
+* Wed Oct 09 2019 Mikhail Efremov <sem@altlinux.org> 8.900-alt2
+- Fix BR: Add fribidi on x86.
+- Fix build on aarch64.
+
 * Tue Oct 08 2019 Mikhail Efremov <sem@altlinux.org> 8.900-alt1
 - Don't use deprecated PreReq.
 - Drop gnome-chess.desktop.
