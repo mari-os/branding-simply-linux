@@ -21,22 +21,16 @@ ahttpd:
 
 # bootloader and bootsplash
 boot:
+	for size in 1024x768 800x600 640x480; do \
+		convert images/boot.jpg -quality 97 -resize "$$size!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' boot-$$size.jpg ;\
+	done
 ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
 	cp -a  /usr/src/design-bootloader-source ./
 	cp -a components/bootloader/config design-bootloader-source/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-install/
 	cp -a components/bootloader/gfxboot.cfg design-bootloader-source/data-boot/
-	for size in 1024x768 800x600 640x480; do \
-		convert images/boot.jpg -quality 97 -resize "$$size!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' boot-$$size.jpg ;\
-	done
 	cp -al boot-800x600.jpg design-bootloader-source/data-boot/back.jpg
 	convert images/boot.jpg -resize "800x600!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' design-bootloader-source/data-install/back.jpg
-#bootsplash
-	mkdir -p $(datadir)/plymouth/themes/$(THEME)
-	cp -al boot-800x600.jpg $(datadir)/plymouth/themes/$(THEME)/grub.jpg
-	cp -al images/background*.png $(datadir)/plymouth/themes/$(THEME)/
-	cp -a components/bootsplash/* $(datadir)/plymouth/themes/$(THEME)
-	mv $(datadir)/plymouth/themes/$(THEME)/theme.plymouth $(datadir)/plymouth/themes/$(THEME)/$(THEME).plymouth
 #bootloader
 	subst 's/label:ALT/label:Simply/g' design-bootloader-source/src/dia_install.inc
 	DEFAULT_LANG='--lang-to-subst--' PATH=$(PATH):/usr/sbin make -C design-bootloader-source
@@ -45,11 +39,16 @@ ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
 	install -m 644 design-bootloader-source/message $(sysconfdir)/../boot/splash/$(THEME)
 	install -m 644 design-bootloader-source/bootlogo $(datadir)/gfxboot/$(THEME)
 endif
+#bootsplash
+	mkdir -p $(datadir)/plymouth/themes/$(THEME)
+	cp -al boot-800x600.jpg $(datadir)/plymouth/themes/$(THEME)/grub.jpg
+	cp -al images/background*.png $(datadir)/plymouth/themes/$(THEME)/
+	cp -a components/bootsplash/* $(datadir)/plymouth/themes/$(THEME)
+	mv $(datadir)/plymouth/themes/$(THEME)/theme.plymouth $(datadir)/plymouth/themes/$(THEME)/$(THEME).plymouth
 #grub2
 	install -d -m 755  $(sysconfdir)/../boot/grub/themes/$(THEME)
 	cp -a components/grub2/* $(sysconfdir)/../boot/grub/themes/$(THEME)/
 	install -m 644 images/grub.png $(sysconfdir)/../boot/grub/themes/$(THEME)/boot.png
-
 
 # index html page, start page for all local browsers
 INDEXHTML_DIR=$(datadir)/doc/indexhtml

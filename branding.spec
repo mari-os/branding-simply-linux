@@ -11,8 +11,9 @@ Name: branding-simply-linux
 Version: 8.900
 Release: alt2
 
+BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 %ifarch %ix86 x86_64
-BuildRequires: cpio fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
+BuildRequires: cpio
 BuildRequires: design-bootloader-source >= 5.0-alt2 fribidi
 BuildRequires: gfxboot >= 4
 %endif
@@ -63,11 +64,10 @@ Summary: Theme for splash animations during bootup
 Summary(ru_RU.UTF-8): Тема для экрана загрузки для дистрибутива "Просто Линукс"
 License: Distributable
 Group:  System/Configuration/Boot and Init
-%ifarch %ix86 x86_64
+BuildArch: noarch
 Provides: plymouth-theme-%theme
 Requires: plymouth-plugin-script
 Requires: plymouth
-%endif
 
 %branding_add_conflicts simply-linux bootsplash
 
@@ -410,9 +410,7 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 
 #bootsplash
 %post bootsplash
-%ifarch %ix86 x86_64
 subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
-%endif
 [ -f /etc/sysconfig/grub2 ] && \
       subst "s|GRUB_WALLPAPER=.*|GRUB_WALLPAPER=/usr/share/plymouth/themes/%theme/grub.jpg|" \
              /etc/sysconfig/grub2 ||:
@@ -442,10 +440,8 @@ fi
 %_iconsdir/altlinux.png
 
 %files bootsplash
-%ifarch %ix86 x86_64
 %_datadir/plymouth/themes/%theme/*
 %exclude %_datadir/plymouth/themes/%theme/*.in
-%endif
 
 %files release
 %dir %data_cur_dir
