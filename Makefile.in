@@ -3,15 +3,18 @@ THEME=@THEME@
 NAME=@NAME@
 VERSION=@VERSION@
 
-.PHONY: all install x86
+.PHONY: all install all-arch-install
 
-all:
-# background
-
-	convert images/wallpaper.png -fill '#c62530' -font /usr/share/fonts/ttf/google-droid/DroidSans-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "@STATUS@"' wallpaper.png
-	cp -al wallpaper.png graphics/backgrounds/default.png
-	cp -al wallpaper.png graphics/backgrounds/xdm.png
+ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
+all: graphics gfxboot
+else
+all: graphics
+endif
 
 include components.mk
-install: browser-qt ahttpd indexhtml system-settings-install
-x86: boot
+all-arch-install: browser-qt ahttpd indexhtml bootsplash-install grub-install system-settings-install
+ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
+install: gfxboot-install all-arch-install
+else
+install: all-arch-install
+endif

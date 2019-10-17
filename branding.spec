@@ -280,7 +280,7 @@ make
 
 %install
 %makeinstall
-make x86 DESTDIR=%buildroot datadir=%buildroot%_datadir sysconfdir=%buildroot%_sysconfdir
+make DESTDIR=%buildroot datadir=%buildroot%_datadir sysconfdir=%buildroot%_sysconfdir
 
 %define data_cur_dir %_datadir/branding-data-current
 mkdir -p %buildroot%data_cur_dir
