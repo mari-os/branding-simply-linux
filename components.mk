@@ -1,7 +1,7 @@
 # browser-qt
 ARCH=$(shell arch)
 
-.PHONY: browser-qt ahttpd graphics gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install
+.PHONY: browser-qt ahttpd graphics gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install xfce-settings-install
 
 components/browser-qt/design/bg.png: images/installer.png
 	convert $< -resize '800x600!' -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' $@
@@ -76,3 +76,16 @@ system-settings-install:
 	mkdir -p $(datadir)/polkit-1/rules.d/
 	cp -a system-settings/polkit-rules/*.rules $(datadir)/polkit-1/rules.d/
 	install -Dm644 system-settings/lightdm-gtk-greeter.conf $(datadir)/install3/lightdm-gtk-greeter.conf
+
+xfce-settings-install:
+	mkdir -p $(sysconfdir)/skel/XDG-Templates.skel/
+	cp -r xfce-settings/etcskel/* $(sysconfdir)/skel/
+	cp -r xfce-settings/etcskel/.config $(sysconfdir)/skel/
+	cp -r xfce-settings/etcskel/.local $(sysconfdir)/skel/
+	cp -r xfce-settings/etcskel/.vimrc $(sysconfdir)/skel/
+	cp -r xfce-settings/etcskel/.gtkrc-2.0 $(sysconfdir)/skel/
+	install -m 644 xfce-settings/etcskel/.wm-select $(sysconfdir)/skel/
+# backgrounds
+	mkdir -p $(datadir)/backgrounds/xfce/
+	install -m 644 xfce-settings/backgrounds/slinux*.jpg $(datadir)/backgrounds/xfce/
+	install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh $(sysconfdir)/X11/profile.d/zdg-move-templates.sh

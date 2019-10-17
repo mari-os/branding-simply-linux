@@ -12,7 +12,7 @@ all: graphics
 endif
 
 include components.mk
-all-arch-install: browser-qt ahttpd indexhtml bootsplash-install grub-install system-settings-install
+all-arch-install: browser-qt ahttpd indexhtml bootsplash-install grub-install system-settings-install xfce-settings-install
 ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
 install: gfxboot-install all-arch-install
 else

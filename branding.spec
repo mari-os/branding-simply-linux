@@ -329,22 +329,6 @@ for r in %buildroot%data_cur_dir/alt-notes/license.*.html; do
   touch %buildroot%_datadir/alt-notes/"${r##*/}"
 done
 
-mkdir -p %buildroot/etc/skel/XDG-Templates.skel/
-
-cp -r xfce-settings/etcskel/* %buildroot/etc/skel/
-cp -r xfce-settings/etcskel/.config %buildroot/etc/skel/
-cp -r xfce-settings/etcskel/.local %buildroot/etc/skel/
-cp -r xfce-settings/etcskel/.vimrc %buildroot/etc/skel/
-cp -r xfce-settings/etcskel/.gtkrc-2.0 %buildroot/etc/skel/
-
-install -m 644 xfce-settings/etcskel/.wm-select %buildroot/etc/skel/
-
-# backgrounds
-mkdir -p %buildroot%_datadir/backgrounds/xfce/
-install -m 644 xfce-settings/backgrounds/slinux*.jpg %buildroot%_datadir/backgrounds/xfce/
-
-install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh %buildroot%_sysconfdir/X11/profile.d/zdg-move-templates.sh
-
 #slideshow
 mkdir -p %buildroot/usr/share/install2/slideshow
 mkdir -p %buildroot/etc/alterator
