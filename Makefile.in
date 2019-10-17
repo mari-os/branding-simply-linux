@@ -3,6 +3,8 @@ THEME=@THEME@
 NAME=@NAME@
 VERSION=@VERSION@
 
+.PHONY: all install x86
+
 all:
 # background
 
