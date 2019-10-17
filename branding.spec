@@ -5,6 +5,9 @@
 
 %define brand simply
 
+%define gtk_theme ClassicLooks
+%define icon_theme SimpleSL
+
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
@@ -275,7 +278,7 @@ Some system settings for Simply Linux.
 
 %build
 autoconf
-THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename ./configure
+THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme ./configure
 make
 
 %install
@@ -486,6 +489,7 @@ fi
 
 %files system-settings
 %_datadir/polkit-1/rules.d/*.rules
+%_datadir/install3/*
 
 %changelog
 * Wed Oct 09 2019 Mikhail Efremov <sem@altlinux.org> 8.900-alt2

@@ -71,6 +71,8 @@ grub-install:
 	cp -a components/grub2/* $(sysconfdir)/../boot/grub/themes/$(THEME)/
 	install -m 644 images/grub.png $(sysconfdir)/../boot/grub/themes/$(THEME)/boot.png
 
+
 system-settings-install:
 	mkdir -p $(datadir)/polkit-1/rules.d/
 	cp -a system-settings/polkit-rules/*.rules $(datadir)/polkit-1/rules.d/
+	install -Dm644 system-settings/lightdm-gtk-greeter.conf $(datadir)/install3/lightdm-gtk-greeter.conf
