@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="ClassicLooks"/>
-    <property name="IconThemeName" type="string" value="SimpleSL"/>
+    <property name="ThemeName" type="string" value="@GTK_THEME@"/>
+    <property name="IconThemeName" type="string" value="@ICON_THEME@"/>
     <property name="DoubleClickTime" type="int" value="350"/>
     <property name="DoubleClickDistance" type="int" value="5"/>
     <property name="DndDragThreshold" type="int" value="8"/>

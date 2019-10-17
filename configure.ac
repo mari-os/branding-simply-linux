@@ -28,6 +28,7 @@ AC_SUBST(MIDDLE_LABELS_HEX)
 AC_SUBST(TITLE_COLOR)
 AC_SUBST(GTK_THEME)
 AC_SUBST(ICON_THEME)
+AC_SUBST(XFWM4_THEME)
 
 AC_CONFIG_FILES([
 		 Makefile
@@ -45,5 +46,7 @@ AC_CONFIG_FILES([
 		 components/indexhtml/index-en.html
 		 components/systemd/os-release
 		 system-settings/lightdm-gtk-greeter.conf
+		 xfce-settings/xfconf-templates/xfwm4.xml
+		 xfce-settings/xfconf-templates/xsettings.xml
 ])
 AC_OUTPUT

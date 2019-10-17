@@ -7,6 +7,7 @@
 
 %define gtk_theme ClassicLooks
 %define icon_theme SimpleSL
+%define xfwm4_theme "ClassicLooks XFWM4"
 
 %define _unpackaged_files_terminate_build 1
 
@@ -278,7 +279,7 @@ Some system settings for Simply Linux.
 
 %build
 autoconf
-THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme ./configure
+THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme XFWM4_THEME=%xfwm4_theme ./configure
 make
 
 %install

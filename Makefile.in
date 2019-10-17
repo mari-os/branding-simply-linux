@@ -6,9 +6,9 @@ VERSION=@VERSION@
 .PHONY: all install all-arch-install
 
 ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
-all: graphics gfxboot
+all: graphics xfce-settings gfxboot
 else
-all: graphics
+all: graphics xfce-settings
 endif
 
 include components.mk

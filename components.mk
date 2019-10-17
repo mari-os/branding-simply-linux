@@ -1,7 +1,7 @@
 # browser-qt
 ARCH=$(shell arch)
 
-.PHONY: browser-qt ahttpd graphics gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install xfce-settings-install
+.PHONY: browser-qt ahttpd graphics xfce-settings gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install xfce-settings-install
 
 components/browser-qt/design/bg.png: images/installer.png
 	convert $< -resize '800x600!' -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' $@
@@ -27,6 +27,9 @@ graphics:
 	convert images/wallpaper.png -fill '#c62530' -font /usr/share/fonts/ttf/google-droid/DroidSans-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "@STATUS@"' wallpaper.png
 	cp -al wallpaper.png graphics/backgrounds/default.png
 	cp -al wallpaper.png graphics/backgrounds/xdm.png
+
+xfce-settings:
+	cp -p xfce-settings/xfconf-templates/*.xml xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 # gfxboot
 gfxboot: graphics
