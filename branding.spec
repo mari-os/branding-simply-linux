@@ -377,6 +377,7 @@ cp -a system-settings/polkit-rules/*.rules %buildroot/%_sysconfdir/polkit-1/rule
 %endif
 
 %post bootloader
+[ "$1" -eq 1 ] || exit 0
 %ifarch %ix86 x86_64
 ln -snf %theme/message /boot/splash/message
 . /etc/sysconfig/i18n
@@ -393,7 +394,7 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 
 %ifarch %ix86 x86_64
 %preun bootloader
-[ $1 = 0 ] || exit 0
+[ "$1" -eq 0 ] || exit 0
 [ "`readlink /boot/splash/message`" != "%theme/message" ] ||
     rm -f /boot/splash/message
 %endif
@@ -410,6 +411,7 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 
 #bootsplash
 %post bootsplash
+[ "$1" -eq 1 ] || exit 0
 subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 [ -f /etc/sysconfig/grub2 ] && \
       subst "s|GRUB_WALLPAPER=.*|GRUB_WALLPAPER=/usr/share/plymouth/themes/%theme/grub.jpg|" \
