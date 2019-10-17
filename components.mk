@@ -60,3 +60,7 @@ indexhtml:
 	cp -a components/indexhtml/images $(INDEXHTML_DIR)
 #	install -Dpm644 images/product-logo.png $(INDEXHTML_DIR)/images/product-logo.png
 	install -Dpm644 components/indexhtml/indexhtml.desktop $(datadir)/applications/indexhtml.desktop
+
+system-settings-install:
+	mkdir -p $(datadir)/polkit-1/rules.d/
+	cp -a system-settings/polkit-rules/*.rules $(datadir)/polkit-1/rules.d/

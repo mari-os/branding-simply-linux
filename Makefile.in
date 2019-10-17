@@ -11,5 +11,5 @@ all:
 	cp -al wallpaper.png graphics/backgrounds/xdm.png
 
 include components.mk
-install: browser-qt ahttpd indexhtml
+install: browser-qt ahttpd indexhtml system-settings-install
 x86: boot

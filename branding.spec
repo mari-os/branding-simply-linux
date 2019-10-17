@@ -365,10 +365,6 @@ cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-mer
 mkdir -p %buildroot/usr/share/desktop-directories
 cp menu/altlinux-wine.directory %buildroot/usr/share/desktop-directories/
 
-# system-settings
-mkdir -p %buildroot/%_sysconfdir/polkit-1/rules.d/
-cp -a system-settings/polkit-rules/*.rules %buildroot/%_sysconfdir/polkit-1/rules.d/
-
 %ifarch %ix86 x86_64
 #bootloader
 %pre bootloader
@@ -489,7 +485,7 @@ fi
 /usr/share/desktop-directories/altlinux-wine.directory
 
 %files system-settings
-%config %_sysconfdir/polkit-1/rules.d/*.rules
+%_datadir/polkit-1/rules.d/*.rules
 
 %changelog
 * Wed Oct 09 2019 Mikhail Efremov <sem@altlinux.org> 8.900-alt2
