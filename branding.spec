@@ -385,13 +385,6 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 %post indexhtml
 %_sbindir/indexhtml-update
 
-%files bootloader
-%ifarch %ix86 x86_64
-%_datadir/gfxboot/%theme
-/boot/splash/%theme
-%endif
-/boot/grub/themes/%theme
-
 #bootsplash
 %post bootsplash
 [ "$1" -eq 1 ] || exit 0
@@ -423,6 +416,13 @@ fi
 %_datadir/design
 %_niconsdir/slinux.png
 %_iconsdir/altlinux.png
+
+%files bootloader
+%ifarch %ix86 x86_64
+%_datadir/gfxboot/%theme
+/boot/splash/%theme
+%endif
+/boot/grub/themes/%theme
 
 %files bootsplash
 %_datadir/plymouth/themes/%theme/*
