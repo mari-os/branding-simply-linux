@@ -181,7 +181,7 @@ Requires: gtk-theme-classiclooks
 Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl >= 2.7-alt3
 Requires: branding-simply-linux-graphics
-Requires: branding-simply-linux-backgrounds8
+Requires: branding-simply-linux-backgrounds9
 # plugins added on panel by default
 Requires: xfce4-places-plugin
 Requires: xfce4-pulseaudio-plugin
@@ -199,15 +199,15 @@ Requires: branding-simply-linux-backgrounds-legacy branding-simply-linux-backgro
 %description xfce-settings
 This package contains default settings for Xfce for Simply linux distribution.
 
-%package backgrounds8
+%package backgrounds9
 Group: Graphics
-Summary: Backgrounds for SL-8
+Summary: Backgrounds for SL-9
 License: CC-BY-NC-SA-3.0+
 BuildArch: noarch
-%branding_add_conflicts simply-linux backgrounds8
+%branding_add_conflicts simply-linux backgrounds9
 
-%description backgrounds8
-This package contains backgrounds for Simply Linux 8.
+%description backgrounds9
+This package contains backgrounds for Simply Linux 9.
 
 %package slideshow
 Summary: Slideshow for Simply Linux %version installer.
@@ -450,7 +450,7 @@ fi
 /etc/skel/.vimrc
 /etc/skel/.gtkrc-2.0
 
-%files backgrounds8
+%files backgrounds9
 /usr/share/backgrounds/xfce/*
 
 %files slideshow

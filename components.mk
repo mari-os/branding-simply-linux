@@ -92,5 +92,5 @@ xfce-settings-install:
 	install -m 644 xfce-settings/etcskel/.wm-select $(sysconfdir)/skel/
 # backgrounds
 	mkdir -p $(datadir)/backgrounds/xfce/
-	install -m 644 xfce-settings/backgrounds/slinux*.jpg $(datadir)/backgrounds/xfce/
+	install -m 644 xfce-settings/backgrounds/slinux*.png $(datadir)/backgrounds/xfce/
 	install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh $(sysconfdir)/X11/profile.d/zdg-move-templates.sh
