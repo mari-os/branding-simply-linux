@@ -20,6 +20,7 @@ ahttpd:
 	cp -a components/ahttpd/styles/*.css $(datadir)/alterator/design/styles
 
 graphics:
+	convert -colorspace YCbCr -sampling-factor 2x2 images/boot.png JPEG:images/boot.jpg
 	for size in 1024x768 800x600 640x480; do \
 		convert images/boot.jpg -quality 97 -resize "$$size!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' boot-$$size.jpg ;\
 	done
