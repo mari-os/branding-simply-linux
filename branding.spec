@@ -192,10 +192,6 @@ Obsoletes: xfce-settings-lite xfce-settings-school-lite
 %branding_add_conflicts simply-linux xfce-settings
 Conflicts: xfce-settings-simply-linux
 
-# NOTE: Drop this requires when SL-9 will be released:
-# at that point these packages will be installed already.
-Requires: branding-simply-linux-backgrounds-legacy branding-simply-linux-backgrounds-vladstudio
-
 %description xfce-settings
 This package contains default settings for Xfce for Simply linux distribution.
 
