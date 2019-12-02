@@ -73,7 +73,7 @@ bootsplash-install:
 grub-install:
 	install -d -m 755  $(sysconfdir)/../boot/grub/themes/$(THEME)
 	cp -a components/grub2/* $(sysconfdir)/../boot/grub/themes/$(THEME)/
-	install -m 644 images/grub.png $(sysconfdir)/../boot/grub/themes/$(THEME)/boot.png
+	install -m 644 images/boot.png $(sysconfdir)/../boot/grub/themes/$(THEME)/boot.png
 
 
 system-settings-install:
