@@ -67,6 +67,8 @@ bootsplash-install:
 	cp -al images/background*.png $(datadir)/plymouth/themes/$(THEME)/
 	cp -a components/bootsplash/* $(datadir)/plymouth/themes/$(THEME)
 	mv $(datadir)/plymouth/themes/$(THEME)/theme.plymouth $(datadir)/plymouth/themes/$(THEME)/$(THEME).plymouth
+	mkdir -p $(datadir)/pixmaps
+	mv $(datadir)/plymouth/themes/$(THEME)/system-logo.png $(datadir)/pixmaps/
 
 #grub
 grub-install:
