@@ -12,8 +12,8 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 8.900
-Release: alt2
+Version: 8.910
+Release: alt1
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 %ifarch %ix86 x86_64
@@ -472,6 +472,30 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Tue Dec 03 2019 Mikhail Efremov <sem@altlinux.org> 8.910-alt1
+- components.mk: Fix convert argument.
+- Fix build on non-x86.
+- xfce-settings: Drop requires for legacy backgrounds.
+- Replace backgrounds8 subpackage with backgrounds9.
+- images: Generate boot.jpg from boot.png.
+- images: New images for bootloader, splash and lightdm.
+- images: Drop grub.png.
+- bootsplash: Drop grub.jpg.
+- bootloader: Fix grub setup.
+- cleanup: Don't mix sections.
+- bootsplash: Package system-logo.png.
+- Drop unneeded make.
+- build: Don't hardcode Xfce GTK, icons and xfwm4 themes.
+- build: Move xfce-settings installation to components.mk.
+- system-settings: Package lightdm-gtk-greeter settings.
+- build: Re-work targets.
+- build: Mark targets as PHONY.
+- build: Move system-settings installation to components.mk.
+- all: Don't touch config files during package update.
+- xfce-settings: Drop fuzion-icon autostart file.
+- xfce-settings: Add polkit-gnome autostart file again.
+- bootsplash: Package plymouth theme on all arches.
+
 * Wed Oct 09 2019 Mikhail Efremov <sem@altlinux.org> 8.900-alt2
 - Fix BR: Add fribidi on x86.
 - Fix build on aarch64.
