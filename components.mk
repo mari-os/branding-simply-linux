@@ -1,8 +1,6 @@
-# browser-qt
-ARCH=$(shell arch)
-
 .PHONY: browser-qt ahttpd graphics xfce-settings gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install xfce-settings-install
 
+# browser-qt
 components/browser-qt/design/bg.png: images/installer.png
 	convert $< -resize '800x600!' -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' $@
 
