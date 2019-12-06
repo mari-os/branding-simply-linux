@@ -9,7 +9,12 @@
 %define icon_theme SimpleSL
 %define xfwm4_theme "ClassicLooks XFWM4"
 
+%ifarch %e2k
+# 2019: no chromium port available
+%define web_browser firefox
+%else
 %define web_browser chromium
+%endif
 %define mail_reader thunderbird
 %define file_manager thunar
 
