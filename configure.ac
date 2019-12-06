@@ -32,6 +32,7 @@ AC_SUBST(XFWM4_THEME)
 AC_SUBST(DEFAULT_WEB_BROWSER)
 AC_SUBST(DEFAULT_MAIL_READER)
 AC_SUBST(DEFAULT_FILE_MANAGER)
+AC_SUBST(LO_ICON_THEME)
 
 AC_CONFIG_FILES([
 		 Makefile
@@ -49,6 +50,7 @@ AC_CONFIG_FILES([
 		 components/indexhtml/index-en.html
 		 components/systemd/os-release
 		 system-settings/lightdm-gtk-greeter.conf
+		 xfce-settings/etcskel/.config/libreoffice/4/user/registrymodifications.xcu
 		 xfce-settings/etcskel/.config/xfce4/helpers.rc
 		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml

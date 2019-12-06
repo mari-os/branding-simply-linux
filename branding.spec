@@ -18,6 +18,14 @@
 %define mail_reader thunderbird
 %define file_manager thunar
 
+# LibreOffice icon theme
+%ifarch %e2k
+# LO5@e2k lacks oxygen icon theme
+%define lo_icon_theme auto
+%else
+%define lo_icon_theme oxygen
+%endif
+
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
@@ -284,7 +292,7 @@ Some system settings for Simply Linux.
 
 %build
 autoconf
-THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme XFWM4_THEME=%xfwm4_theme DEFAULT_WEB_BROWSER=%web_browser DEFAULT_MAIL_READER=%mail_reader DEFAULT_FILE_MANAGER=%file_manager ./configure
+THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme XFWM4_THEME=%xfwm4_theme DEFAULT_WEB_BROWSER=%web_browser DEFAULT_MAIL_READER=%mail_reader DEFAULT_FILE_MANAGER=%file_manager LO_ICON_THEME=%lo_icon_theme ./configure
 make
 
 %install
