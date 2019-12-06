@@ -46,7 +46,7 @@ AC_CONFIG_FILES([
 		 components/indexhtml/index-en.html
 		 components/systemd/os-release
 		 system-settings/lightdm-gtk-greeter.conf
-		 xfce-settings/xfconf-templates/xfwm4.xml
-		 xfce-settings/xfconf-templates/xsettings.xml
+		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 ])
 AC_OUTPUT

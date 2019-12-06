@@ -1,4 +1,4 @@
-.PHONY: browser-qt ahttpd graphics xfce-settings gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install xfce-settings-install
+.PHONY: browser-qt ahttpd graphics gfxboot indexhtml gfxboot-install bootsplash-install grub-install system-settings-install xfce-settings-install
 
 # browser-qt
 components/browser-qt/design/bg.png: images/installer.png
@@ -26,9 +26,6 @@ graphics:
 	convert images/wallpaper.png -fill '#c62530' -font /usr/share/fonts/ttf/google-droid/DroidSans-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' wallpaper.png
 	cp -al wallpaper.png graphics/backgrounds/default.png
 	cp -al wallpaper.png graphics/backgrounds/xdm.png
-
-xfce-settings:
-	cp -p xfce-settings/xfconf-templates/*.xml xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 # gfxboot
 gfxboot: graphics
@@ -88,6 +85,8 @@ xfce-settings-install:
 	cp -r xfce-settings/etcskel/.vimrc $(sysconfdir)/skel/
 	cp -r xfce-settings/etcskel/.gtkrc-2.0 $(sysconfdir)/skel/
 	install -m 644 xfce-settings/etcskel/.wm-select $(sysconfdir)/skel/
+	# remove templates
+	find $(sysconfdir)/skel/ -type f -name '*.in' -delete
 # backgrounds
 	mkdir -p $(datadir)/backgrounds/xfce/
 	install -m 644 xfce-settings/backgrounds/slinux*.png $(datadir)/backgrounds/xfce/

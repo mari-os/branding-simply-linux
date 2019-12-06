@@ -7,9 +7,9 @@ ARCH=$(shell arch)
 .PHONY: all install all-arch-install
 
 ifeq (,$(filter-out i586 i686 x86_64,$(ARCH)))
-all: graphics xfce-settings gfxboot
+all: graphics gfxboot
 else
-all: graphics xfce-settings
+all: graphics
 endif
 
 include components.mk
