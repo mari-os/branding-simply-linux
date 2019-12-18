@@ -9,6 +9,7 @@
 %define icon_theme SimpleSL
 %define xfwm4_theme "ClassicLooks XFWM4"
 
+# NOTE: Helper's name must be one of exo helpers.
 %ifarch %e2k
 # 2019: no chromium port available
 %define web_browser firefox
@@ -16,7 +17,7 @@
 %define web_browser chromium
 %endif
 %define mail_reader thunderbird
-%define file_manager thunar
+%define file_manager Thunar
 
 # LibreOffice icon theme
 %ifarch %e2k
