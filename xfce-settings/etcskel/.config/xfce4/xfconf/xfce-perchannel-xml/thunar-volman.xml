@@ -23,11 +23,11 @@
   </property>
   <property name="autoplay-audio-cds" type="empty">
     <property name="enabled" type="bool" value="true"/>
-    <property name="command" type="string" value="smplayer %d"/>
+    <property name="command" type="string" value="vlc %d"/>
   </property>
   <property name="autoplay-video-cds" type="empty">
     <property name="enabled" type="bool" value="true"/>
-    <property name="command" type="string" value="smplayer %d"/>
+    <property name="command" type="string" value="vlc %d"/>
   </property>
   <property name="autophoto" type="empty">
     <property name="enabled" type="bool" value="false"/>
