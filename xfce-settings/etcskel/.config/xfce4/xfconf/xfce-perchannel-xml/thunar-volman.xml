@@ -8,8 +8,8 @@
     <property name="enabled" type="bool" value="true"/>
   </property>
   <property name="autoburn" type="empty">
-    <property name="data-cd-command" type="string" value="brasero"/>
-    <property name="audio-cd-command" type="string" value="brasero"/>
+    <property name="data-cd-command" type="string" value="xfburn"/>
+    <property name="audio-cd-command" type="string" value="xfburn"/>
     <property name="enabled" type="bool" value="true"/>
   </property>
   <property name="autobrowse" type="empty">
