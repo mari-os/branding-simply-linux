@@ -15,5 +15,6 @@
     <property name="general-notification" type="bool" value="true"/>
     <property name="show-tray-icon" type="bool" value="true"/>
     <property name="show-panel-label" type="int" value="1"/>
+    <property name="handle-brightness-keys" type="bool" value="true"/>
   </property>
 </channel>
