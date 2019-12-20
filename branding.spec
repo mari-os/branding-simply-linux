@@ -193,7 +193,6 @@ Distribution license and release notes
 Summary: default settings for Xfce for Simply linux distribution
 License: GPLv2+
 Group: Graphical desktop/XFce
-BuildArch: noarch
 Requires: PolicyKit-gnome
 Requires: etcskel
 Requires: gtk-theme-classiclooks
