@@ -22,8 +22,9 @@
 %define file_manager Thunar
 
 # LibreOffice icon theme
-%ifarch %e2k
+%ifarch %e2k mipsel
 # LO5@e2k lacks oxygen icon theme
+# On mipsel we have only LO 6.3+ which also lacks it
 %define lo_icon_theme auto
 %else
 %define lo_icon_theme oxygen
