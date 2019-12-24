@@ -10,9 +10,10 @@
 %define xfwm4_theme "ClassicLooks XFWM4"
 
 # NOTE: Helper's name must be one of exo helpers.
-%ifarch %e2k %arm aarch64
+%ifarch %e2k %arm aarch64 mipsel
 # e2k: 2019: no chromium port available
 # aarch64: Seems firefox is faster as reported by jqt4@
+# mipsel: firefox works better now -- iv@
 %define web_browser firefox
 %else
 %define web_browser chromium
