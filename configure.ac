@@ -33,6 +33,7 @@ AC_SUBST(DEFAULT_WEB_BROWSER)
 AC_SUBST(DEFAULT_MAIL_READER)
 AC_SUBST(DEFAULT_FILE_MANAGER)
 AC_SUBST(LO_ICON_THEME)
+AC_SUBST(MEDIA_PLAYER)
 
 AC_CONFIG_FILES([
 		 Makefile
@@ -54,5 +55,7 @@ AC_CONFIG_FILES([
 		 xfce-settings/etcskel/.config/xfce4/helpers.rc
 		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+		 xfce-settings/etcskel/.config/xfce4/xfconf/xfce-perchannel-xml/thunar-volman.xml
+		 xfce-settings/etcskel/.local/share/applications/mimeapps.list
 ])
 AC_OUTPUT
