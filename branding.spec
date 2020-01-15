@@ -205,6 +205,7 @@ Requires: gnome-icon-theme icon-theme-simple-sl >= 2.7-alt3
 Requires: branding-simply-linux-graphics
 Requires: branding-simply-linux-backgrounds9
 # plugins added on panel by default
+Requires: xfce4-datetime-plugin
 Requires: xfce4-places-plugin
 Requires: xfce4-pulseaudio-plugin
 Requires: xfce4-whiskermenu-plugin
