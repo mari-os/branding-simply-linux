@@ -44,6 +44,7 @@ image/x-pixmap=ristretto.desktop
 image/tiff=ristretto.desktop
 image/svg+xml=ristretto.desktop
 image/x-xpixmap=ristretto.desktop
+inode/directory=thunar.desktop
 
 [Default Applications]
 video/3gp=@MEDIA_PLAYER@.desktop
@@ -91,3 +92,4 @@ image/x-pixmap=ristretto.desktop
 image/tiff=ristretto.desktop
 image/svg+xml=ristretto.desktop
 image/x-xpixmap=ristretto.desktop
+inode/directory=thunar.desktop
