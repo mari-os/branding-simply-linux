@@ -35,7 +35,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 8.920
+Version: 8.930
 Release: alt1
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -495,6 +495,22 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Fri Jan 17 2020 Mikhail Efremov <sem@altlinux.org> 8.930-alt1
+- Fix changelog.
+- xfce-settings: Set thunar for inode/directory MIME type.
+- menu: Drop gmplayer.desktop.
+- menu: Drop gcompris-edit.desktop.
+- menu: Add gimagereader-qt5.desktop.
+- xfce4-settings: Set Bright theme for xfce4-notifyd.
+- indexhtml: Use https://getalt.org as download link.
+- xfce-settings: Use human-readable name for desktop file.
+- xfce-settings: Require datetime plugin.
+- xfce-settings: Replace orageclock plugin with datetime.
+- menu: Add celluloid desktop file.
+- xfce-settings: Use celluloid as meadia player on non-x86.
+- Use auto icon theme on mipsel (by Ivan A. Melnikov).
+- Use firefox on mipsel (by Ivan A. Melnikov).
+
 * Mon Dec 23 2019 Mikhail Efremov <sem@altlinux.org> 8.920-alt1
 - xfce-settings: It is not noarch now.
 - xfce-settings: Set firefox as web browser on ARM.
