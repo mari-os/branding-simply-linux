@@ -929,7 +929,7 @@ fi
 - Rename and fix fusion-icon.desktop for autostart.
 - backgrounds: Replace slinux_spring_*.png with slinux_spring_*.jpg.
 
-* Wed Jun 30 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt15
+* Thu Jun 30 2011 Alexandra Panyukova <mex3@altlinux.ru> 6.0.0-alt15
 - wallpapers path fixed
 - more sizes of thunar icons
 - greeting, installer, lilo and finish step icons added
