@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<name xml:lang="ru">Открыть терминал</name>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<description xml:lang="ru">Пример особого действия</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>system-search</icon>
+	<name>Search for files...</name>
+	<name xml:lang="ru">Поиск файлов...</name>
+	<command>mate-search-tool --path=%f</command>
+	<description>Locate documents and folders by name or content</description>
+	<description xml:lang="ru">Искать документы и папки по имени или по содержанию</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>
