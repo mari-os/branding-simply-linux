@@ -351,9 +351,9 @@ done
 #slideshow
 mkdir -p %buildroot/usr/share/install2/slideshow
 mkdir -p %buildroot/etc/alterator
-cp -a slideshow/slides*/  %buildroot/usr/share/install2/slideshow/
+cp -a slideshow/Slides*/  %buildroot/usr/share/install2/slideshow/
 # Set English slideshow as default
-#ln -s slides-en %buildroot/usr/share/install2/slideshow/slides
+ln -s Slides-en %buildroot/usr/share/install2/slideshow/Slides
 install slideshow/slideshow.conf %buildroot/etc/alterator/
 
 #indexhtml
