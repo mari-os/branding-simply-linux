@@ -9,6 +9,13 @@
 %define icon_theme SimpleSL
 %define xfwm4_theme "ClassicLooks XFWM4"
 
+# Enable compositing on x86_64 only
+%ifarch x86_64
+%define xfwm4_compositing true
+%else
+%define xfwm4_compositing false
+%endif
+
 # NOTE: Helper's name must be one of exo helpers.
 %ifarch %e2k %arm aarch64 mipsel
 # e2k: 2019: no chromium port available
@@ -298,7 +305,7 @@ Some system settings for Simply Linux.
 
 %build
 autoconf
-THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme XFWM4_THEME=%xfwm4_theme DEFAULT_WEB_BROWSER=%web_browser DEFAULT_MAIL_READER=%mail_reader DEFAULT_FILE_MANAGER=%file_manager LO_ICON_THEME=%lo_icon_theme MEDIA_PLAYER=%media_player ./configure
+THEME=%theme NAME='%Name' STATUS=%status VERSION=%version CODENAME=%codename GTK_THEME=%gtk_theme ICON_THEME=%icon_theme XFWM4_THEME=%xfwm4_theme XFWM4_COMPOSITING=%xfwm4_compositing DEFAULT_WEB_BROWSER=%web_browser DEFAULT_MAIL_READER=%mail_reader DEFAULT_FILE_MANAGER=%file_manager LO_ICON_THEME=%lo_icon_theme MEDIA_PLAYER=%media_player ./configure
 make
 
 %install
