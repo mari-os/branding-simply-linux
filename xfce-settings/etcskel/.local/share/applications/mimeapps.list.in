@@ -1,4 +1,9 @@
 [Added Associations]
+application/pdf=atril.desktop
+application/rtf=writer.desktop
+application/xml=@DEFAULT_WEB_BROWSER@.desktop
+text/html=@DEFAULT_WEB_BROWSER@.desktop
+text/plain=medit.desktop
 video/3gp=@MEDIA_PLAYER@.desktop
 video/3gpp=@MEDIA_PLAYER@.desktop
 video/divx=@MEDIA_PLAYER@.desktop
@@ -47,6 +52,11 @@ image/x-xpixmap=ristretto.desktop
 inode/directory=thunar.desktop
 
 [Default Applications]
+application/pdf=atril.desktop
+application/rtf=writer.desktop
+application/xml=@DEFAULT_WEB_BROWSER@.desktop
+text/html=@DEFAULT_WEB_BROWSER@.desktop
+text/plain=medit.desktop
 video/3gp=@MEDIA_PLAYER@.desktop
 video/3gpp=@MEDIA_PLAYER@.desktop
 video/divx=@MEDIA_PLAYER@.desktop
