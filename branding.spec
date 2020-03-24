@@ -39,6 +39,8 @@
 %define lo_icon_theme oxygen
 %endif
 
+%define java_version 1.8.0
+
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
@@ -57,6 +59,9 @@ BuildRequires: libalternatives-devel
 BuildRequires: qt5-base-devel
 
 BuildRequires: ImageMagick fontconfig bc
+
+# For java-*-openjdk-*-policytool.desktop
+BuildRequires: java-%{java_version}-openjdk
 
 Source: %name-%version.tar
 
@@ -283,7 +288,6 @@ Simply Linux index.html welcome page.
 Summary: menu for Simply Linux
 License: Distributable
 Group: Graphical desktop/Other
-BuildArch: noarch
 Requires(pre): altlinux-freedesktop-menu-common
 Requires: altlinux-freedesktop-menu-common
 
@@ -377,6 +381,12 @@ mkdir -p %buildroot/etc/xdg/menus/xfce-applications-merged
 cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-merged/
 mkdir -p %buildroot/usr/share/desktop-directories
 cp menu/altlinux-wine.directory %buildroot/usr/share/desktop-directories/
+# Find and use java policy desktop file: its name arch-dependent
+JAVA_POLICY_DESKTOP="$(find /usr/share/applications -mindepth 1 -maxdepth 1 \
+                       -name 'java-%{java_version}-openjdk-*-policytool.desktop')" >/dev/null 2>&1
+[ -n "$JAVA_POLICY_DESKTOP" ] || exit 1
+cp -a "$JAVA_POLICY_DESKTOP" %buildroot/usr/share/slinux-style/applications/
+echo "NoDisplay=True" >>%buildroot/usr/share/slinux-style/applications/"${JAVA_POLICY_DESKTOP##*/}"
 
 %ifarch %ix86 x86_64
 #bootloader
