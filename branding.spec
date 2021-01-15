@@ -43,6 +43,7 @@
 
 #alterantives weights
 %define alterator_browser_weight 52
+%define artworks_weight 12
 
 %define _unpackaged_files_terminate_build 1
 
@@ -337,9 +338,9 @@ popd
 
 install -d %buildroot//etc/alternatives/packages.d
 cat >%buildroot/etc/alternatives/packages.d/%name-graphics <<__EOF__
-%_datadir/artworks	%_datadir/design/%theme 10	
-%_datadir/design-current	%_datadir/design/%theme	10
-%_datadir/design/current	%_datadir/design/%theme	10
+%_datadir/artworks	%_datadir/design/%theme %artworks_weight
+%_datadir/design-current	%_datadir/design/%theme	%artworks_weight
+%_datadir/design/current	%_datadir/design/%theme	%artworks_weight
 __EOF__
 
 #release
