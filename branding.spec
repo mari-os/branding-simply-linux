@@ -392,6 +392,11 @@ JAVA_POLICY_DESKTOP="$(find /usr/share/applications -mindepth 1 -maxdepth 1 \
 cp -a "$JAVA_POLICY_DESKTOP" %buildroot/usr/share/slinux-style/applications/
 echo "NoDisplay=True" >>%buildroot/usr/share/slinux-style/applications/"${JAVA_POLICY_DESKTOP##*/}"
 
+# Workarond for rcc files: don't build it, just install old one:
+# seems something wrong with newly created files, they are ignored.
+# This issue must be further investigated.
+cp slinux.rcc %buildroot%_datadir/alterator-browser-qt/design/
+
 %ifarch %ix86 x86_64
 #bootloader
 %pre bootloader
