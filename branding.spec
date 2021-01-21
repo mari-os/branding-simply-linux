@@ -48,7 +48,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 9.0
+Version: 9.0.90
 Release: alt1
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -521,6 +521,11 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Thu Jan 21 2021 Mikhail Efremov <sem@altlinux.org> 9.0.90-alt1
+- Workaround for rcc file.
+- graphics: Fix duplicate alternatives.
+- alterator: Fix duplicate alternatives.
+
 * Tue Mar 24 2020 Mikhail Efremov <sem@altlinux.org> 9.0-alt1
 - menu: Use system java-*-openjdk-*-policytool.desktop.
 - indexhtml: Update download links.
