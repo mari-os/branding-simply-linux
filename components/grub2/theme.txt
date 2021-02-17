@@ -34,7 +34,7 @@ terminal-font: "Misc Fixed Regular 13"
 	left = 0
 	width = 100%
 	height = 20
-	text = "To boot the selected operating system using default settings, press return. For additional settings, press E"
+	text = "@KEYMAP_MIDDLE@"
 	align = "center"
 	font = "DejaVu Sans Regular 10"
 	color = "#000"
