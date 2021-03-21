@@ -112,6 +112,9 @@ Provides: plymouth-theme-%theme
 Requires: plymouth-plugin-script
 Requires: plymouth
 
+# ALT bug #39593
+Conflicts: system-logo
+
 %branding_add_conflicts simply-linux bootsplash
 
 %description bootsplash
