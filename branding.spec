@@ -306,6 +306,8 @@ Summary: Some system settings for Simply Linux
 License: GPLv2+
 Group: System/Base
 BuildArch: noarch
+# Due to /usr/share/install3/lightdm-gtk-greeter.conf
+Conflicts: branding-alt-workstation-mate-settings
 
 %description system-settings
 Some system settings for Simply Linux.
