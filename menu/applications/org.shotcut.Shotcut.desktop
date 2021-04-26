@@ -9,6 +9,7 @@ Comment=Shotcut is a free, open source, cross-platform video editor.
 Comment[ru]=Shotcut - видеоредактор с открытым исходным кодом.
 Comment[de]=Programm zum Bearbeiten und Abspielen von Videodateien.
 Exec=shotcut %F
+TryExec=shotcut %F
 Icon=org.shotcut.Shotcut
 Terminal=false
 Categories=AudioVideo;Video;AudioVideoEditing;
