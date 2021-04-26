@@ -5,5 +5,6 @@ GenericName=License Agreement
 GenericName[ru]=Лицензионное соглашение
 Icon=flash-player-properties
 Exec=xdg-open http://www.adobe.com/legal/licenses-terms.html
+TryExec=xdg-open http://www.adobe.com/legal/licenses-terms.html
 Categories=AudioVideo;
 NoDisplay=true

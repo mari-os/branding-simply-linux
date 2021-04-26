@@ -118,3 +118,4 @@ Name[zh_CN]=新建窗口
 Name[zh_TW]=新視窗
 Name=New Window
 Exec=celluloid --new-window
+TryExec=celluloid --new-window
