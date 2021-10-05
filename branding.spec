@@ -1,6 +1,6 @@
 %define theme slinux
 %define Name Simply Linux
-%define codename Destiny
+%define codename Captain Finn
 %define status %nil
 
 %define brand simply
