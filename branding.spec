@@ -181,6 +181,7 @@ Summary(ru_RU.UTF-8): Описание дистрибутива "Просто Л
 License: GPLv2+
 Group: System/Configuration/Other
 BuildArch: noarch
+Requires: alt-os-release
 Provides: %(for n in %provide_list; do echo -n "$n-release = %version-%release "; done) altlinux-release-%theme  branding-alt-%theme-release
 Obsoletes: %obsolete_list  branding-alt-%theme-release
 Conflicts: %conflicts_list
@@ -350,13 +351,10 @@ __EOF__
 
 #release
 install -pD -m644 /dev/null %buildroot%_sysconfdir/buildreqs/packages/ignore.d/%name-release
-install -pD -m644 components/systemd/os-release %buildroot%data_cur_dir/release/os-release
-echo "%Name %version %status (%codename)" >%buildroot%data_cur_dir/release/altlinux-release
+install -pD -m644 components/systemd/os-release %buildroot%_prefix/lib/os-release
+echo "%Name %version %status (%codename)" >%buildroot%_sysconfdir/altlinux-release
 for n in fedora redhat system; do
-	ln -s altlinux-release %buildroot%data_cur_dir/release/$n-release
-done
-for r in %buildroot%data_cur_dir/release/*-release; do
-  touch %buildroot%_sysconfdir/"${r##*/}"
+	ln -s altlinux-release %buildroot%_sysconfdir/$n-release
 done
 
 #notes
@@ -439,13 +437,6 @@ shell_config_set /etc/sysconfig/grub2 GRUB_COLOR_HIGHLIGHT %grub_high
 [ "$1" -eq 1 ] || exit 0
 subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 
-#release
-%post release
-if ! [ -e %_sysconfdir/altlinux-release ] && \
-   ! [ -e %_sysconfdir/os-release ]; then
-	cp -a %data_cur_dir/release/*-release %_sysconfdir/
-fi
-
 #notes
 %post notes
 if ! [ -e %_datadir/alt-notes/license.all.html ]; then
@@ -476,10 +467,9 @@ fi
 %exclude %_datadir/plymouth/themes/%theme/*.in
 
 %files release
-%dir %data_cur_dir
-%data_cur_dir/release/
+%_sysconfdir/*-release
+%_prefix/lib/os-release
 %_sysconfdir/buildreqs/packages/ignore.d/*
-%ghost %config(noreplace) %_sysconfdir/*-release
 
 %files notes
 %dir %data_cur_dir
