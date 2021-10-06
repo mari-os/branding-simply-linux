@@ -9,5 +9,5 @@ Exec=regedit
 TryExec=regedit
 Terminal=false
 Type=Application
-Icon=preferences-system
+Icon=wine-regedit
 Categories=Wine;Settings;
