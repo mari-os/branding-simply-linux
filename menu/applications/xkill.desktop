@@ -1,12 +1,11 @@
 [Desktop Entry]
-Encoding=UTF-8
 Type=Application
 Name=Xkill
 Name[ru]=Аварийное закрытие программы
 Comment=Kill X clients
 Comment[ru]=Закрытие зависших окон
-Icon=xkill.xpm
+Icon=xkill
 Exec=xkill
 TryExec=xkill
 Terminal=false
-Categories=Application;System;Monitor;
+Categories=System;Monitor;
