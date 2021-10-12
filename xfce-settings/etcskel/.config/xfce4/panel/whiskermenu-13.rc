@@ -1,4 +1,4 @@
-favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
+favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-mail-reader.desktop,xfce4-web-browser.desktop
 button-icon=slinux
 button-single-row=false
 show-button-title=false

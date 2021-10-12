@@ -43,7 +43,7 @@
     </property>
     <property name="plugin-5" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="exo-web-browser.desktop"/>
+        <value type="string" value="xfce4-web-browser.desktop"/>
       </property>
     </property>
     <property name="plugin-6" type="string" value="pager">
