@@ -42,7 +42,7 @@ terminal-font: "Misc Fixed Regular 13"
 
 #menu
 + boot_menu {
-	left = 20%
+	left = 25%
 	width = 75%
 	top = 30%
 	height = 40%
