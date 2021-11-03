@@ -240,13 +240,13 @@ This package contains default settings for Xfce for Simply linux distribution.
 
 %package backgrounds10
 Group: Graphics
-Summary: Backgrounds for SL-9
+Summary: Backgrounds for SL-10
 License: CC-BY-NC-SA-3.0+
 BuildArch: noarch
 %branding_add_conflicts simply-linux backgrounds10
 
 %description backgrounds10
-This package contains backgrounds for Simply Linux 9.
+This package contains backgrounds for Simply Linux 10.
 
 %package slideshow
 Summary: Slideshow for Simply Linux %version installer.
