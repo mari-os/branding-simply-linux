@@ -48,8 +48,8 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 9.1
-Release: alt2
+Version: 9.900
+Release: alt1
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 %ifarch %ix86 x86_64
@@ -508,6 +508,34 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Tue Dec 14 2021 Mikhail Efremov <sem@altlinux.org> 9.900-alt1
+- xfce-settings: Drop compiz settings.
+- xfce-settings: Drop meditrc.
+- xfce-settings: Rename exo-*.desktop -> xfce4-*.desktop.
+- xfce-settings: Update xfce4-notifyd.xml.
+- xfce-settings,backgrounds10: Update backgrounds for SL-10.
+- bootsplash: Update images for SL-10.
+- Revert "Workaround for rcc file".
+- Fix codename handling.
+- menu: Add newline to end of altlinux-wine.directory.
+- menu: Drop wine.desktop.
+- menu: Update wine-regedit.desktop.
+- menu: Update xkill.desktop.
+- menu: Drop xfce-xfcalendar-settings.desktop.
+- menu: Drop wesnoth.desktop.
+- menu: Rename and update shotwell.desktop.
+- menu: Drop ppapi-plugin-adobe-flash.desktop.
+- menu: Drop openttd.desktop.
+- menu: Drop gimagereader-qt5.desktop.
+- menu: Drop easytag.desktop.
+- menu: Update dropbox.desktop.
+- menu: Update cups.desktop.
+- menu: Drop com.obsproject.Studio.desktop.
+- menu: Drop medit.desktop.
+- release: Package /usr/lib/os-release.
+- os-release.in: Add BUILD_ID.
+- Set codename to Captain Finn.
+
 * Mon Apr 26 2021 Mikhail Efremov <sem@altlinux.org> 9.1-alt2
 - menu: Add TryExec to all desktop files.
 - xfwm4.xml.in: Don't force window content display (by Ivan A. Melnikov).
