@@ -75,7 +75,7 @@ keymap=
 ; screen size
 screen.size=800,600
 ; upper left corner
-mainmenu.pos=260,200
+mainmenu.pos=260,170
 ; boot option input field position
 bootopt.pos=200,480
 
@@ -83,7 +83,7 @@ bootopt.pos=200,480
 ; screen size
 screen.size=640,480
 ; upper left corner
-mainmenu.pos=130,100
+mainmenu.pos=130,85
 ; boot option input field position
 bootopt.pos=263,380
 
