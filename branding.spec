@@ -465,7 +465,9 @@ fi
 
 %files xfce-settings
 %_sysconfdir/X11/profile.d/zdg-move-templates.sh
+%_sysconfdir/X11/profile.d/zdg-move-desktop.sh
 /etc/skel/XDG-Templates.skel/
+/etc/skel/XDG-Desktop.skel/
 /etc/skel/.wm-select
 /etc/skel/.config
 /etc/skel/.local

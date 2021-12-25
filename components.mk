@@ -85,9 +85,14 @@ xfce-settings-install:
 	cp -r xfce-settings/etcskel/.vimrc $(sysconfdir)/skel/
 	cp -r xfce-settings/etcskel/.gtkrc-2.0 $(sysconfdir)/skel/
 	install -m 644 xfce-settings/etcskel/.wm-select $(sysconfdir)/skel/
+	mkdir -p $(sysconfdir)/skel/XDG-Desktop.skel
+	install -Dpm644 components/indexhtml/indexhtml.desktop $(sysconfdir)/skel/XDG-Desktop.skel
+	chmod +x $(sysconfdir)/skel/XDG-Desktop.skel/indexhtml.desktop
 	# remove templates
 	find $(sysconfdir)/skel/ -type f -name '*.in' -delete
 # backgrounds
 	mkdir -p $(datadir)/backgrounds/xfce/
 	install -m 644 xfce-settings/backgrounds/slinux*.png $(datadir)/backgrounds/xfce/
+# scripts
 	install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh $(sysconfdir)/X11/profile.d/zdg-move-templates.sh
+	install -pDm0755 xfce-settings/scripts/zdg-move-desktop.sh $(sysconfdir)/X11/profile.d/zdg-move-desktop.sh
