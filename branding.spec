@@ -46,7 +46,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 9.900
+Version: 10.0
 Release: alt1
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -500,6 +500,18 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Mon Dec 27 2021 Mikhail Efremov <sem@altlinux.org> 10.0-alt1
+- menu: Use Name as GenericName in pavucontrol.desktop.
+- xfce-settings: Add indexhtml.desktop to desktop.
+- xfce-settings: Reduce panel size.
+- bootloader: Move gfxboot menu.
+- menu: Drop java-*-openjdk-*-policytool.desktop.
+- slideshow: Update slides for SL10.
+- xfce-settings,backgrounds10: Fix description.
+- bootloader: Set white gfxboot menu color.
+- bootloader: Set white grub menu text.
+- bootloader: Move grub menu a bit.
+
 * Tue Dec 14 2021 Mikhail Efremov <sem@altlinux.org> 9.900-alt1
 - xfce-settings: Drop compiz settings.
 - xfce-settings: Drop meditrc.
