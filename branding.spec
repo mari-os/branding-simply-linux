@@ -16,7 +16,7 @@
 %define xfwm4_compositing false
 %endif
 
-# NOTE: Helper's name must be one of exo helpers.
+# NOTE: Helper's name must be one of xfce4-settings helpers.
 %ifarch %e2k %arm aarch64 mipsel riscv64
 # e2k: 2019: no chromium port available
 # aarch64: Seems firefox is faster as reported by jqt4@
