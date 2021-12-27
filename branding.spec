@@ -57,7 +57,7 @@
 
 Name: branding-simply-linux
 Version: 10.0
-Release: alt1
+Release: alt2
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 %ifarch %ix86 x86_64
@@ -510,6 +510,9 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Mon Dec 27 2021 Anton Midyukov <antohami@altlinux.org> 10.0-alt2
+- riscv64: set browser to epiphany, mail_reader to claws-mail
+
 * Mon Dec 27 2021 Mikhail Efremov <sem@altlinux.org> 10.0-alt1
 - menu: Use Name as GenericName in pavucontrol.desktop.
 - xfce-settings: Add indexhtml.desktop to desktop.
