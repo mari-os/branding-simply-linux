@@ -17,9 +17,8 @@
 %endif
 
 # NOTE: Helper's name must be one of xfce4-settings helpers.
-%ifarch %e2k %arm aarch64 mipsel riscv64
+%ifarch %e2k %arm mipsel riscv64
 # e2k: 2019: no chromium port available
-# aarch64: Seems firefox is faster as reported by jqt4@
 # mipsel: firefox works better now -- iv@
 %ifarch riscv64
 # riscv64: 2021: no firefox port available
