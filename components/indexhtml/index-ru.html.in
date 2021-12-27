@@ -88,7 +88,7 @@
 <div id="footer">
 <table border="0" width="100%">
 <tr>
-<td id="left_footer">&copy; ООО «Базальт СПО», 2017. Все права защищены.</td>
+<td id="left_footer">&copy; ООО «Базальт СПО», 2017-@YEAR@. Все права защищены.</td>
 <td id="right_footer">
 Телефон: +7 (495) 123-4799<br>
 ул. Бутырская, д.75<br>

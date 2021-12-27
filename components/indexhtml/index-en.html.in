@@ -88,7 +88,7 @@
 <div id="footer">
 <table border="0" width="100%">
 <tr>
-<td id="left_footer">&copy; 2017 Basealt Ltd. All rights reserved.</td>
+<td id="left_footer">&copy; 2017-@YEAR@ Basealt Ltd. All rights reserved.</td>
 <td id="right_footer">
 Tel/fax: +7 (495) 123-4799<br>
 75 Butyrskaya<br>
