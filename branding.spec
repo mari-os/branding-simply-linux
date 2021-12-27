@@ -17,17 +17,27 @@
 %endif
 
 # NOTE: Helper's name must be one of exo helpers.
-%ifarch %e2k %arm aarch64 mipsel
+%ifarch %e2k %arm aarch64 mipsel riscv64
 # e2k: 2019: no chromium port available
 # aarch64: Seems firefox is faster as reported by jqt4@
 # mipsel: firefox works better now -- iv@
+%ifarch riscv64
+# riscv64: 2021: no firefox port available
+%define web_browser epiphany
+%else
 %define web_browser firefox
+%endif
 %define media_player celluloid
 %else
 %define web_browser chromium
 %define media_player vlc
 %endif
+%ifarch riscv64
+# riscv64: 2021: no thunderbird port available
+%define mail_reader sylpheed-claws
+%else
 %define mail_reader thunderbird
+%endif
 %define file_manager Thunar
 
 # LibreOffice icon theme
