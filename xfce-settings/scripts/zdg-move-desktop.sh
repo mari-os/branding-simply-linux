@@ -13,6 +13,17 @@ if [ -d "$SKEL_DESKTOP_DIR" -a -f "$HOME/.config/user-dirs.dirs" -a \
 		if [ -d "$XDG_DESKTOP_DIR" ] && rmdir "$XDG_DESKTOP_DIR" ||
 				mkdir -p "${XDG_DESKTOP_DIR%/*}"; then
 			mv "$SKEL_DESKTOP_DIR" "$XDG_DESKTOP_DIR" ||:
+			if [ -f "$XDG_DESKTOP_DIR"/indexhtml.desktop ]; then
+				gio set "$XDG_DESKTOP_DIR"/indexhtml.desktop \
+				  "metadata::trusted:" yes
+				gio set "$XDG_DESKTOP_DIR"/indexhtml.desktop \
+				  "metadata::xfce-exe-checksum" \
+				  $(sha256sum "$XDG_DESKTOP_DIR"/indexhtml.desktop |
+				  cut -f1 -d ' ')
+				gio set "$XDG_DESKTOP_DIR"/indexhtml.desktop \
+				  "metadata::trust" true
+			fi
 		fi
 	fi
+
 fi
