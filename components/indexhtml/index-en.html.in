@@ -44,9 +44,9 @@
 <td width="33%" id="central_pane"> <!-- Second column: Company -->
 <ul>
 <li><a href="https://basealt.ru">Company Website</a></li>
-<li><a href="https://www.basealt.ru/sales/support">Technical Support</a></li>
+<li><a href="https://www.basealt.ru/support">Technical Support</a></li>
 <li><a href="https://getalt.org/en">Products</a></li>
-<li><a href="https://basealt.ru/pages/about.html">Contacts</a></li>
+<li><a href="https://basealt.ru/contacts">Contacts</a></li>
 <li><a href="https://getalt.org/en/simply">Download</a></li>
 <li><a href="https://torrent.altlinux.org/">Torrents</a></li>
 </ul>
