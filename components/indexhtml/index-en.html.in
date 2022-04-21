@@ -56,7 +56,7 @@
 <ul>
 <li><a href="https://lists.altlinux.org">Mailing Lists</a></li>
 <li><a href="https://forum.altlinux.org">User Forum</a></li>
-<li><a href="https://bugs.altlinux.org">Report a Bug</a></li>
+<li><a href="https://bugzilla.altlinux.org">Report a Bug</a></li>
 <li><a href="https://packages.altlinux.org">Software Repository</a></li>
 <li><a href="http://git.altlinux.org">Build environment</a></li>
 </ul>

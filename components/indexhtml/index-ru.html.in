@@ -56,7 +56,7 @@
 <ul>
 <li><a href="https://lists.altlinux.org">Списки рассылки</a></li>
 <li><a href="https://forum.altlinux.org">Форум пользователей</a></li>
-<li><a href="https://bugs.altlinux.org">Сообщить об ошибке</a></li>
+<li><a href="https://bugzilla.altlinux.org">Сообщить об ошибке</a></li>
 <li><a href="https://packages.altlinux.org">Репозиторий</a></li>
 <li><a href="http://git.altlinux.org">Сборочная среда</a></li>
 </ul>
