@@ -336,8 +336,8 @@ mkdir -p %buildroot%data_cur_dir
 #graphics
 mkdir -p %buildroot/%_datadir/design/{%theme,backgrounds}
 mkdir -p %buildroot/%_niconsdir
-install graphics/icons/slinux.png %buildroot/%_niconsdir/slinux.png
-install graphics/icons/mini/slinux.png %buildroot/%_iconsdir/altlinux.png
+install -m644 graphics/icons/slinux.png %buildroot/%_niconsdir/slinux.png
+install -m644 graphics/icons/mini/slinux.png %buildroot/%_iconsdir/altlinux.png
 cp -ar graphics/* %buildroot/%_datadir/design/%theme
 
 pushd %buildroot/%_datadir/design/%theme
@@ -377,18 +377,18 @@ mkdir -p %buildroot/etc/alterator
 cp -a slideshow/Slides*/  %buildroot/usr/share/install2/slideshow/
 # Set English slideshow as default
 ln -s Slides-en %buildroot/usr/share/install2/slideshow/Slides
-install slideshow/slideshow.conf %buildroot/etc/alterator/
+install -m0644 slideshow/slideshow.conf %buildroot/etc/alterator/
 
 #indexhtml
 %define _indexhtmldir %_defaultdocdir/indexhtml
-install components/indexhtml/*.html %buildroot%_defaultdocdir/indexhtml/
+install -m644 components/indexhtml/*.html %buildroot%_defaultdocdir/indexhtml/
 mkdir -p %buildroot%_defaultdocdir/indexhtml/images
-install components/indexhtml/images/* %buildroot%_defaultdocdir/indexhtml/images/
+install -m644 components/indexhtml/images/* %buildroot%_defaultdocdir/indexhtml/images/
 #install -m644 components/indexhtml.desktop %buildroot%_desktopdir/
 
 #menu
 mkdir -p %buildroot/usr/share/slinux-style/applications
-install menu/applications/* %buildroot/usr/share/slinux-style/applications/
+install -m644 menu/applications/* %buildroot/usr/share/slinux-style/applications/
 mkdir -p %buildroot/etc/xdg/menus/xfce-applications-merged
 cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-merged/
 mkdir -p %buildroot/usr/share/desktop-directories
