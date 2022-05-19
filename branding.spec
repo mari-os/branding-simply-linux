@@ -276,14 +276,7 @@ BuildArch: noarch
 Provides: indexhtml indexhtml-%theme = %version indexhtml-Desktop = 1:5.0
 Obsoletes: indexhtml-desktop indexhtml-Desktop
 
-Conflicts: indexhtml-sisyphus
-Conflicts: indexhtml-school_junior
-Conflicts: indexhtml-school_lite
-Conflicts: indexhtml-school_master
-Conflicts: indexhtml-school_terminal
-Conflicts: indexhtml-small_business
-Conflicts: indexhtml-school-server
-Conflicts: branding-altlinux-backup-server-indexhtml
+%branding_add_conflicts simply-linux indexhtml
 
 Requires: xdg-utils 
 Requires: docs-simply-linux
