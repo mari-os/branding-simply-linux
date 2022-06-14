@@ -17,26 +17,37 @@
 %endif
 
 # NOTE: Helper's name must be one of xfce4-settings helpers.
-%ifarch %e2k %arm mipsel riscv64
+
+# Browser
+%ifarch %e2k %arm mipsel
 # e2k: 2019: no chromium port available
 # mipsel: firefox works better now -- iv@
+%define web_browser firefox
+%else
 %ifarch riscv64
 # riscv64: 2021: no firefox port available
 %define web_browser epiphany
 %else
-%define web_browser firefox
+%define web_browser chromium
 %endif
+%endif
+
+# Media Player
+%ifarch %e2k %arm mipsel riscv64
 %define media_player celluloid
 %else
-%define web_browser chromium
 %define media_player vlc
 %endif
+
+# Mail Reader
 %ifarch riscv64
 # riscv64: 2021: no thunderbird port available
 %define mail_reader sylpheed-claws
 %else
 %define mail_reader thunderbird
 %endif
+
+# File Manager
 %define file_manager Thunar
 
 # LibreOffice icon theme
