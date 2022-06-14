@@ -19,9 +19,10 @@
 # NOTE: Helper's name must be one of xfce4-settings helpers.
 
 # Browser
-%ifarch %e2k %arm mipsel
+%ifarch %e2k %arm mipsel i586
 # e2k: 2019: no chromium port available
 # mipsel: firefox works better now -- iv@
+# i586: chromium no longer supports 32bit
 %define web_browser firefox
 %else
 %ifarch riscv64
