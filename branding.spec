@@ -242,7 +242,6 @@ Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl >= 2.7-alt3
 Requires: branding-simply-linux-graphics
 Requires: branding-simply-linux-backgrounds10
-Requires: branding-simply-linux-backgrounds10-vladstudio = %EVR
 # plugins added on panel by default
 Requires: xfce4-datetime-plugin
 Requires: xfce4-places-plugin
@@ -262,6 +261,7 @@ Group: Graphics
 Summary: Backgrounds for SL-10
 License: CC-BY-NC-SA-3.0+
 BuildArch: noarch
+Requires: branding-simply-linux-backgrounds10-vladstudio = %EVR
 %branding_add_conflicts simply-linux backgrounds10
 
 %description backgrounds10
@@ -465,8 +465,8 @@ fi
 [ -e %_datadir/design/slinux/backgrounds/xdm.png ] || \
 	ln -s xdm-16x9.png %_datadir/design/slinux/backgrounds/xdm.png
 
-#xfce-settings
-%post xfce-settings
+#backgrounds10
+%post backgrounds10
 [ -e %_datadir/backgrounds/xfce/default_SL10 ] || \
 	ln -s %def_desktop_wallpaper %_datadir/backgrounds/xfce/default_SL10
 
@@ -517,10 +517,10 @@ fi
 /etc/skel/.local
 /etc/skel/.vimrc
 /etc/skel/.gtkrc-2.0
-%ghost %_datadir/backgrounds/xfce/default_SL10
 
 %files backgrounds10
 %_datadir/backgrounds/xfce/slinux_*.png
+%ghost %_datadir/backgrounds/xfce/default_SL10
 
 %files backgrounds10-vladstudio
 %_datadir/backgrounds/xfce/vladstudio10/
