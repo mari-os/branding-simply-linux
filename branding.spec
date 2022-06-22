@@ -242,6 +242,7 @@ Requires: gnome-themes-standard
 Requires: gnome-icon-theme icon-theme-simple-sl >= 2.7-alt3
 Requires: branding-simply-linux-graphics
 Requires: branding-simply-linux-backgrounds10
+Requires: branding-simply-linux-backgrounds10-vladstudio = %EVR
 # plugins added on panel by default
 Requires: xfce4-datetime-plugin
 Requires: xfce4-places-plugin
@@ -265,6 +266,15 @@ BuildArch: noarch
 
 %description backgrounds10
 This package contains backgrounds for Simply Linux 10.
+
+%package backgrounds10-vladstudio
+Group: Graphics
+Summary: Backgrounds from Vladstudio
+License: CC-BY-NC-SA-3.0+
+BuildArch: noarch
+
+%description backgrounds10-vladstudio
+This package contains backgrounds for Simply Linux 10 from https://vlad.studio.
 
 %package slideshow
 Summary: Slideshow for Simply Linux %version installer.
@@ -501,7 +511,11 @@ fi
 %ghost %_datadir/backgrounds/xfce/default_SL10
 
 %files backgrounds10
-%_datadir/backgrounds/xfce/*
+%_datadir/backgrounds/xfce/slinux_*.png
+
+%files backgrounds10-vladstudio
+%_datadir/backgrounds/xfce/vladstudio10/
+%_datadir/backgrounds/xfce/vladstudio_*.jpg
 
 %files slideshow
 /etc/alterator/slideshow.conf
