@@ -16,6 +16,8 @@
 %define xfwm4_compositing false
 %endif
 
+%define def_desktop_wallpaper slinux_october_2021_1920x1080.png
+
 # NOTE: Helper's name must be one of xfce4-settings helpers.
 
 # Browser
@@ -399,6 +401,10 @@ cp menu/50-xfce-applications.menu %buildroot/etc/xdg/menus/xfce-applications-mer
 mkdir -p %buildroot/usr/share/desktop-directories
 cp menu/altlinux-wine.directory %buildroot/usr/share/desktop-directories/
 
+#backgrounds
+mkdir -p %buildroot/%_datadir/backgrounds/xfce/
+touch %buildroot/%_datadir/backgrounds/xfce/default_SL10
+
 %ifarch %ix86 x86_64
 #bootloader
 %pre bootloader
@@ -441,6 +447,11 @@ subst "s/Theme=.*/Theme=%theme/" /etc/plymouth/plymouthd.conf
 if ! [ -e %_datadir/alt-notes/license.all.html ]; then
 	cp -a %data_cur_dir/alt-notes/license.*.html %_datadir/alt-notes/
 fi
+
+#xfce-settings
+%post xfce-settings
+[ -e %_datadir/backgrounds/xfce/default_SL10 ] || \
+	ln -s %def_desktop_wallpaper %_datadir/backgrounds/xfce/default_SL10
 
 %files alterator
 %config %_altdir/*.rcc
@@ -487,9 +498,10 @@ fi
 /etc/skel/.local
 /etc/skel/.vimrc
 /etc/skel/.gtkrc-2.0
+%ghost %_datadir/backgrounds/xfce/default_SL10
 
 %files backgrounds10
-/usr/share/backgrounds/xfce/*
+%_datadir/backgrounds/xfce/*
 
 %files slideshow
 /etc/alterator/slideshow.conf
