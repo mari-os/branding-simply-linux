@@ -92,7 +92,7 @@ xfce-settings-install:
 	find $(sysconfdir)/skel/ -type f -name '*.in' -delete
 # backgrounds
 	mkdir -p $(datadir)/backgrounds/xfce/
-	install -m 644 xfce-settings/backgrounds/slinux*.png $(datadir)/backgrounds/xfce/
+	cp -a xfce-settings/backgrounds/* $(datadir)/backgrounds/xfce/
 # scripts
 	install -pDm0755 xfce-settings/scripts/zdg-move-templates.sh $(sysconfdir)/X11/profile.d/zdg-move-templates.sh
 	install -pDm0755 xfce-settings/scripts/zdg-move-desktop.sh $(sysconfdir)/X11/profile.d/zdg-move-desktop.sh
