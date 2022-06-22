@@ -23,9 +23,16 @@ graphics:
 		convert images/boot.jpg -quality 97 -resize "$$size!" -fill '#c62530' -font /usr/share/fonts/ttf/dejavu/DejaVuSansCondensed-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' boot-$$size.jpg ;\
 	done
 # background
-	convert images/wallpaper.png -fill '#c62530' -font /usr/share/fonts/ttf/google-droid/DroidSans-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' wallpaper.png
-	cp -al wallpaper.png graphics/backgrounds/default.png
-	cp -al wallpaper.png graphics/backgrounds/xdm.png
+	for w in images/wallpaper-*.png; do \
+		f_name=`basename $$w`; \
+		suff="$${f_name#wallpaper-}"; \
+		size="$${f_name%.*}"; \
+		convert $$w -fill '#c62530' -font /usr/share/fonts/ttf/google-droid/DroidSans-Bold.ttf -style Normal -weight Normal -pointsize 20 -gravity northeast -draw 'text 25,25 "$(STATUS)"' "$$f_name"; \
+		cp -al "$$f_name" graphics/backgrounds/default-"$$suff"; \
+		ln -s default-"$$suff" graphics/backgrounds/xdm-"$$suff"; \
+	done
+	ln -s default-16x9.png graphics/backgrounds/default.png
+	ln -s xdm-16x9.png graphics/backgrounds/xdm.png
 
 # gfxboot
 gfxboot: graphics

@@ -458,6 +458,13 @@ if ! [ -e %_datadir/alt-notes/license.all.html ]; then
 	cp -a %data_cur_dir/alt-notes/license.*.html %_datadir/alt-notes/
 fi
 
+#graphics
+%post graphics
+[ -e %_datadir/design/slinux/backgrounds/default.png ] || \
+	ln -s default-16x9.png %_datadir/design/slinux/backgrounds/default.png
+[ -e %_datadir/design/slinux/backgrounds/xdm.png ] || \
+	ln -s xdm-16x9.png %_datadir/design/slinux/backgrounds/xdm.png
+
 #xfce-settings
 %post xfce-settings
 [ -e %_datadir/backgrounds/xfce/default_SL10 ] || \
@@ -473,6 +480,8 @@ fi
 %_datadir/design
 %_niconsdir/slinux.png
 %_iconsdir/altlinux.png
+%ghost %_datadir/design/slinux/backgrounds/default.png
+%ghost %_datadir/design/slinux/backgrounds/xdm.png
 
 %files bootloader
 %ifarch %ix86 x86_64
