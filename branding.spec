@@ -16,7 +16,7 @@
 %define xfwm4_compositing false
 %endif
 
-%define def_desktop_wallpaper slinux_october_2021_1920x1080.png
+%define def_desktop_wallpaper vladstudio_skyline_16x9_2560x1440.jpg
 
 # NOTE: Helper's name must be one of xfce4-settings helpers.
 
