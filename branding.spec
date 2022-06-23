@@ -69,7 +69,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: branding-simply-linux
-Version: 10.0.910
+Version: 10.1
 Release: alt1
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
@@ -549,6 +549,19 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Thu Jun 23 2022 Mikhail Efremov <sem@altlinux.org> 10.1-alt1
+- backgrounds10,xfce-settings: Move default_SL10 symlink.
+- graphics: Add default.png and xdm.png in different sizes.
+- backgrounds: Package Vladstudio backgrounds as separate subpackage.
+- backgrounds10: Set Vladstudio "skyline" wallpaper as default.
+- xfce-settings: Use symlink as default wallpaper.
+- backgrounds10: Add new Vladstudio wallpapers for SL.
+- xfce-settings: Use firefox on i586.
+- spec: Cleanup defines of xfce4-settings helpers.
+- indexhtml: Use %%branding_add_conflicts macro.
+- graphics,menu,indexhtml: Fix files permission mode.
+- xfce-settings: Replace dm-tool with xfce4-session-logout.
+
 * Fri May 13 2022 Mikhail Efremov <sem@altlinux.org> 10.0.910-alt1
 - xfce-settings: Disable CSD for open/save dialogs.
 - xfce-settings; Update audacious config (closes: #29014).
