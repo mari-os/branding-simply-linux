@@ -16,7 +16,7 @@
 %define xfwm4_compositing false
 %endif
 
-%define def_desktop_wallpaper vladstudio_skyline_16x9_2560x1440.jpg
+%define def_desktop_wallpaper mariy_jilme.jpg
 
 # NOTE: Helper's name must be one of xfce4-settings helpers.
 
@@ -70,7 +70,7 @@
 
 Name: branding-simply-linux
 Version: 10.1
-Release: alt1
+Release: alt2
 
 BuildRequires: fonts-ttf-dejavu fonts-ttf-google-droid-serif fonts-ttf-google-droid-sans fonts-ttf-google-droid-sans-mono
 %ifarch %ix86 x86_64
@@ -549,6 +549,9 @@ fi
 %_datadir/install3/*
 
 %changelog
+* Wed Jun 14 2023 Andrey Sokolov <keremet@altlinux.org> 10.1-alt2
+- Mariy OS
+
 * Thu Jun 23 2022 Mikhail Efremov <sem@altlinux.org> 10.1-alt1
 - backgrounds10,xfce-settings: Move default_SL10 symlink.
 - graphics: Add default.png and xdm.png in different sizes.
