@@ -520,6 +520,7 @@ fi
 
 %files backgrounds10
 %_datadir/backgrounds/xfce/slinux_*.png
+%_datadir/backgrounds/xfce/mariy_jilme.jpg
 %ghost %_datadir/backgrounds/xfce/default_SL10
 
 %files backgrounds10-vladstudio
